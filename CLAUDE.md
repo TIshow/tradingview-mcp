@@ -127,3 +127,11 @@ Claude Code ←→ MCP Server (stdio) ←→ CDP (localhost:9222) ←→ Trading
 ```
 
 Pine graphics path: `study._graphics._primitivesCollection.dwglines.get('lines').get(false)._primitivesDataById`
+
+## Investor-content project
+
+This repo is also used to produce investor-facing technical-analysis articles (theme → screen → TradingView analysis → article). Before working on that, read:
+- `docs/content-pipeline.md` — the editorial strategy & workflow (living doc, update it)
+- `docs/tooling-notes.md` — which MCP tools are reliable vs broken, the stale-symbol-switch gate, and the `scripts/` (analyze_semi_jp, rrg_compute, dump_bars, backtest_rsi_macd) that compute indicators locally from raw bars
+
+Key operational fact: MCP indicator readouts (`data_get_study_values`, screenshot legend) are unreliable/stale — compute indicators locally from raw OHLCV instead; use TradingView for visual/levels/screenshots only.

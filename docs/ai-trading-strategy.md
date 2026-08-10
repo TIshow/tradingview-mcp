@@ -160,5 +160,27 @@ AIが支持線・抵抗線を判断 → **実際に描画**（`draw_shape`）→
 
 ---
 
+## 10. Issue 一覧（作業単位）
+
+**Step 0 — ケイパビリティ検証（最優先。結果次第で設計が変わる）**
+- [#2 ui_evaluate で TVスクリーナーAPI を叩けるか](https://github.com/TIshow/tradingview-mcp/issues/2) — 全銘柄スキャン問題の解決可否
+- [#3 replay_* の動作検証](https://github.com/TIshow/tradingview-mcp/issues/3) — **実験①〜④すべての土台**
+- [#4 pine_* 閉ループ検証](https://github.com/TIshow/tradingview-mcp/issues/4) — AIによる自律的戦略開発の可否
+
+**Step 1 — 基盤構築**
+- [#5 データ基盤：履歴深掘り + ローカルキャッシュ](https://github.com/TIshow/tradingview-mcp/issues/5) — 実験を100倍速く
+- [#6 バックテストエンジン v2](https://github.com/TIshow/tradingview-mcp/issues/6) — ポートフォリオ・損切り・コスト・正しいDD
+- [#7 検証ハーネス](https://github.com/TIshow/tradingview-mcp/issues/7) — **中核**。まぐれか本物かの自動判定
+- [#8 特徴量ライブラリ](https://github.com/TIshow/tradingview-mcp/issues/8)
+
+**Step 2 — 実験**
+- [#9 実験①チャートパターンは本当に機能するのか](https://github.com/TIshow/tradingview-mcp/issues/9)
+- [#10 実験②AIは支持線を正しく引けるのか](https://github.com/TIshow/tradingview-mcp/issues/10)
+- [#11 実験③リプレイ対決 AI vs ルール vs 買い持ち](https://github.com/TIshow/tradingview-mcp/issues/11)
+- [#12 実験④層2は層1を上回るか](https://github.com/TIshow/tradingview-mcp/issues/12) — **本命の問い**
+- [#13 実験⑤マルチタイムフレーム判断](https://github.com/TIshow/tradingview-mcp/issues/13)
+
+---
+
 ## 更新履歴
 - 2026-08-11: 初版。TradingViewを「判断エンジン」と位置づけるファネル構造、AIの3層、検証の鉄則（選択バイアス実証つき）、リーク対策、構築順、インパクト実験6件、未検証ケイパビリティ3件を確定。

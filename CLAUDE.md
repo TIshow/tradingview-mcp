@@ -128,9 +128,17 @@ Claude Code ←→ MCP Server (stdio) ←→ CDP (localhost:9222) ←→ Trading
 
 Pine graphics path: `study._graphics._primitivesCollection.dwglines.get('lines').get(false)._primitivesDataById`
 
-## Investor-content project
+## Research projects in this repo
 
-This repo is also used to produce investor-facing technical-analysis articles (theme → screen → TradingView analysis → article). Before working on that, read:
+Two related efforts use this MCP. Read the relevant doc before working on either.
+
+**AI trading research** — is AI's visual judgment / context integration actually good at charts?
+- `docs/ai-trading-strategy.md` — strategy, architecture, validation rules, experiment plan, open issues
+- Key stance: TradingView MCP is a **judgment engine, not a screening engine** (5-10s/symbol; bulk screening belongs to external data). The innovation is the visual/context/replay layer.
+- Non-negotiable: search for **rules, not stocks**; sealed test data; log every trial; always benchmark vs buy&hold. See `scripts/selection_bias_demo.js` for why (pure noise produced Sharpe 2.15).
+- Scope: research and validation only — no live order execution.
+
+**Investor-content pipeline** — theme → screen → TradingView analysis → article
 - `docs/content-pipeline.md` — the editorial strategy & workflow (living doc, update it)
 - `docs/tooling-notes.md` — which MCP tools are reliable vs broken, the stale-symbol-switch gate, and the `scripts/` (analyze_semi_jp, rrg_compute, dump_bars, backtest_rsi_macd) that compute indicators locally from raw bars
 

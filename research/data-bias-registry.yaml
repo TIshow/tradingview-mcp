@@ -1,0 +1,53 @@
+# Data Bias Registry — データ汚染を機械可読にする
+#
+# 完全な point-in-time は無料データではまず達成できない。
+# 目指すのは「達成」ではなく「汚染箇所を測定・記録し、結論の射程を機械的に制限すること」。
+#
+#   「知らずに汚染される」と「汚染を知った上で射程を狭める」は全く別物。
+#
+# 判定装置は forbidden_claims に該当する結論を出した実験を自動棄却する。
+# 参照: docs/research-protocol.md §4
+
+datasets:
+  - dataset_id: equity_daily_v1
+    source:                      # 例: J-Quants / Yahoo Finance / stooq / TradingView
+    retrieved_at:                # 取得日時（イベント発生時刻と区別すること）
+    version_hash:
+
+    # --- 各性質を true / false / unknown で明示する。unknown を放置しない ---
+    price_point_in_time:         # 価格はその時点で入手可能だったか
+    corporate_actions_point_in_time:   # 分割・配当の調整が事後書き換えでないか
+    universe_survivorship_free:  # 上場廃止銘柄を含むか（false なら銘柄選択の結論は出せない）
+    fundamentals_as_reported:    # 発表時の値か、改定後の値か
+    announcement_timestamp_quality:    # 発表時刻の精度: exact | date_only | unavailable
+    timezone_verified:
+    trading_hours_verified:
+    symbol_change_handled:       # コード変更・再割り当てを追跡できるか
+    missing_data_policy:         # 欠損の扱い。欠損自体が将来情報を示唆しないか
+
+    # --- 射程の制限（判定装置が参照する） ---
+    allowed_claims:
+      - fixed-universe price-pattern research
+    forbidden_claims:
+      - historical stock-selection performance   # 生存者バイアスがある場合
+      - fundamental announcement reaction        # 発表時刻が不正確な場合
+      - intraday execution assumptions           # 日足のみの場合
+
+    # --- 既知の限界（自由記述） ---
+    known_limitations:
+      - ""
+
+    verified_by:                 # 誰が / どう検証したか（例: TradingViewの生バーと終値を照合）
+    verification_notes:
+
+
+# 検証の型（新しいデータ源を追加するとき必ず通す）
+verification_protocol:
+  - 1〜3銘柄を複数ソースから取得し、同じ日の終値が一致するか照合する
+    （TradingView の生バーは scripts/dump_bars.js で出力できる。照合の基準に使う）
+  - 分割・配当のあった銘柄で調整の扱いを確認する
+  - 上場廃止銘柄が取得できるか確認する（ここで survivorship_free が決まる）
+  - タイムゾーンと取引時間を確認する
+  - 上記の結果をこのレジストリに記録してから、量を増やす
+
+# 順序の原則: データが正しいことを確認してから量を増やす。逆にすると全部やり直しになる。

@@ -1,0 +1,66 @@
+{
+  "_note": "米国株ユニバース。契約 RC-20260812-us に対応。テーマ分類は日本株版(watchlist.json)と対応させ、市場間比較を可能にする。",
+  "_selection_rule": "S&P500構成銘柄のうち時価総額上位100銘柄（凍結日時点）。凍結後は入れ替えない。",
+  "_status": "PROVISIONAL — 凍結前に実データ源で構成銘柄と時価総額順位を検証すること。現在の一覧は代表的な大型株であり、正確な上位100位の順位は未検証。",
+  "_bias_warning": "「凍結日時点の上位100銘柄」を過去に遡って適用すると、生存者バイアスと先読みが入る（現在大きい企業＝過去に成長した企業を選んでいる）。research/data-bias-registry.yaml に記録し、銘柄選択に関する主張は forbidden_claims とする。",
+
+  "半導体/AIインフラ": [
+    ["NVDA","NVIDIA"],["AMD","Advanced Micro Devices"],["AVGO","Broadcom"],
+    ["MU","Micron Technology"],["INTC","Intel"],["TXN","Texas Instruments"],
+    ["QCOM","Qualcomm"],["AMAT","Applied Materials"],["LRCX","Lam Research"],
+    ["KLAC","KLA Corp"],["ADI","Analog Devices"],["NXPI","NXP Semiconductors"]
+  ],
+  "ソフトウェア/クラウド": [
+    ["MSFT","Microsoft"],["ORCL","Oracle"],["CRM","Salesforce"],
+    ["ADBE","Adobe"],["NOW","ServiceNow"],["INTU","Intuit"],
+    ["PANW","Palo Alto Networks"],["SNPS","Synopsys"],["CDNS","Cadence Design"]
+  ],
+  "プラットフォーム/消費": [
+    ["AAPL","Apple"],["GOOGL","Alphabet"],["AMZN","Amazon"],
+    ["META","Meta Platforms"],["NFLX","Netflix"],["TSLA","Tesla"],
+    ["BKNG","Booking Holdings"],["ABNB","Airbnb"],["UBER","Uber"]
+  ],
+  "金融": [
+    ["BRK.B","Berkshire Hathaway"],["JPM","JPMorgan Chase"],["BAC","Bank of America"],
+    ["WFC","Wells Fargo"],["GS","Goldman Sachs"],["MS","Morgan Stanley"],
+    ["C","Citigroup"],["SCHW","Charles Schwab"],["BLK","BlackRock"],
+    ["SPGI","S&P Global"],["AXP","American Express"],["V","Visa"],["MA","Mastercard"]
+  ],
+  "医薬/ヘルスケア": [
+    ["LLY","Eli Lilly"],["JNJ","Johnson & Johnson"],["UNH","UnitedHealth"],
+    ["ABBV","AbbVie"],["MRK","Merck"],["PFE","Pfizer"],
+    ["TMO","Thermo Fisher"],["ABT","Abbott Labs"],["AMGN","Amgen"],
+    ["DHR","Danaher"],["ISRG","Intuitive Surgical"],["VRTX","Vertex Pharmaceuticals"]
+  ],
+  "エネルギー": [
+    ["XOM","Exxon Mobil"],["CVX","Chevron"],["COP","ConocoPhillips"],
+    ["SLB","Schlumberger"],["EOG","EOG Resources"],["PSX","Phillips 66"]
+  ],
+  "資本財/防衛": [
+    ["GE","GE Aerospace"],["RTX","RTX Corp"],["LMT","Lockheed Martin"],
+    ["BA","Boeing"],["CAT","Caterpillar"],["DE","Deere"],
+    ["HON","Honeywell"],["UNP","Union Pacific"],["ETN","Eaton"]
+  ],
+  "生活必需品": [
+    ["WMT","Walmart"],["PG","Procter & Gamble"],["KO","Coca-Cola"],
+    ["PEP","PepsiCo"],["COST","Costco"],["MDLZ","Mondelez"],
+    ["PM","Philip Morris"],["MO","Altria"],["CL","Colgate-Palmolive"]
+  ],
+  "小売/外食": [
+    ["HD","Home Depot"],["MCD","McDonald's"],["NKE","Nike"],
+    ["LOW","Lowe's"],["SBUX","Starbucks"],["TJX","TJX Companies"]
+  ],
+  "通信/メディア": [
+    ["T","AT&T"],["VZ","Verizon"],["CMCSA","Comcast"],
+    ["DIS","Walt Disney"],["TMUS","T-Mobile US"]
+  ],
+  "素材/公益": [
+    ["LIN","Linde"],["SHW","Sherwin-Williams"],["FCX","Freeport-McMoRan"],
+    ["NEE","NextEra Energy"],["DUK","Duke Energy"],["SO","Southern Company"]
+  ],
+  "その他大型": [
+    ["ACN","Accenture"],["IBM","IBM"],["CSCO","Cisco"],
+    ["MMM","3M"],["UPS","United Parcel Service"],["GILD","Gilead Sciences"]
+  ],
+  "_count_note": "現在102銘柄。凍結時に時価総額順位を検証し、上位100に揃える（順位外を除外）。"
+}

@@ -130,16 +130,20 @@ Pine graphics path: `study._graphics._primitivesCollection.dwglines.get('lines')
 
 ## Research projects in this repo
 
-Two related efforts use this MCP. Read the relevant doc before working on either.
+**Primary: quantitative research lab** — an AI-era Renaissance-style research infrastructure.
+- `docs/ai-trading-strategy.md` — **the charter**: org structure, core principles, research protocol, acceptance criteria, issue map. Read this first.
+- `docs/references.md` — the scientific literature the validation rests on (Reality Check, SPA, Deflated Sharpe, Purged CV). **Do not invent judging criteria** — ground them here.
+- `docs/tooling-notes.md` — instrument manual: which MCP tools are reliable vs stale/broken, the stale-symbol-switch gate, replay verification.
 
-**AI trading research** — is AI's visual judgment / context integration actually good at charts?
-- `docs/ai-trading-strategy.md` — strategy, architecture, validation rules, experiment plan, open issues
-- Key stance: AI is **research infrastructure, not an oracle**. The LLM writes deterministic programs and never answers with numbers; results are saved and re-runnable. TradingView MCP is a **microscope** for reproducing failures, not an alpha source.
-- Non-negotiable: build the **validation harness before the generator**; search for rules, not stocks; signals are correlated so compress them; judge new candidates only on **incremental information** over existing ones; sealed test data; log every trial.
+Non-negotiables:
+- The **LLM writes deterministic programs and never answers with numbers**. Output is code plus saved results under `research/`, so everything is re-runnable.
+- The **validation harness ships before the generator**. Generation is free; `scripts/selection_bias_demo.js` shows pure noise yields Sharpe 2.15 over 3050 trials.
+- Signals are correlated (RSI/MACD/EMA are one price series) — compress them, then judge candidates only on **incremental information** after orthogonalizing against existing factors.
+- Log **every** trial including rejected ones; sealed test data is touched once.
+- TradingView MCP is a **microscope** for reproducing failures, not an alpha source or bulk data feed (5-10s/symbol).
 - Scope: research and validation only — no live order execution.
 
-**Investor-content pipeline** — theme → screen → TradingView analysis → article
-- `docs/content-pipeline.md` — the editorial strategy & workflow (living doc, update it)
-- `docs/tooling-notes.md` — which MCP tools are reliable vs broken, the stale-symbol-switch gate, and the `scripts/` (analyze_semi_jp, rrg_compute, dump_bars, backtest_rsi_macd) that compute indicators locally from raw bars
+**Secondary (paused): investor-content pipeline** — theme → screen → analysis → article.
+- `docs/content-pipeline.md` — editorial strategy. Its discovery engine (`scripts/watchlist.json`, `scripts/scan.js`) is reused by the lab.
 
-Key operational fact: MCP indicator readouts (`data_get_study_values`, screenshot legend) are unreliable/stale — compute indicators locally from raw OHLCV instead; use TradingView for visual/levels/screenshots only.
+Key operational fact: MCP indicator readouts (`data_get_study_values`, screenshot legend) are unreliable/stale — compute indicators locally from raw OHLCV instead.

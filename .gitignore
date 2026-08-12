@@ -9,3 +9,4 @@ discovery-log.json
 .codex/
 AGENTS.md
 .tool-versions
+experiments/

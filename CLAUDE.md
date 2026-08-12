@@ -134,8 +134,8 @@ Two related efforts use this MCP. Read the relevant doc before working on either
 
 **AI trading research** — is AI's visual judgment / context integration actually good at charts?
 - `docs/ai-trading-strategy.md` — strategy, architecture, validation rules, experiment plan, open issues
-- Key stance: TradingView MCP is a **judgment engine, not a screening engine** (5-10s/symbol; bulk screening belongs to external data). The innovation is the visual/context/replay layer.
-- Non-negotiable: search for **rules, not stocks**; sealed test data; log every trial; always benchmark vs buy&hold. See `scripts/selection_bias_demo.js` for why (pure noise produced Sharpe 2.15).
+- Key stance: AI is **research infrastructure, not an oracle**. The LLM writes deterministic programs and never answers with numbers; results are saved and re-runnable. TradingView MCP is a **microscope** for reproducing failures, not an alpha source.
+- Non-negotiable: build the **validation harness before the generator**; search for rules, not stocks; signals are correlated so compress them; judge new candidates only on **incremental information** over existing ones; sealed test data; log every trial.
 - Scope: research and validation only — no live order execution.
 
 **Investor-content pipeline** — theme → screen → TradingView analysis → article

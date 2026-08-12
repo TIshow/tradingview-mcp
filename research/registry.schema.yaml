@@ -1,0 +1,120 @@
+# 実験レジストリ — スキーマ定義
+#
+# 目的は2つ。どちらも欠かせない。
+#   ① 統計入力：試行数は Deflated Sharpe / PBO の入力。成功例だけ保存すると判定が無効になる
+#   ② 研究資産：棄却理由の蓄積が「何を生成すべきでないか」の学習信号になる
+#
+# 記録対象は「提出物」ではなく「探索の全過程」。LLMが生成→棄却→再試行した分も
+# すべて1試行としてカウントする。人手の申告に頼らない。
+#
+# 実体: research/registry.jsonl（1行1実験・追記のみ・削除しない）
+# 参照: docs/research-protocol.md §7
+
+experiment:
+  # --- 同定 ---
+  experiment_id:        # 例: EXP-20260812-0001
+  contract_id:          # 準拠する研究契約（RC-YYYYMMDD-xx）
+  timestamp:            # ISO8601
+
+  # --- 仮説の系譜（1000試行 ≠ 1000の独立実験） ---
+  hypothesis_id:
+  parent_hypothesis_id: # 派生元。ルートなら null
+  derivation:           # 派生方法: new | param_variant | reformulation | combination | autopsy_child
+  hypothesis_family:    # 実験予算の割当単位
+  economic_rationale:   # なぜ効くと考えるか（必須。書けない仮説は登録しない）
+  falsification_condition:  # どうなったら棄却するか（事前に宣言）
+
+  # --- 再現性（同じ入力 → 同じ結果） ---
+  llm_model:
+  prompt_hash:
+  code_hash:
+  data_version:
+  feature_version:
+  seed:
+
+  # --- 対象 ---
+  market_universe:
+  training_period:      { from: , to: }
+  validation_period:    { from: , to: }
+  parameters_tested:    # 探索したパラメータ空間の全体（試行数の実体）
+  n_configurations:     # このレコードが代表する設定数。DSRの入力
+
+  # --- 執行仮定 ---
+  execution_assumptions:
+    commission_bp:
+    slippage_bp:
+    cost_multiplier:    # 反証テスト: 1 / 2 / 4
+    fill_assumption:
+    liquidity_filter_passed:
+
+  # --- 結果 ---
+  result:
+    status:             # completed | error | budget_exceeded
+    hard_conditions:    # すべて真でなければ即棄却
+      no_lookahead:
+      no_repaint:
+      impl_agreement:   # Pine と JS/Python の一致
+      oos_positive_after_cost:
+      max_dd_within_limit:
+      min_trades_met:
+      liquidity_ok:
+      claims_allowed:   # Data Bias Registry の forbidden_claims に抵触しないか
+    metrics:
+      n_trades:
+      sharpe:
+      deflated_sharpe:
+      max_dd:
+      turnover:
+      buy_and_hold:     # 常に併記
+    delta_u:            # 既存ポートフォリオへの増分効用
+      point_estimate:
+      ci_low:
+      ci_high:
+      baseline_version:
+    evidence_profile:   # 合否の二値にしない（0-1）
+      statistical:
+      economic:
+      cost_robustness:
+      independence:
+      regime_robustness:
+      capacity:
+
+  # --- 判定 ---
+  verdict:              # accepted | rejected | shelved
+  rejection_reason:     # 下の分類から選ぶ
+  notes:
+
+  # --- 独立性 ---
+  signal_cluster:       # 重複排除で割り当てられたクラスタID
+  correlation_to_existing:
+  pnl_correlation_max:
+
+  # --- 封印期間の管理 ---
+  sealed_test:
+    dataset_hash:
+    status: untouched   # untouched | touched | invalidated
+    access_count: 0
+    access_reason: null
+    accessed_at: null
+    invalidated_for_future_research: false
+
+
+# 棄却理由の分類（LLMへの学習信号）
+rejection_reasons:
+  - statistically_weak       # 統計的に弱い
+  - killed_by_costs          # コストで消滅
+  - duplicate_of_existing    # 既存戦略と重複
+  - period_dependent         # 特定期間に依存
+  - symbol_dependent         # 特定銘柄に依存
+  - implementation_mismatch  # 実装不一致（Pine vs Python）
+  - data_leak                # データリーク
+  - insufficient_capacity    # 容量不足
+  - no_economic_rationale    # 経済的説明が成立しない
+  - budget_exceeded          # 実験予算の上限
+
+# 不変条件（レジストリ側で強制する）
+invariants:
+  - 追記のみ。レコードの削除・書き換えを禁止する
+  - 棄却・エラーも必ず記録する（成功例だけの保存はDSRを無効にする）
+  - sealed_test.access_count がプロジェクト予算を超えたら以後の実験を停止する
+  - n_configurations の総和が DSR の試行数入力と一致すること

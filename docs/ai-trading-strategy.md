@@ -6,6 +6,7 @@
 - **最終更新**: 2026-08-11
 - **ステータス**: 憲章確定 / 基盤未構築
 - **関連ドキュメント**
+  - [research-protocol.md](research-protocol.md) — **運用マニュアル**（11段パイプライン・研究契約・v0）
   - [references.md](references.md) — **科学的手法と文献**（判定基準の根拠）
   - [tooling-notes.md](tooling-notes.md) — 装置の実務メモ（信頼できるツール／壊れているツール）
   - [content-pipeline.md](content-pipeline.md) — 副次トラック（記事制作・現在は保留）
@@ -132,31 +133,20 @@ LLMをそのまま次足予測器にはしない。
 
 ---
 
-## 4.5 研究プロトコル（1つの仮説がたどる経路）
+## 4.5 研究プロトコル → [research-protocol.md](research-protocol.md)
 
-```
-① 仮説を登録        research/hypotheses/<id>/spec.md
-                    何を、なぜ、どの先行研究に基づくか
-        ↓
-② LLMが実装         research/hypotheses/<id>/strategy.js + test.js
-                    ※LLMは数値を答えない。コードを書くだけ
-        ↓
-③ 探索データで実行   結果は research/results/<id>.json（決定論的・再実行可能）
-        ↓
-④ 試行を記録        research/registry.json に必ず追記（棄却されたものも）
-        ↓
-⑤ 反証実験          コスト2倍 / 遅延追加 / 期間変更 / 市場変更
-        ↓
-⑥ 増分情報量        既存因子で直交化 → 残差に力が残るか
-        ↓
-⑦ 統計判定          Reality Check / SPA / Deflated Sharpe（試行回数を入力）
-        ↓
-⑧ 封印データで1回   ここで落ちたら捨てる。再挑戦しない
-        ↓
-⑨ 失敗の解剖        TradingView顕微鏡で失敗局面を再現 → Failure Atlas へ
-```
+運用の詳細は別冊に分離した。要点のみ：
 
-**棄却された仮説も必ず記録する。** 「効かないと分かっている」ことが資産になる。
+- **最初の成果物は戦略ではなく、①結果を見る前に条件を固定した研究契約と、②失敗を失わない実験台帳**
+- 判定は**ハード棄却条件 → 増分効用 ΔU** の2段。単一スコアに平均化しない（重大な欠陥が平均化で薄まる）
+- 出力は合否ではなく**証拠プロファイル**（統計/経済/コスト耐性/独立性/レジーム耐性/容量）。単体不合格でも既存が負ける局面で稼ぐなら価値がある
+- **Point-in-time は達成目標ではなく測定対象**。汚染を Data Bias Registry に機械可読で記録し、`forbidden_claims` に抵触する結論を自動棄却する
+- **封印期間は「見た回数」を予算化**。一度見て戦略を修正したら、その期間は以後の仮説にとって封印ではない
+- **実験予算**を仮説族ごとに割り当てる。予算がなければLLMは微調整を続け、必ず偶然の勝者を見つける
+- TradingViewでの解剖は**新しい子仮説として登録**する。後知恵の説明を元実験の成功理由に後付けしない
+
+**v0**：11段を全部作ってから統合するのが最大の失敗パターン。**20仮説で全工程を貫通させる**（1000ではない）。
+v0の完成条件に「利益の出る戦略を見つける」を置かない。**生き残りゼロでも正常終了することが合格条件**——全候補棄却は判定装置が機能した結果である。
 
 ---
 
@@ -273,40 +263,43 @@ LLMの成果物がコードとして残るため、後から検算も再実行�
 
 ## 11. Issue 一覧
 
-**Step 0 — 基盤（この順序を守る）**
-| # | 内容 |
-|---|---|
-| [#5](https://github.com/TIshow/tradingview-mcp/issues/5) | データ基盤：キャッシュ＋履歴の深掘り — **全ての前提** |
-| [#2](https://github.com/TIshow/tradingview-mcp/issues/2) | 広域スキャン用データ源（外部一括API）— **#17 より先**。§1.5-③ より、データを増やさず生成だけ増やすと仮説/データ比が悪化する |
-| [#7](https://github.com/TIshow/tradingview-mcp/issues/7) | 検証ハーネス — **最優先。生成器より先** |
-| [#23](https://github.com/TIshow/tradingview-mcp/issues/23) | 文献に基づく検定手法（Reality Check / SPA / DSR / Purged CV） |
-| [#22](https://github.com/TIshow/tradingview-mcp/issues/22) | 研究レジストリ — **探索の全過程**を記録（捨てた試行も。§1.5-②） |
-| [#6](https://github.com/TIshow/tradingview-mcp/issues/6) | バックテストエンジン v2 |
-| [#8](https://github.com/TIshow/tradingview-mcp/issues/8) | 特徴量ライブラリ |
+### 🎯 マイルストーン v0 — 20仮説で全工程を貫通
+> 成功条件は「利益の出る戦略を見つけること」**ではない**。**生き残りゼロでも正常終了することが合格条件**。
 
-**Step 1 — 研究サイクル**
 | # | 内容 |
 |---|---|
-| [#17](https://github.com/TIshow/tradingview-mcp/issues/17) | 戦略ジェネレータ（LLMがコードを書く） |
+| [#24](https://github.com/TIshow/tradingview-mcp/issues/24) | **研究契約を発行して凍結**（最初の成果物） |
+| [#25](https://github.com/TIshow/tradingview-mcp/issues/25) | **実験レジストリ＋封印期間アクセス制御**（失敗を失わない台帳） |
+| [#26](https://github.com/TIshow/tradingview-mcp/issues/26) | Data Bias Registry（汚染を機械可読に） |
+| [#2](https://github.com/TIshow/tradingview-mcp/issues/2) | 一括データ源の確保 — **#17より先** |
+| [#5](https://github.com/TIshow/tradingview-mcp/issues/5) | データ基盤：キャッシュ＋履歴の深掘り |
+| [#7](https://github.com/TIshow/tradingview-mcp/issues/7) | 検証ハーネス（ハード条件→ΔU→証拠プロファイル）— **生成器より先** |
+
+**実装の優先順位**：① 研究契約 → ② レジストリと封印制御 → ③ v0マイルストーン → ④ 判定装置 → ⑤ 20仮説の生成
+
+### 研究サイクル（v0通過後に本格化）
+| # | 内容 |
+|---|---|
+| [#17](https://github.com/TIshow/tradingview-mcp/issues/17) | 戦略ジェネレータ（v0では**20個**） |
 | [#18](https://github.com/TIshow/tradingview-mcp/issues/18) | 相関クラスタリング → 独立因子へ圧縮 |
-| [#19](https://github.com/TIshow/tradingview-mcp/issues/19) | 増分情報量による評価（直交化） |
-| [#20](https://github.com/TIshow/tradingview-mcp/issues/20) | Model Residual Atlas ＋ **実効独立試行数の推定**（§1.5-④） |
-| [#21](https://github.com/TIshow/tradingview-mcp/issues/21) | TradingView顕微鏡（失敗局面の自動再現） |
+| [#19](https://github.com/TIshow/tradingview-mcp/issues/19) | 増分情報量による評価（直交化＋ΔU） |
+| [#20](https://github.com/TIshow/tradingview-mcp/issues/20) | Model Residual Atlas ＋ 実効独立試行数の推定 |
+| [#21](https://github.com/TIshow/tradingview-mcp/issues/21) | TradingView顕微鏡（解剖は**新しい子仮説**として登録） |
+| [#6](https://github.com/TIshow/tradingview-mcp/issues/6) / [#8](https://github.com/TIshow/tradingview-mcp/issues/8) | バックテストエンジン v2 / 特徴量ライブラリ |
 | [#4](https://github.com/TIshow/tradingview-mcp/issues/4) | pine_* 閉ループ検証（#21の前提） |
 
-**保留 — 層1（視覚判断）が仮説に格下げされたため**
-| # | 内容 |
-|---|---|
-| [#11](https://github.com/TIshow/tradingview-mcp/issues/11) | 条件比較（C:数値＋画像 vs A:数値のみ）— これで層1の存否を決める |
-| [#12](https://github.com/TIshow/tradingview-mcp/issues/12) | 文脈統合（数値＋ニュース vs 数値のみ）— 維持 |
+### 保留 — 層1（視覚判断）が仮説に格下げされたため
+[#11](https://github.com/TIshow/tradingview-mcp/issues/11) 条件比較（C:数値＋画像 vs A:数値のみ）／ [#12](https://github.com/TIshow/tradingview-mcp/issues/12) 文脈統合（維持）
 
-**完了 / クローズ**
-- ✅ #3 リプレイ検証（使える） / #15 匿名化 / #16 チャート表示領域 — いずれも `scripts/blind_sample.js` で実装済み
-- ❌ #9 チャートパターン / #10 支持線 / #13 MTF — 層1前提のためクローズ。なお #9 は **Lo, Mamaysky & Wang (2000)** が既にカーネル回帰で定量化しており、AIの視覚認識を使う必然性は薄い（[references.md](references.md) §3）
+### 完了 / クローズ
+- ✅ #3 リプレイ検証 / #15 匿名化 / #16 チャート表示領域 — `scripts/blind_sample.js` で実装済み
+- 🔄 #22 → #25 に統合
+- ❌ #9 チャートパターン / #10 支持線 / #13 MTF — 層1前提のためクローズ。#9 は **Lo, Mamaysky & Wang (2000)** が既にカーネル回帰で定量化済み（[references.md](references.md) §3）
 
 ---
 
 ## 更新履歴
 - 2026-08-11: 初版（判断エンジン論・AIの3層・実験6件）
+- 2026-08-12: 運用マニュアルを [research-protocol.md](research-protocol.md) に分離。11段パイプライン、研究契約、ハード条件＋ΔU＋証拠プロファイル、Data Bias Registry、封印期間のアクセス予算、実験予算、仮説系譜、v0スコープを追加。テンプレート3種を `research/` に配置。
 - 2026-08-12: 原則⑥と §1.5「LLM時代の変化」を追加。危険なのは試行数ではなく、**記録されない試行**と**データに対する仮説数の比**。補正コストは対数的。データ源(#2)を生成器(#17)より前に。
 - 2026-08-11: **全面改訂**。AIを予言モデルではなく研究インフラと位置づけ。LLMはコードを書き数値を答えない、判定装置が生成器より先、相関圧縮と増分情報量、Model Residual Atlas、受け入れ4基準、TradingView＝顕微鏡。層1（視覚判断）は前提から仮説へ格下げ。

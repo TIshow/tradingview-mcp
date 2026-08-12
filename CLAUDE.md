@@ -132,6 +132,7 @@ Pine graphics path: `study._graphics._primitivesCollection.dwglines.get('lines')
 
 **Primary: quantitative research lab** — an AI-era Renaissance-style research infrastructure.
 - `docs/ai-trading-strategy.md` — **the charter**: org structure, core principles, research protocol, acceptance criteria, issue map. Read this first.
+- `docs/research-protocol.md` — **the operating manual**: 11-stage pipeline, research contract, judging (hard conditions then incremental utility), data bias registry, sealed-test budgeting, experiment budgets, and the v0 scope.
 - `docs/references.md` — the scientific literature the validation rests on (Reality Check, SPA, Deflated Sharpe, Purged CV). **Do not invent judging criteria** — ground them here.
 - `docs/tooling-notes.md` — instrument manual: which MCP tools are reliable vs stale/broken, the stale-symbol-switch gate, replay verification.
 
@@ -139,7 +140,9 @@ Non-negotiables:
 - The **LLM writes deterministic programs and never answers with numbers**. Output is code plus saved results under `research/`, so everything is re-runnable.
 - The **validation harness ships before the generator**. Generation is free; `scripts/selection_bias_demo.js` shows pure noise yields Sharpe 2.15 over 3050 trials.
 - Signals are correlated (RSI/MACD/EMA are one price series) — compress them, then judge candidates only on **incremental information** after orthogonalizing against existing factors.
-- Log **every** trial including rejected ones; sealed test data is touched once.
+- Log **every** trial including rejected ones — the trial count is the input to Deflated Sharpe, so keeping only winners invalidates the statistics. Sealed test data has an access budget, not a boolean flag.
+- The first deliverable is never a strategy: it is a **frozen research contract** (conditions fixed before seeing any result) and an **experiment ledger that never loses a failure**.
+- v0 runs 20 hypotheses end-to-end, not 1000. **Zero survivors is a passing outcome** — it means the judge worked.
 - TradingView MCP is a **microscope** for reproducing failures, not an alpha source or bulk data feed (5-10s/symbol).
 - Scope: research and validation only — no live order execution.
 

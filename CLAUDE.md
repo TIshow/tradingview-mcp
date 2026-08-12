@@ -143,6 +143,7 @@ Non-negotiables:
 - Log **every** trial including rejected ones — the trial count is the input to Deflated Sharpe, so keeping only winners invalidates the statistics. Sealed test data has an access budget, not a boolean flag.
 - The first deliverable is never a strategy: it is a **frozen research contract** (conditions fixed before seeing any result) and an **experiment ledger that never loses a failure**.
 - v0 runs 20 hypotheses end-to-end, not 1000. **Zero survivors is a passing outcome** — it means the judge worked.
+- **Forward recording starts before the judge is built.** A record written before the outcome exists is out-of-sample by construction, and clean data only accrues in wall-clock time — every day of delay is lost permanently. Signals are pushed before the open (external timestamp), the strategy set is frozen up front and reported in full every time, and post-hoc explanations of losses are registered as unverified child hypotheses, never stated as conclusions.
 - TradingView MCP is a **microscope** for reproducing failures, not an alpha source or bulk data feed (5-10s/symbol).
 - Scope: research and validation only — no live order execution.
 

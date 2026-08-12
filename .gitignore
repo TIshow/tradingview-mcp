@@ -10,3 +10,4 @@ discovery-log.json
 AGENTS.md
 .tool-versions
 experiments/
+.DS_Store

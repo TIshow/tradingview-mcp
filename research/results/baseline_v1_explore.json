@@ -1,0 +1,157 @@
+{
+  "baseline_version": "baseline_v1",
+  "dataset_id": "jp_equity_daily_yfinance_v1",
+  "data_version": "35a833a898fb0dd587e37db8b9b3fd5280e6e94c5d4cb0115a352f5bf8cd9497",
+  "period": "explore",
+  "range": {
+    "from": "2016-01-04",
+    "to": "2023-12-29"
+  },
+  "excluded_symbols": [
+    {
+      "ticker": "1326.T",
+      "maxMove": 111.40292571436363
+    },
+    {
+      "ticker": "1655.T",
+      "maxMove": 9.098430433625964
+    },
+    {
+      "ticker": "7564.T",
+      "maxMove": 11.611353711790393
+    },
+    {
+      "ticker": "8303.T",
+      "maxMove": 19771263.64045747
+    },
+    {
+      "ticker": "8919.T",
+      "maxMove": 1.9807692307692308
+    }
+  ],
+  "hold": 20,
+  "contract": {
+    "commissionBp": 5,
+    "slippageBp": 10,
+    "maxWeightPerName": 0.2,
+    "maxDrawdown": -0.2,
+    "minTradedValue": 1000000000,
+    "rebalanceDays": 5,
+    "longOnly": true
+  },
+  "benchmark": {
+    "strategy": "benchmark",
+    "name": "ユニバース等ウェイト",
+    "from": "2016-02-03",
+    "to": "2023-12-29",
+    "nDays": 1956,
+    "hold": 20,
+    "costMultiplier": 1,
+    "totalReturn": 0.2380987580109164,
+    "cagr": 0.027912578055744763,
+    "sharpe": 0.35670580980619576,
+    "maxDD": -0.30806294590010985,
+    "turnoverPerYear": 6.3934526854220195,
+    "nRebalance": 391,
+    "halted": false,
+    "haltedAt": null,
+    "ddWithinLimit": false
+  },
+  "results": [
+    {
+      "strategy": "trend",
+      "name": "トレンド追随",
+      "from": "2017-01-16",
+      "to": "2023-12-29",
+      "nDays": 1725,
+      "hold": 20,
+      "costMultiplier": 1,
+      "totalReturn": 0.6251448465552347,
+      "cagr": 0.07356032171052074,
+      "sharpe": 0.49359874394801456,
+      "maxDD": -0.5599213266022147,
+      "turnoverPerYear": 17.043619489559163,
+      "nRebalance": 345,
+      "halted": false,
+      "haltedAt": null,
+      "ddWithinLimit": false,
+      "vsBenchmark": 0.3870460885443183
+    },
+    {
+      "strategy": "reversal",
+      "name": "逆張り",
+      "from": "2016-03-02",
+      "to": "2023-12-29",
+      "nDays": 1937,
+      "hold": 20,
+      "costMultiplier": 1,
+      "totalReturn": 0.8614385553523691,
+      "cagr": 0.08423877526795409,
+      "sharpe": 0.7435911733169773,
+      "maxDD": -0.5288134276655017,
+      "turnoverPerYear": 51.92293388429748,
+      "nRebalance": 388,
+      "halted": false,
+      "haltedAt": null,
+      "ddWithinLimit": false,
+      "vsBenchmark": 0.6233397973414527
+    },
+    {
+      "strategy": "lowvol",
+      "name": "低ボラティリティ",
+      "from": "2016-04-14",
+      "to": "2023-12-29",
+      "nDays": 1907,
+      "hold": 20,
+      "costMultiplier": 1,
+      "totalReturn": 0.14166199975053217,
+      "cagr": 0.017670704123624814,
+      "sharpe": 0.46151635672391444,
+      "maxDD": -0.2719472205678344,
+      "turnoverPerYear": 19.06526757607556,
+      "nRebalance": 382,
+      "halted": false,
+      "haltedAt": null,
+      "ddWithinLimit": false,
+      "vsBenchmark": -0.09643675826038423
+    },
+    {
+      "strategy": "volume",
+      "name": "出来高急増",
+      "from": "2016-04-14",
+      "to": "2023-12-29",
+      "nDays": 1907,
+      "hold": 20,
+      "costMultiplier": 1,
+      "totalReturn": -0.5920372549625783,
+      "cagr": -0.11178407431459902,
+      "sharpe": 0.1614202125515957,
+      "maxDD": -0.6580910462080118,
+      "turnoverPerYear": 87.19517313746063,
+      "nRebalance": 382,
+      "halted": false,
+      "haltedAt": null,
+      "ddWithinLimit": false,
+      "vsBenchmark": -0.8301360129734947
+    },
+    {
+      "strategy": "relstr",
+      "name": "相対強度",
+      "from": "2016-04-14",
+      "to": "2023-12-29",
+      "nDays": 1907,
+      "hold": 20,
+      "costMultiplier": 1,
+      "totalReturn": -0.23405703940143185,
+      "cagr": -0.03464035585357639,
+      "sharpe": 0.1674312273166964,
+      "maxDD": -0.5980328956944992,
+      "turnoverPerYear": 30.70010493179432,
+      "nRebalance": 382,
+      "halted": false,
+      "haltedAt": null,
+      "ddWithinLimit": false,
+      "vsBenchmark": -0.47215579741234825
+    }
+  ]
+}

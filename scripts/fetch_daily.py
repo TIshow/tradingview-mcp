@@ -19,7 +19,7 @@ Usage:
   python3 scripts/fetch_daily.py --update       # 既存を差分更新（最終日以降のみ）
   python3 scripts/fetch_daily.py --verify       # マニフェストとの整合を検査
 """
-import argparse, gzip, hashlib, json, os, sys, time, warnings
+import argparse, gzip, hashlib, json, math, os, sys, time, warnings
 from datetime import datetime, timezone
 
 warnings.filterwarnings('ignore')
@@ -37,8 +37,22 @@ BATCH = 50          # yfinance の一括ダウンロード単位
 FIELDS = ['t', 'o', 'h', 'l', 'c', 'v', 'adjc']
 
 
-def sha256_of(obj) -> str:
-    return hashlib.sha256(json.dumps(obj, separators=(',', ':'), sort_keys=True).encode()).hexdigest()
+def canonical(payload: dict) -> bytes:
+    """ファイルに書き出すのと同一のバイト列。ハッシュはこれを対象にする。
+
+    言語をまたぐハッシュ一致のため、オブジェクトではなく【バイト列】を対象にする。
+    Python は 1440.0、JS は 1440 と書き出すため、
+    それぞれが自前で直列化したものをハッシュすると同じデータでも不一致になる（実測）。
+    また fetched_at のような取得ごとに変わる値は含めない。
+    含めると、内容が同じでも再取得のたびにハッシュが変わってしまう。
+    """
+    # allow_nan=False: NaN/Infinity が混じったら書き出し時に例外にする。
+    # 標準外のJSONになり、他言語から読めなくなるため。
+    return json.dumps(payload, separators=(',', ':'), sort_keys=True, allow_nan=False).encode()
+
+
+def sha256_bytes(b: bytes) -> str:
+    return hashlib.sha256(b).hexdigest()
 
 
 def bar_path(ticker: str) -> str:
@@ -53,9 +67,12 @@ def load_bars(ticker: str):
         return json.load(f)
 
 
-def save_bars(ticker: str, payload: dict):
-    with gzip.open(bar_path(ticker), 'wt', encoding='utf-8') as f:
-        json.dump(payload, f, separators=(',', ':'))
+def save_bars(ticker: str, payload: dict) -> str:
+    """保存し、そのバイト列の sha256 を返す。"""
+    raw = canonical(payload)
+    with gzip.open(bar_path(ticker), 'wb') as f:
+        f.write(raw)
+    return sha256_bytes(raw)
 
 
 def frame_to_rows(df, ticker: str):
@@ -78,12 +95,14 @@ def frame_to_rows(df, ticker: str):
             cv = float(c.iloc[i])
         except Exception:
             continue
-        if cv != cv:      # NaN
+        if not math.isfinite(cv):
             continue
         def g(s, d=None):
             try:
                 x = float(s.iloc[i])
-                return None if x != x else round(x, 4)
+                # NaN だけでなく ±Infinity もはじく。
+                # JSON の標準外の値になり、他言語のパーサが読めなくなる（実測で混入）。
+                return None if not math.isfinite(x) else round(x, 4)
             except Exception:
                 return d
         rows.append([
@@ -128,10 +147,12 @@ def main():
         man = json.load(open(MANIFEST)) if os.path.exists(MANIFEST) else {'symbols': {}}
         ok = bad = missing = 0
         for t, rec in man.get('symbols', {}).items():
-            d = load_bars(t)
-            if d is None:
+            p = bar_path(t)
+            if not os.path.exists(p):
                 missing += 1; continue
-            if sha256_of(d['bars']) == rec['sha256']:
+            with gzip.open(p, 'rb') as f:
+                raw = f.read()
+            if sha256_bytes(raw) == rec['sha256']:
                 ok += 1
             else:
                 bad += 1
@@ -155,22 +176,22 @@ def main():
             if not rows:
                 failed += 1
                 continue
+            # fetched_at は含めない（内容が同じなら再取得でもハッシュが変わらないように）
             payload = {'symbol': t, 'code': meta[t]['code'], 'name': meta[t]['name'],
-                       'source': 'yfinance', 'fields': FIELDS,
-                       'fetched_at': manifest['fetched_at'], 'bars': rows}
-            save_bars(t, payload)
+                       'source': 'yfinance', 'fields': FIELDS, 'bars': rows}
+            digest = save_bars(t, payload)
             manifest['symbols'][t] = {
                 'rows': len(rows),
                 'first': datetime.fromtimestamp(rows[0][0], timezone.utc).strftime('%Y-%m-%d'),
                 'last': datetime.fromtimestamp(rows[-1][0], timezone.utc).strftime('%Y-%m-%d'),
-                'sha256': sha256_of(rows),
+                'sha256': digest,
             }
             done += 1
         el = time.time() - t0
         print(f'  {min(i+BATCH,len(tickers)):>5}/{len(tickers)}  成功{done} 失敗{failed}  {el:.0f}秒', flush=True)
 
     manifest['count'] = len(manifest['symbols'])
-    manifest['manifest_sha256'] = sha256_of(manifest['symbols'])
+    manifest['manifest_sha256'] = sha256_bytes(canonical(manifest['symbols']))
     with open(MANIFEST, 'w') as f:
         json.dump(manifest, f, indent=1, sort_keys=True)
 

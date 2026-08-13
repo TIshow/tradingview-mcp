@@ -1,49 +1,100 @@
 # Data Bias Registry — データ汚染を機械可読にする
 #
-# 完全な point-in-time は無料データではまず達成できない。
-# 目指すのは「達成」ではなく「汚染箇所を測定・記録し、結論の射程を機械的に制限すること」。
-#
+# 完全な point-in-time は達成目標ではなく「測定対象」。
+# 汚染箇所を記録し、結論の射程を機械的に制限する。
 #   「知らずに汚染される」と「汚染を知った上で射程を狭める」は全く別物。
 #
 # 判定装置は forbidden_claims に該当する結論を出した実験を自動棄却する。
 # 参照: docs/research-protocol.md §4
 
 datasets:
-  - dataset_id: equity_daily_v1
-    source:                      # 例: J-Quants / Yahoo Finance / stooq / TradingView
-    retrieved_at:                # 取得日時（イベント発生時刻と区別すること）
-    version_hash:
+  # =============================================================
+  # 日本株：J-Quants API V2（JPX公式）— 2026-08-12 実測で確認
+  # =============================================================
+  - dataset_id: jp_equity_daily_jquants_v2
+    source: J-Quants API V2 (JPX公式)
+    endpoint_base: https://api.jquants.com
+    auth: x-api-key ヘッダー（キーは .env の JQUANTS_API。リポジトリには入れない）
+    plan: Free
+    retrieved_at: 2026-08-12
+    version_hash: TBD   # 実データ取得時に記録
 
-    # --- 各性質を true / false / unknown で明示する。unknown を放置しない ---
-    price_point_in_time:         # 価格はその時点で入手可能だったか
-    corporate_actions_point_in_time:   # 分割・配当の調整が事後書き換えでないか
-    universe_survivorship_free:  # 上場廃止銘柄を含むか（false なら銘柄選択の結論は出せない）
-    fundamentals_as_reported:    # 発表時の値か、改定後の値か
-    announcement_timestamp_quality:    # 発表時刻の精度: exact | date_only | unavailable
-    timezone_verified:
-    trading_hours_verified:
-    symbol_change_handled:       # コード変更・再割り当てを追跡できるか
-    missing_data_policy:         # 欠損の扱い。欠損自体が将来情報を示唆しないか
+    # --- 実測で確認した性質 ---
+    price_point_in_time: true
+      # 生値(O/H/L/C)と調整後(AdjO/AdjH/AdjL/AdjC)の両方が返る。
+      # 調整後は事後改訂されるため、PIT厳密性が要る場合は【生値】を使い、
+      # 判断時点までの AdjFactor のみを累積適用すること。
+    corporate_actions_point_in_time: partial
+      # AdjFactor が行ごとに付与される。分割・併合は追跡可能。
+      # 配当の扱いは未検証 → 要確認（TBD）
+    universe_survivorship_free: true
+      # ★実測: /v2/equities/master?date=YYYYMMDD で当時の構成銘柄が取得できる。
+      #   2024-06-03 時点 4,358 銘柄 vs 現在 4,446 銘柄。
+      #   当時あって現在ない銘柄が 265 件 = 上場廃止銘柄を再現できる。
+      #   → 生存者バイアスを回避できる。銘柄選択に関する主張が可能になる。
+    fundamentals_as_reported: unknown     # 本データセットは価格のみ。財務は別エンドポイント（未検証）
+    announcement_timestamp_quality: not_applicable   # 価格データのため
+    timezone_verified: true               # 日足・JST・日付のみ
+    trading_hours_verified: not_applicable
+    symbol_change_handled: unknown        # コード変更の追跡可否は未検証（TBD）
+    missing_data_policy: unknown          # 欠損の扱いは未検証（TBD）
 
-    # --- 射程の制限（判定装置が参照する） ---
+    # --- 利用可能な項目 ---
+    fields:
+      - "Date, Code(5桁), O/H/L/C（生値）"
+      - "AdjO/AdjH/AdjL/AdjC, AdjFactor, AdjVo（調整後）"
+      - "Vo（出来高）, Va（売買代金）← 流動性条件に直接使える"
+      - "MktCap（時価総額）"
+      - "UL/LL（ストップ高安フラグ）, ExRT"
+    endpoints:
+      master: "/v2/equities/master?date=YYYYMMDD   # 当時の構成銘柄（survivorship対応）"
+      daily:  "/v2/equities/bars/daily?code=83060&from=YYYYMMDD&to=YYYYMMDD"
+
+    # --- ★ 最大の制約（契約の期間分割に直結）---
+    coverage_start: 2024-05-21
+    coverage_end: 2026-05-21
+      # Freeプランは【直近2年】かつ【約12週間の遅延】。
+      # 2026-08-12 時点で 2026-05-21 までしか取得できない。
+    critical_limitations:
+      - "履歴が2年しかない。契約の期間3分割（探索/調整/封印）が窮屈になる"
+      - "約12週間の遅延があるため【フォワード記録の日次シグナルには使えない】。
+         人工投資家には別の当日データ源が必要（TradingView / 他API）"
+      - "レート制限あり。連続リクエストで 'Rate limit exceeded'。スロットル必須"
+
     allowed_claims:
       - fixed-universe price-pattern research
+      - historical stock-selection performance   # ★survivorship-free のため解禁
+      - liquidity-filtered universe research     # Va（売買代金）が取得可能
     forbidden_claims:
-      - historical stock-selection performance   # 生存者バイアスがある場合
-      - fundamental announcement reaction        # 発表時刻が不正確な場合
-      - intraday execution assumptions           # 日足のみの場合
+      - fundamental announcement reaction        # 発表時刻の精度が未検証
+      - intraday execution assumptions           # 日足のみ
+      - real-time or same-day signals            # 約12週間の遅延があるため
 
-    # --- 既知の限界（自由記述） ---
+    verified_by: 実測（/v2/equities/master の日付指定差分、/v2/equities/bars/daily の範囲取得）
+    verification_notes: |
+      2026-08-12 実施。
+      - master 現在4,446件 / 2024-06-03時点4,358件、差分265件が上場廃止 → survivorship-free を確認
+      - bars/daily は from/to の範囲指定が有効
+      - 範囲外の日付は HTTP 400 で利用可能期間を明示して返す
+      - 未検証: 配当調整の扱い / コード変更の追跡 / 欠損の扱い / 正確なレート制限値
+
+  # =============================================================
+  # 米国株：未着手
+  # =============================================================
+  - dataset_id: us_equity_daily_v1
+    source: TBD
+    universe_survivorship_free: unknown
+    allowed_claims:
+      - TBD
+    forbidden_claims:
+      - historical stock-selection performance   # 生存者バイアスが解消されるまで禁止
     known_limitations:
-      - ""
-
-    verified_by:                 # 誰が / どう検証したか（例: TradingViewの生バーと終値を照合）
-    verification_notes:
+      - "watchlist-us.json は現在の大型株から選んでおり、遡及適用は先読みを含む"
 
 
-# 検証の型（新しいデータ源を追加するとき必ず通す）
+# 新しいデータ源を追加するとき必ず通す検証
 verification_protocol:
-  - 1〜3銘柄を複数ソースから取得し、同じ日の終値が一致するか照合する
+  - 1〜3銘柄を複数ソースから取得し、同じ日の終値を照合する
     （TradingView の生バーは scripts/dump_bars.js で出力できる。照合の基準に使う）
   - 分割・配当のあった銘柄で調整の扱いを確認する
   - 上場廃止銘柄が取得できるか確認する（ここで survivorship_free が決まる）
@@ -59,15 +110,8 @@ verification_protocol:
 # 取引時間の拡大・呼値の変更・税制変更などは、前後のデータを素朴にプールすると
 # 「戦略の劣化」と誤読される。境界をまたぐ検証には注記を必須とする。
 regime_boundaries:
-  - market:            # jp | us
-    date:              # 確認できた時点で記録する
-    change:            # 何が変わったか
-    source:            # 出典（必須）
-    implication:       # 前後をプールしてよいか / 分けるべきか
-  # 例（未確認・要検証）:
-  #   - market: us
-  #     date: TBD
-  #     change: 取引時間の拡大（23時間取引）
-  #     source: TBD
-  #     implication: 前後を分けて評価する。またぐ検証には注記必須
-
+  - market: us
+    date: TBD
+    change: 取引時間の拡大（23時間取引）
+    source: TBD（未確認。確認でき次第、出典と日付を記録する）
+    implication: 前後を分けて評価する。またぐ検証には注記必須

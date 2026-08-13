@@ -1,0 +1,87 @@
+# フォワード記録の戦略集合 — 凍結済み
+#
+# ★ このファイルは書き換えない。戦略を追加する場合は cohort を分けて追記し、
+#   開始コホートと混ぜて集計しない（後から良かったものを紹介するのは多重検定）。
+# ★ 実装が変わっていないかは以下で検査できる:
+#     node scripts/freeze_strategy_set.js --verify
+#
+# 参照: research/contracts/RC-20260812-jp.md §10 / research/forward-record.schema.yaml
+
+strategy_set:
+  frozen_at: "2026-08-13T17:47:33.971Z"          # UTC
+  frozen_at_jst: "2026-08-14 02:47:33"   # JST（東証の営業日基準）
+  contract_id: RC-20260812-jp
+  baseline_version: baseline_v1
+  code_version: cc70851fb7a4be4674412512ff09b5fdf5c7e12a
+  market: jp
+
+  # 執行の前提（契約 §5・§7 と同一。ここで上書きしない）
+  execution:
+    hold: 20                       # 保有銘柄数
+    rebalance_days: 5                # 週次
+    decision_at: "大引け後（前日終値までの情報のみ）"
+    execution_at: "翌営業日の始値"       # 同じ足で判断して同じ足で約定させない
+    commission_bp: 5                 # 片道 0.05%
+    slippage_bp: 10                   # 片道 0.10%
+    max_weight_per_name: 0.2
+    long_only: true
+  universe: "プライム/スタンダード/グロース上場の株式で、20日平均売買代金10億円以上（ETF/ETN/REITを除く）"
+  signal_data_source: same_day_quotes_yfinance   # J-Quantsは12週遅延のため当日には使えない
+  signal_time_jst: "08:00"                       # 東証の寄り付き1時間前
+
+  strategies:
+    - strategy_id: trend
+      name: トレンド追随
+      code_hash: 9386e505abe2d2151c826b65cf3487d2591546c89181650692b1a4b3ad03b7ef
+      warmup_days: 252
+      added_at: "2026-08-14"
+      cohort: 開始コホート
+      economic_rationale: "過去の上昇が継続する（モメンタム）。直近1ヶ月は短期反転が混じるため除外する。"
+    - strategy_id: reversal
+      name: 逆張り
+      code_hash: 575545063ac92133d1564236741294100210d68f7755780ac46205ce44088922
+      warmup_days: 40
+      added_at: "2026-08-14"
+      cohort: 開始コホート
+      economic_rationale: "短期の急落は需給要因で行き過ぎることがあり、その後戻す（短期反転）。"
+    - strategy_id: lowvol
+      name: 低ボラティリティ
+      code_hash: ca8facbfb11c02e7328ee4395a926b671275a474ab92bf5292013f7ce862ea5a
+      warmup_days: 70
+      added_at: "2026-08-14"
+      cohort: 開始コホート
+      economic_rationale: "低ボラ銘柄がリスク対比で優れるという広く報告された異常（low-volatility anomaly）。"
+    - strategy_id: volume
+      name: 出来高急増
+      code_hash: 350f6cfeb04ae907a014b9bddd8116c47f1928ffe11dfb56db88ac9e2b8e7db3
+      warmup_days: 70
+      added_at: "2026-08-14"
+      cohort: 開始コホート
+      economic_rationale: "出来高の膨張は新しい情報の到来を示し、価格変化が続くことがある。"
+    - strategy_id: relstr
+      name: 相対強度
+      code_hash: 9fe6ddb33e6cd65a414b8510a52f0be01f764ea17c6b59c2485583b336dedb1f
+      warmup_days: 70
+      added_at: "2026-08-14"
+      cohort: 開始コホート
+      economic_rationale: "市場全体の動きを除いた銘柄固有の強さが継続する。"
+
+# ---------------------------------------------------------------
+# 期待値の宣言（開始時に書いておく。3ヶ月目に失速しないため）
+# ---------------------------------------------------------------
+expectations:
+  purpose: |
+    この5戦略は「勝つための戦略」ではない。新しい候補を測るための基準線である。
+    探索期間（2016-2023）の実測では5種すべてがベンチマーク（ユニバース等ウェイト）に負け、
+    5種すべてが位相不変性テストで脆いと判定され、
+    5種すべてがランダム選択の分布（コスト0）の上位20〜55%に留まった。
+    つまり銘柄選択の情報を示していない。それを承知の上で開始コホートとして凍結する。
+  year_one_success_criterion: |
+    1年目の成果は「市場に勝ったか」ではなく【汚染のない記録が存在すること】。
+    年間の観測は約250件で、穏当な優位性の統計的検出には数年かかる。
+  expected_outcome: |
+    5戦略ともベンチマークを下回ることが最も確からしい予測である。
+    それが起きた場合、これは失敗ではなく【探索期間の測定がフォワードで再現された】という結果になる。
+  falsification: |
+    探索期間の結論（＝情報なし）と食い違う結果が出た場合、まず記録側の欠陥を疑う。
+    データ源・執行時刻・コスト計上を先に検査してから、戦略の実力を論じる。

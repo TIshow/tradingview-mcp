@@ -14,7 +14,9 @@
  *
  * Usage: node scripts/rrg_compute.js > /tmp/rrg.json
  */
-import { evaluate, evaluateAsync, disconnect } from '../src/connection.js';
+import { evaluate, disconnect } from '../src/connection.js';
+import { setSymbol, setResolution, waitBars, currentClose, T, C } from './lib/tv.js';
+import { smaAt } from './lib/indicators.js';
 
 const UNIVERSE = [
   { code: '8035', sym: 'TSE:8035', name: '東京エレクトロン' },
@@ -28,36 +30,6 @@ const UNIVERSE = [
 ];
 const BENCH_CANDIDATES = ['TVC:NI225', 'INDEX:NKY', 'TSE:998405', 'NIKKEI225'];
 const BARS = 260, RATIO_W = 50, MOM_W = 10, TAIL_POINTS = 6, TAIL_STEP = 5;
-const CHART = 'window.TradingViewApi._activeChartWidgetWV.value()';
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-async function setResolution(res) { await evaluate(`(function(){${CHART}.setResolution(${JSON.stringify(res)},{});})()`); }
-async function setSymbol(sym) {
-  await evaluateAsync(`(function(){var c=${CHART};return new Promise(function(res){c.setSymbol(${JSON.stringify(sym)},{});setTimeout(res,400);});})()`);
-}
-async function readBars(limit) {
-  return evaluate(`
-    (function(){
-      var s=${CHART}._chartWidget.model().mainSeries(); var bars=s.bars();
-      if(!bars||typeof bars.lastIndex!=='function') return null;
-      var out=[]; var end=bars.lastIndex(); var start=Math.max(bars.firstIndex(), end-${limit}+1);
-      for(var i=start;i<=end;i++){var v=bars.valueAt(i); if(v) out.push([v[0],v[4]]);}
-      var sym=''; try{sym=s.symbolInfo()?s.symbolInfo().full_name||'':'';}catch(e){}
-      return {bars:out, sym:sym};
-    })()`);
-}
-async function waitBars(limit, prevClose) {
-  let last=-1,lc=null,stable=0;
-  for(let i=0;i<30;i++){
-    await sleep(500);
-    const d=await readBars(limit).catch(()=>null);
-    const n=d?.bars?.length||0; const c=n?d.bars[n-1][1]:null;
-    const changed = prevClose==null || c!==prevClose;
-    if(n>60 && n===last && c===lc && changed){ if(++stable>=2) return d; } else stable=0;
-    last=n; lc=c;
-  }
-  return readBars(limit);
-}
 async function tryFetch(sym, prevClose) {
   await setSymbol(sym);
   const d = await waitBars(BARS, prevClose).catch(()=>null);
@@ -66,11 +38,10 @@ async function tryFetch(sym, prevClose) {
   return null;
 }
 
-const smaAt = (arr, i, w) => { if(i<w-1) return null; let s=0; for(let j=i-w+1;j<=i;j++) s+=arr[j]; return s/w; };
 
 async function main() {
   await setResolution('D');
-  let prev=null; try{const c=await readBars(3);const b=c?.bars||[];prev=b.length?b[b.length-1][1]:null;}catch{}
+  let prev = await currentClose();
 
   // 1) fetch all stocks -> map code -> Map(t->close)
   const stockData = {};
@@ -78,9 +49,9 @@ async function main() {
     process.stderr.write(`fetch ${u.sym} ... `);
     const d = await tryFetch(u.sym, prev);
     if (!d) { process.stderr.write('FAIL\n'); continue; }
-    const m = new Map(d.bars.map(b => [b[0], b[1]]));
+    const m = new Map(d.bars.map(b => [b[T], b[C]]));
     stockData[u.code] = m;
-    prev = d.bars[d.bars.length-1][1];
+    prev = d.bars[d.bars.length-1][C];
     process.stderr.write(`${m.size} bars (${d.sym})\n`);
   }
 
@@ -89,7 +60,7 @@ async function main() {
   for (const b of BENCH_CANDIDATES) {
     process.stderr.write(`bench ${b} ... `);
     const d = await tryFetch(b, prev);
-    if (d) { benchMap = new Map(d.bars.map(x=>[x[0],x[1]])); benchName = d.sym||b; prev=d.bars[d.bars.length-1][1]; process.stderr.write(`OK (${benchName})\n`); break; }
+    if (d) { benchMap = new Map(d.bars.map(x=>[x[T],x[C]])); benchName = d.sym||b; prev=d.bars[d.bars.length-1][C]; process.stderr.write(`OK (${benchName})\n`); break; }
     process.stderr.write('no\n');
   }
   if (!benchMap) {

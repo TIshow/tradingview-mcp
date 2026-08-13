@@ -17,7 +17,8 @@
  *   node scripts/blind_sample.js            # 1サンプル生成
  *   node scripts/blind_sample.js --reveal   # 直近サンプルの正解を表示
  */
-import { evaluate, evaluateAsync, getClient, disconnect } from '../src/connection.js';
+import { evaluate, getClient, disconnect } from '../src/connection.js';
+import { setSymbol, setResolution, readBars, waitBars, currentClose, sleep, ymd, T, H, L, C } from './lib/tv.js';
 import * as replay from '../src/core/replay.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
@@ -33,50 +34,6 @@ const CLEAN_FROM = '2026-02-01';   // 知識カットオフ以降のみ
 const HORIZON = 20;                // 何営業日先の結果を測るか
 const LOOKBACK_DAYS = 200;         // 表示する過去の長さ(暦日)
 const CHART = 'window.TradingViewApi._activeChartWidgetWV.value()';
-const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-// ---------- reveal mode ----------
-if (process.argv.includes('--reveal')) {
-  if (!existsSync(PENDING_FILE)) { console.error('保留中のサンプルがありません'); process.exit(1); }
-  const p = JSON.parse(readFileSync(PENDING_FILE, 'utf8'));
-  console.log('\n=== 正解 ===');
-  console.log(`サンプルID : ${p.id}`);
-  console.log(`銘柄       : ${p.code} ${p.name}`);
-  console.log(`判断時点   : ${p.date}  (終値 ${p.close.toLocaleString()}円)`);
-  console.log(`${HORIZON}営業日後 : ${p.futureDate}  (終値 ${p.futureClose.toLocaleString()}円)`);
-  console.log(`結果       : ${p.ret >= 0 ? '+' : ''}${p.ret.toFixed(2)}%   → ${p.label}`);
-  console.log(`最大上昇/下落(期間中): +${p.maxUp.toFixed(2)}% / ${p.maxDown.toFixed(2)}%\n`);
-  process.exit(0);
-}
-
-// ---------- helpers ----------
-async function setSymbol(sym) {
-  await evaluateAsync(`(function(){var c=${CHART};return new Promise(function(r){c.setSymbol(${JSON.stringify(sym)},{});setTimeout(r,400);});})()`);
-}
-async function setResolution(res) { await evaluate(`(function(){${CHART}.setResolution(${JSON.stringify(res)},{});})()`); }
-async function readBars(limit) {
-  return evaluate(`
-    (function(){
-      var s=${CHART}._chartWidget.model().mainSeries(); var b=s.bars();
-      if(!b||typeof b.lastIndex!=='function') return null;
-      var out=[]; var e=b.lastIndex(); var st=Math.max(b.firstIndex(), e-${limit}+1);
-      for(var i=st;i<=e;i++){var v=b.valueAt(i); if(v) out.push([v[0],v[2],v[3],v[4]]);}
-      return {bars:out};
-    })()`);
-}
-async function waitBars(limit, prevClose) {
-  let last=-1, lc=null, stable=0;
-  for (let i=0;i<30;i++) {
-    await sleep(450);
-    const d = await readBars(limit).catch(()=>null);
-    const n = d?.bars?.length||0; const c = n ? d.bars[n-1][3] : null;
-    const changed = prevClose==null || c!==prevClose;
-    if (n>60 && n===last && c===lc && changed) { if (++stable>=2) return d; } else stable=0;
-    last=n; lc=c;
-  }
-  return readBars(limit);
-}
-const ymd = t => new Date(t*1000).toISOString().slice(0,10);
 
 // 凡例を隠す / 戻す
 const HIDE_CSS_ID = 'blind-sample-hide';
@@ -145,7 +102,7 @@ async function verifyReplayDate(expectedYmd) {
     const d = await readBars(3).catch(()=>null);
     const b = d?.bars || [];
     if (b.length) {
-      const lastYmd = ymd(b[b.length-1][0]);
+      const lastYmd = ymd(b[b.length-1][T]);
       if (lastYmd === expectedYmd) return { ok: true, lastYmd };
       // 日付がずれている場合、最終バーが期待日を超えていたら失敗
       if (lastYmd > expectedYmd) return { ok: false, lastYmd };
@@ -153,7 +110,7 @@ async function verifyReplayDate(expectedYmd) {
   }
   const d = await readBars(3).catch(()=>null);
   const b = d?.bars || [];
-  return { ok: false, lastYmd: b.length ? ymd(b[b.length-1][0]) : null };
+  return { ok: false, lastYmd: b.length ? ymd(b[b.length-1][T]) : null };
 }
 // チャート描画領域(価格ペイン＋サブペイン、軸を除く)の座標
 // RIGHT_INSET: 右端に描かれる「最終値＋ティッカー」ラベル(例: 6857)を確実に切り落とす
@@ -197,8 +154,7 @@ async function main() {
   }
 
   await setResolution('D');
-  let prev = null;
-  try { const d = await readBars(3); const b = d?.bars||[]; prev = b.length ? b[b.length-1][3] : null; } catch {}
+  let prev = await currentClose();
 
   // ランダムに銘柄を選び、条件を満たすまで試す
   let pick = null;
@@ -206,28 +162,28 @@ async function main() {
     const u = universe[Math.floor(Math.random() * universe.length)];
     await setSymbol(`TSE:${u.code}`);
     const d = await waitBars(400, prev);
-    const bars = (d?.bars || []).filter(b => b && Number.isFinite(b[3]));
+    const bars = (d?.bars || []).filter(b => b && Number.isFinite(b[C]));
     if (bars.length < 120) continue;
-    prev = bars[bars.length-1][3];
+    prev = bars[bars.length-1][C];
     // クリーン期間内で、HORIZON営業日先まで存在するバーを候補に
     const cands = [];
     for (let i = 0; i < bars.length - HORIZON; i++) {
-      if (ymd(bars[i][0]) >= CLEAN_FROM) cands.push(i);
+      if (ymd(bars[i][T]) >= CLEAN_FROM) cands.push(i);
     }
     if (!cands.length) continue;
     const i = cands[Math.floor(Math.random() * cands.length)];
     const fut = bars.slice(i+1, i+1+HORIZON);
-    const ret = (bars[i+HORIZON][3] / bars[i][3] - 1) * 100;
-    const maxUp = (Math.max(...fut.map(b=>b[1])) / bars[i][3] - 1) * 100;
-    const maxDown = (Math.min(...fut.map(b=>b[2])) / bars[i][3] - 1) * 100;
+    const ret = (bars[i+HORIZON][C] / bars[i][C] - 1) * 100;
+    const maxUp = (Math.max(...fut.map(b=>b[H])) / bars[i][C] - 1) * 100;
+    const maxDown = (Math.min(...fut.map(b=>b[L])) / bars[i][C] - 1) * 100;
     pick = {
       id: `S${Date.now().toString(36).toUpperCase()}`,
       code: u.code, name: u.name, theme: u.theme,
-      date: ymd(bars[i][0]), close: bars[i][3],
+      date: ymd(bars[i][T]), close: bars[i][C],
       // replay.selectDate(D) は「D より前」のバーまでを表示するため、
       // 判断時点 bars[i] を最終バーにするには翌営業日を指定する
-      replayDate: ymd(bars[i+1][0]),
-      futureDate: ymd(bars[i+HORIZON][0]), futureClose: bars[i+HORIZON][3],
+      replayDate: ymd(bars[i+1][T]),
+      futureDate: ymd(bars[i+HORIZON][T]), futureClose: bars[i+HORIZON][C],
       ret, maxUp, maxDown,
       label: ret >= 3 ? '上昇' : ret <= -3 ? '下落' : '横ばい',
       horizon: HORIZON,

@@ -4,6 +4,8 @@
  * MACD×RSI戦略をパラメータ50通りで試す（=3050試行）。
  * 真の優位性はゼロなのに、「Sharpe 1.5を超える組み合わせ」がいくつ見つかるかを数える。
  */
+import { ema, rsiWilder, sharpe } from './lib/indicators.js';
+
 const N_STOCKS = 61, N_DAYS = 400, DAILY_VOL = 0.02, COMMISSION = 0.0003;
 
 // 再現可能な乱数
@@ -21,21 +23,12 @@ function makeStock() {
   for (let i = 1; i < N_DAYS; i++) c.push(c[i-1] * Math.exp(DAILY_VOL * gauss() - 0.5 * DAILY_VOL ** 2));
   return c;
 }
-function ema(v, p) { const k = 2/(p+1); const o = new Array(v.length).fill(null); let pr;
-  for (let i = 0; i < v.length; i++) { if (i < p-1) continue;
-    if (pr === undefined) { let s = 0; for (let j = i-p+1; j <= i; j++) s += v[j]; pr = s/p; }
-    else pr = v[i]*k + pr*(1-k); o[i] = pr; } return o; }
-function rsiW(c, p) { const o = new Array(c.length).fill(null); let ag=0, al=0;
-  for (let i = 1; i < c.length; i++) { const ch=c[i]-c[i-1], g=Math.max(ch,0), l=Math.max(-ch,0);
-    if (i <= p) { ag+=g; al+=l; if (i===p) { ag/=p; al/=p; o[i]= al===0?100:100-100/(1+ag/al); } }
-    else { ag=(ag*(p-1)+g)/p; al=(al*(p-1)+l)/p; o[i]= al===0?100:100-100/(1+ag/al); } } return o; }
-
 // 戦略：MACD上抜け かつ RSI>閾値 で買い、MACD下抜け または RSI>上限 で売り
 function run(c, {fast, slow, sig, rsiLen, rsiEntry, rsiExit}) {
   const ef = ema(c, fast), es = ema(c, slow);
   const macd = c.map((_, i) => (ef[i]!=null && es[i]!=null) ? ef[i]-es[i] : null);
   const signal = ema(macd.map(v => v==null?0:v), sig).map((v,i) => macd[i]==null?null:v);
-  const rsi = rsiW(c, rsiLen);
+  const rsi = rsiWilder(c, rsiLen);
   let pos = null; const dailyRet = [];
   for (let i = 1; i < c.length; i++) {
     let r = 0;
@@ -48,12 +41,8 @@ function run(c, {fast, slow, sig, rsiLen, rsiEntry, rsiExit}) {
     }
     dailyRet.push(r);
   }
-  const n = dailyRet.length;
-  const mean = dailyRet.reduce((a,b)=>a+b,0)/n;
-  const sd = Math.sqrt(dailyRet.reduce((a,b)=>a+(b-mean)**2,0)/(n-1));
-  const sharpe = sd === 0 ? 0 : (mean/sd)*Math.sqrt(252);
   const total = dailyRet.reduce((eq,r)=>eq*(1+r),1) - 1;
-  return { sharpe, total };
+  return { sharpe: sharpe(dailyRet), total };
 }
 
 // パラメータグリッド（50通り）

@@ -54,7 +54,7 @@ export function runStrategy(panel, strategy, universeByDate, {
 
   let equity = 1;
   let positions = new Map();     // si -> weight
-  const equityCurve = [], dailyReturns = [];
+  const equityCurve = [];
   let peak = 1, maxDD = 0, turnoverSum = 0, nRebalance = 0, halted = false, haltedAt = null;
 
   for (let di = i0; di <= i1; di++) {
@@ -65,7 +65,6 @@ export function runStrategy(panel, strategy, universeByDate, {
       if (c0 != null && c1 != null && c0 !== 0) dayRet += w * (c1 / c0 - 1);
     }
     equity *= (1 + dayRet);
-    dailyReturns.push(dayRet);
     equityCurve.push({ date: dates[di], equity });
     peak = Math.max(peak, equity);
     maxDD = Math.min(maxDD, equity / peak - 1);
@@ -78,7 +77,8 @@ export function runStrategy(panel, strategy, universeByDate, {
     // --- リバランス判定（di の情報で決め、di+1 の始値で執行）---
     if ((di - i0) % CONTRACT.rebalanceDays !== 0 || di + 1 > i1) continue;
     const uni = universeByDate[di];
-    if (!uni || uni.length < hold) continue;
+    // ポートフォリオを埋められない日は取引しない。hold=Infinity（ユニバース全部）なら1銘柄あればよい。
+    if (!uni || uni.length < (Number.isFinite(hold) ? hold : 1)) continue;
 
     const ranked = strategy.rank(panel, di, uni);
     if (!ranked.length) continue;
@@ -105,6 +105,12 @@ export function runStrategy(panel, strategy, universeByDate, {
     positions = next;
   }
 
+  // ★ 日次リターンは【執行コストを引いた後】の資産曲線から出す。
+  //   コストを資産に直接掛けるだけにして日次リターンから漏らすと、
+  //   売買回転率の高い戦略ほど Sharpe が過大に出る。
+  //   実測: ランダム選択（回転率104回/年）は総リターン -46% なのに Sharpe 0.37 と表示されていた。
+  const dailyReturns = equityCurve.slice(1).map((p, i) => p.equity / equityCurve[i].equity - 1);
+
   const years = Math.max((i1 - i0) / 252, 1e-9);
   const totalReturn = equity - 1;
   return {
@@ -112,7 +118,7 @@ export function runStrategy(panel, strategy, universeByDate, {
     name: strategy.name,
     from: dates[i0], to: dates[i1],
     nDays: i1 - i0 + 1,
-    hold, costMultiplier,
+    hold: Number.isFinite(hold) ? hold : 'all', costMultiplier,
     totalReturn,
     cagr: Math.pow(equity, 1 / years) - 1,
     sharpe: sharpe(dailyReturns),
@@ -126,12 +132,21 @@ export function runStrategy(panel, strategy, universeByDate, {
   };
 }
 
-/** ベンチマーク: ユニバース等ウェイト保有（毎日リバランスしない・週次で入れ替え）。 */
-export function runBuyAndHold(panel, universeByDate, { from = null, to = null, hold = 20 } = {}) {
+/**
+ * ベンチマーク: ユニバース【全体】を等ウェイトで保有する（週次で構成銘柄を入れ替え）。
+ *
+ * ★ 上位N銘柄ではなく全銘柄を持つこと。
+ *   実測の教訓: 当初は hold=20 で「順位なし＝先頭から」拾う実装だった。
+ *   銘柄インデックスは証券コード順なので、これは【コードの若い20銘柄】を持つ意味になる。
+ *   ETFをユニバースから外した途端、先頭が 1801大成建設・1802大林組・1803清水建設… と並び、
+ *   ベンチマークが建設株の集中ポートフォリオに化けて総リターンが 29.5% → 68.4% に跳ねた。
+ *   基準線が銘柄選択をしてしまっては、それとの比較に意味がない。
+ */
+export function runBuyAndHold(panel, universeByDate, { from = null, to = null } = {}) {
   return runStrategy(panel, {
     id: 'benchmark', name: 'ユニバース等ウェイト', warmup: 21,
-    rank: (p, di, uni) => uni.map(si => ({ si, score: 0 })),   // 順位なし＝先頭から
-  }, universeByDate, { hold, from, to });
+    rank: (p, di, uni) => uni.map(si => ({ si, score: 0 })),
+  }, universeByDate, { hold: Infinity, from, to });
 }
 
 /** 結果の要約（1行）。 */

@@ -16,3 +16,10 @@ experiments/
 .env
 .env.*
 !.env.example
+
+# 研究データ本体（大きい・再取得可能）。マニフェストのハッシュのみ git 管理する。
+# 注: 親ディレクトリを除外すると git が中を見ないため、段階的に除外する必要がある。
+data/*
+!data/*/
+data/*/*
+!data/*/manifest.json

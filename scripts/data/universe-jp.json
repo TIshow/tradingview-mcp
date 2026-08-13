@@ -1,0 +1,9552 @@
+{
+ "_note": "研究ユニバースの母集団。売買代金3億円以上（2026-05-21時点）。実際のユニバースは各判定日に20日平均売買代金10億円以上でフィルタする。",
+ "_selection_date": "2026-05-21",
+ "_threshold_jpy": 300000000.0,
+ "_count": 1193,
+ "symbols": [
+  {
+   "code": "285A0",
+   "ticker": "285A.T",
+   "name": "キオクシアホールディングス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 3087931838000.0
+  },
+  {
+   "code": "58030",
+   "ticker": "5803.T",
+   "name": "フジクラ",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 442044460500.0
+  },
+  {
+   "code": "99840",
+   "ticker": "9984.T",
+   "name": "ソフトバンクグループ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 434655646200.0
+  },
+  {
+   "code": "68570",
+   "ticker": "6857.T",
+   "name": "アドバンテスト",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 261929641500.0
+  },
+  {
+   "code": "58010",
+   "ticker": "5801.T",
+   "name": "古河電気工業",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 235391020000.0
+  },
+  {
+   "code": "15700",
+   "ticker": "1570.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ日経平均レバレッジ・インデックス連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 209246485690.0
+  },
+  {
+   "code": "83060",
+   "ticker": "8306.T",
+   "name": "三菱ＵＦＪフィナンシャル・グループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 161731532600.0
+  },
+  {
+   "code": "40620",
+   "ticker": "4062.T",
+   "name": "イビデン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 161314045500.0
+  },
+  {
+   "code": "61460",
+   "ticker": "6146.T",
+   "name": "ディスコ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 136243824000.0
+  },
+  {
+   "code": "80350",
+   "ticker": "8035.T",
+   "name": "東京エレクトロン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 132968864000.0
+  },
+  {
+   "code": "69200",
+   "ticker": "6920.T",
+   "name": "レーザーテック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 130535731000.0
+  },
+  {
+   "code": "84110",
+   "ticker": "8411.T",
+   "name": "みずほフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 124276103800.0
+  },
+  {
+   "code": "70110",
+   "ticker": "7011.T",
+   "name": "三菱重工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 112372173000.0
+  },
+  {
+   "code": "83160",
+   "ticker": "8316.T",
+   "name": "三井住友フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 110779638100.0
+  },
+  {
+   "code": "69810",
+   "ticker": "6981.T",
+   "name": "村田製作所",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 105553908800.0
+  },
+  {
+   "code": "50160",
+   "ticker": "5016.T",
+   "name": "ＪＸ金属",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 104212758500.0
+  },
+  {
+   "code": "57060",
+   "ticker": "5706.T",
+   "name": "三井金属",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 92653581000.0
+  },
+  {
+   "code": "87660",
+   "ticker": "8766.T",
+   "name": "東京海上ホールディングス",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 90988826400.0
+  },
+  {
+   "code": "65010",
+   "ticker": "6501.T",
+   "name": "日立製作所",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 90092958700.0
+  },
+  {
+   "code": "66130",
+   "ticker": "6613.T",
+   "name": "ＱＤレーザ",
+   "market": "グロース",
+   "sector": "電気機器",
+   "va_at_selection": 80920907300.0
+  },
+  {
+   "code": "79740",
+   "ticker": "7974.T",
+   "name": "任天堂",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 72441029200.0
+  },
+  {
+   "code": "67230",
+   "ticker": "6723.T",
+   "name": "ルネサスエレクトロニクス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 72290662500.0
+  },
+  {
+   "code": "65250",
+   "ticker": "6525.T",
+   "name": "ＫＯＫＵＳＡＩ　ＥＬＥＣＴＲＩＣ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 71963120500.0
+  },
+  {
+   "code": "40040",
+   "ticker": "4004.T",
+   "name": "レゾナック・ホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 70950646000.0
+  },
+  {
+   "code": "67580",
+   "ticker": "6758.T",
+   "name": "ソニーグループ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 70196006800.0
+  },
+  {
+   "code": "72030",
+   "ticker": "7203.T",
+   "name": "トヨタ自動車",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 65287653400.0
+  },
+  {
+   "code": "99830",
+   "ticker": "9983.T",
+   "name": "ファーストリテイリング",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 63872037000.0
+  },
+  {
+   "code": "58020",
+   "ticker": "5802.T",
+   "name": "住友電気工業",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 63518212000.0
+  },
+  {
+   "code": "68610",
+   "ticker": "6861.T",
+   "name": "キーエンス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 60068614000.0
+  },
+  {
+   "code": "69760",
+   "ticker": "6976.T",
+   "name": "太陽誘電",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 59907106200.0
+  },
+  {
+   "code": "69540",
+   "ticker": "6954.T",
+   "name": "ファナック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 59216680900.0
+  },
+  {
+   "code": "86300",
+   "ticker": "8630.T",
+   "name": "ＳＯＭＰＯホールディングス",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 57019200600.0
+  },
+  {
+   "code": "70130",
+   "ticker": "7013.T",
+   "name": "ＩＨＩ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 56787915000.0
+  },
+  {
+   "code": "65260",
+   "ticker": "6526.T",
+   "name": "ソシオネクスト",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 55782907550.0
+  },
+  {
+   "code": "65030",
+   "ticker": "6503.T",
+   "name": "三菱電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 51391061300.0
+  },
+  {
+   "code": "60980",
+   "ticker": "6098.T",
+   "name": "リクルートホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 46101935900.0
+  },
+  {
+   "code": "40630",
+   "ticker": "4063.T",
+   "name": "信越化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 44984658700.0
+  },
+  {
+   "code": "65060",
+   "ticker": "6506.T",
+   "name": "安川電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 41673573500.0
+  },
+  {
+   "code": "80580",
+   "ticker": "8058.T",
+   "name": "三菱商事",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 39849722700.0
+  },
+  {
+   "code": "67620",
+   "ticker": "6762.T",
+   "name": "ＴＤＫ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 37720098350.0
+  },
+  {
+   "code": "31100",
+   "ticker": "3110.T",
+   "name": "日東紡績",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 37237595000.0
+  },
+  {
+   "code": "94320",
+   "ticker": "9432.T",
+   "name": "ＮＴＴ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 36685375160.0
+  },
+  {
+   "code": "71820",
+   "ticker": "7182.T",
+   "name": "ゆうちょ銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 36487858400.0
+  },
+  {
+   "code": "70120",
+   "ticker": "7012.T",
+   "name": "川崎重工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 35302457250.0
+  },
+  {
+   "code": "85910",
+   "ticker": "8591.T",
+   "name": "オリックス",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 34949263400.0
+  },
+  {
+   "code": "34360",
+   "ticker": "3436.T",
+   "name": "ＳＵＭＣＯ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 33899901950.0
+  },
+  {
+   "code": "67520",
+   "ticker": "6752.T",
+   "name": "パナソニック　ホールディングス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 31362197000.0
+  },
+  {
+   "code": "13570",
+   "ticker": "1357.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　日経平均ダブルインバース・インデックス連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 31086876981.0
+  },
+  {
+   "code": "80310",
+   "ticker": "8031.T",
+   "name": "三井物産",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 30078581900.0
+  },
+  {
+   "code": "87250",
+   "ticker": "8725.T",
+   "name": "ＭＳ＆ＡＤインシュアランスグループホールディングス",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 28800929600.0
+  },
+  {
+   "code": "67870",
+   "ticker": "6787.T",
+   "name": "メイコー",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 28523495000.0
+  },
+  {
+   "code": "186A0",
+   "ticker": "186A.T",
+   "name": "アストロスケールホールディングス",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 28022606400.0
+  },
+  {
+   "code": "77350",
+   "ticker": "7735.T",
+   "name": "ＳＣＲＥＥＮホールディングス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 27814308500.0
+  },
+  {
+   "code": "94330",
+   "ticker": "9433.T",
+   "name": "ＫＤＤＩ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 26830613750.0
+  },
+  {
+   "code": "28020",
+   "ticker": "2802.T",
+   "name": "味の素",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 26441194100.0
+  },
+  {
+   "code": "13210",
+   "ticker": "1321.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　日経２２５連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 26288516640.0
+  },
+  {
+   "code": "83080",
+   "ticker": "8308.T",
+   "name": "りそなホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 25321216750.0
+  },
+  {
+   "code": "67010",
+   "ticker": "6701.T",
+   "name": "日本電気",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 24874747500.0
+  },
+  {
+   "code": "57130",
+   "ticker": "5713.T",
+   "name": "住友金属鉱山",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 24343455000.0
+  },
+  {
+   "code": "29140",
+   "ticker": "2914.T",
+   "name": "日本たばこ産業",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 23974593400.0
+  },
+  {
+   "code": "65940",
+   "ticker": "6594.T",
+   "name": "ニデック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 23716703200.0
+  },
+  {
+   "code": "80010",
+   "ticker": "8001.T",
+   "name": "伊藤忠商事",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 23521939250.0
+  },
+  {
+   "code": "69630",
+   "ticker": "6963.T",
+   "name": "ローム",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 22838884100.0
+  },
+  {
+   "code": "62730",
+   "ticker": "6273.T",
+   "name": "ＳＭＣ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 22574974000.0
+  },
+  {
+   "code": "63010",
+   "ticker": "6301.T",
+   "name": "小松製作所",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 22562263100.0
+  },
+  {
+   "code": "47550",
+   "ticker": "4755.T",
+   "name": "楽天グループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 22196844810.0
+  },
+  {
+   "code": "68710",
+   "ticker": "6871.T",
+   "name": "日本マイクロニクス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 22128473000.0
+  },
+  {
+   "code": "80020",
+   "ticker": "8002.T",
+   "name": "丸紅",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 22047572400.0
+  },
+  {
+   "code": "49800",
+   "ticker": "4980.T",
+   "name": "デクセリアルズ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 20881132200.0
+  },
+  {
+   "code": "88010",
+   "ticker": "8801.T",
+   "name": "三井不動産",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 20566320050.0
+  },
+  {
+   "code": "72670",
+   "ticker": "7267.T",
+   "name": "本田技研工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 20313344000.0
+  },
+  {
+   "code": "67020",
+   "ticker": "6702.T",
+   "name": "富士通",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 20311693900.0
+  },
+  {
+   "code": "16050",
+   "ticker": "1605.T",
+   "name": "ＩＮＰＥＸ",
+   "market": "プライム",
+   "sector": "鉱業",
+   "va_at_selection": 20238580500.0
+  },
+  {
+   "code": "58380",
+   "ticker": "5838.T",
+   "name": "楽天銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 20144068900.0
+  },
+  {
+   "code": "88020",
+   "ticker": "8802.T",
+   "name": "三菱地所",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 20088461700.0
+  },
+  {
+   "code": "77410",
+   "ticker": "7741.T",
+   "name": "ＨＯＹＡ",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 19920107000.0
+  },
+  {
+   "code": "63670",
+   "ticker": "6367.T",
+   "name": "ダイキン工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 19568168500.0
+  },
+  {
+   "code": "43920",
+   "ticker": "4392.T",
+   "name": "ＦＩＧ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 19212263700.0
+  },
+  {
+   "code": "83030",
+   "ticker": "8303.T",
+   "name": "ＳＢＩ新生銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 18901116500.0
+  },
+  {
+   "code": "61780",
+   "ticker": "6178.T",
+   "name": "日本郵政",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 18241412300.0
+  },
+  {
+   "code": "79360",
+   "ticker": "7936.T",
+   "name": "アシックス",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 18099282900.0
+  },
+  {
+   "code": "45430",
+   "ticker": "4543.T",
+   "name": "テルモ",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 17870321800.0
+  },
+  {
+   "code": "88300",
+   "ticker": "8830.T",
+   "name": "住友不動産",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 17451062300.0
+  },
+  {
+   "code": "45680",
+   "ticker": "4568.T",
+   "name": "第一三共",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 17318846300.0
+  },
+  {
+   "code": "39050",
+   "ticker": "3905.T",
+   "name": "データセクション",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 17169785000.0
+  },
+  {
+   "code": "45190",
+   "ticker": "4519.T",
+   "name": "中外製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 17016832900.0
+  },
+  {
+   "code": "45020",
+   "ticker": "4502.T",
+   "name": "武田薬品工業",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 16964085000.0
+  },
+  {
+   "code": "95010",
+   "ticker": "9501.T",
+   "name": "東京電力ホールディングス",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 16946492950.0
+  },
+  {
+   "code": "65040",
+   "ticker": "6504.T",
+   "name": "富士電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 16431184000.0
+  },
+  {
+   "code": "63610",
+   "ticker": "6361.T",
+   "name": "荏原製作所",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 16427501700.0
+  },
+  {
+   "code": "63830",
+   "ticker": "6383.T",
+   "name": "ダイフク",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 16381985100.0
+  },
+  {
+   "code": "70030",
+   "ticker": "7003.T",
+   "name": "三井Ｅ＆Ｓ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 16230922100.0
+  },
+  {
+   "code": "46610",
+   "ticker": "4661.T",
+   "name": "オリエンタルランド",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 16009900900.0
+  },
+  {
+   "code": "15790",
+   "ticker": "1579.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　日経平均ブル２倍上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 15769262958.0
+  },
+  {
+   "code": "81360",
+   "ticker": "8136.T",
+   "name": "サンリオ",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 15741569990.0
+  },
+  {
+   "code": "54010",
+   "ticker": "5401.T",
+   "name": "日本製鉄",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 15698499750.0
+  },
+  {
+   "code": "45780",
+   "ticker": "4578.T",
+   "name": "大塚ホールディングス",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 15543756000.0
+  },
+  {
+   "code": "69710",
+   "ticker": "6971.T",
+   "name": "京セラ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 15432293250.0
+  },
+  {
+   "code": "91010",
+   "ticker": "9101.T",
+   "name": "日本郵船",
+   "market": "プライム",
+   "sector": "海運業",
+   "va_at_selection": 15233956600.0
+  },
+  {
+   "code": "14580",
+   "ticker": "1458.T",
+   "name": "楽天投信投資顧問株式会社　楽天ＥＴＦ‐日経レバレッジ指数連動型",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 14980826010.0
+  },
+  {
+   "code": "80150",
+   "ticker": "8015.T",
+   "name": "豊田通商",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 14926354300.0
+  },
+  {
+   "code": "485A0",
+   "ticker": "485A.T",
+   "name": "パワーエックス",
+   "market": "グロース",
+   "sector": "電気機器",
+   "va_at_selection": 14894961000.0
+  },
+  {
+   "code": "83090",
+   "ticker": "8309.T",
+   "name": "三井住友トラストグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 14853652000.0
+  },
+  {
+   "code": "49110",
+   "ticker": "4911.T",
+   "name": "資生堂",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 14787399900.0
+  },
+  {
+   "code": "13200",
+   "ticker": "1320.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　日経２２５（年１回決算型）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 14703426450.0
+  },
+  {
+   "code": "42080",
+   "ticker": "4208.T",
+   "name": "ＵＢＥ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 14555097450.0
+  },
+  {
+   "code": "62270",
+   "ticker": "6227.T",
+   "name": "ＡＩメカテック",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 14480169000.0
+  },
+  {
+   "code": "13600",
+   "ticker": "1360.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　日経平均ベア２倍上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 14346917957.0
+  },
+  {
+   "code": "41860",
+   "ticker": "4186.T",
+   "name": "東京応化工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 14085738000.0
+  },
+  {
+   "code": "18010",
+   "ticker": "1801.T",
+   "name": "大成建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 13976969500.0
+  },
+  {
+   "code": "80530",
+   "ticker": "8053.T",
+   "name": "住友商事",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 13901823600.0
+  },
+  {
+   "code": "69650",
+   "ticker": "6965.T",
+   "name": "浜松ホトニクス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 13763735300.0
+  },
+  {
+   "code": "43070",
+   "ticker": "4307.T",
+   "name": "野村総合研究所",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 13741189300.0
+  },
+  {
+   "code": "87500",
+   "ticker": "8750.T",
+   "name": "第一ライフグループ",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 13674346150.0
+  },
+  {
+   "code": "77510",
+   "ticker": "7751.T",
+   "name": "キヤノン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 13596339300.0
+  },
+  {
+   "code": "50740",
+   "ticker": "5074.T",
+   "name": "テスホールディングス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 13066833000.0
+  },
+  {
+   "code": "51080",
+   "ticker": "5108.T",
+   "name": "ブリヂストン",
+   "market": "プライム",
+   "sector": "ゴム製品",
+   "va_at_selection": 12718229700.0
+  },
+  {
+   "code": "91040",
+   "ticker": "9104.T",
+   "name": "商船三井",
+   "market": "プライム",
+   "sector": "海運業",
+   "va_at_selection": 12531377000.0
+  },
+  {
+   "code": "56310",
+   "ticker": "5631.T",
+   "name": "日本製鋼所",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 12504054700.0
+  },
+  {
+   "code": "94340",
+   "ticker": "9434.T",
+   "name": "ソフトバンク",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 12456564400.0
+  },
+  {
+   "code": "86040",
+   "ticker": "8604.T",
+   "name": "野村ホールディングス",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 12337130200.0
+  },
+  {
+   "code": "68340",
+   "ticker": "6834.T",
+   "name": "精工技研",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 12012711000.0
+  },
+  {
+   "code": "268A0",
+   "ticker": "268A.T",
+   "name": "リガク・ホールディングス",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 11712241800.0
+  },
+  {
+   "code": "94120",
+   "ticker": "9412.T",
+   "name": "スカパーＪＳＡＴ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 11443742000.0
+  },
+  {
+   "code": "63260",
+   "ticker": "6326.T",
+   "name": "クボタ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 11414685650.0
+  },
+  {
+   "code": "67540",
+   "ticker": "6754.T",
+   "name": "アンリツ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 11040266300.0
+  },
+  {
+   "code": "82670",
+   "ticker": "8267.T",
+   "name": "イオン",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 10996338350.0
+  },
+  {
+   "code": "63150",
+   "ticker": "6315.T",
+   "name": "ＴＯＷＡ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 10988782300.0
+  },
+  {
+   "code": "45060",
+   "ticker": "4506.T",
+   "name": "住友ファーマ",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 10943139900.0
+  },
+  {
+   "code": "38530",
+   "ticker": "3853.T",
+   "name": "アステリア",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 10917110100.0
+  },
+  {
+   "code": "18020",
+   "ticker": "1802.T",
+   "name": "大林組",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 10898335800.0
+  },
+  {
+   "code": "33820",
+   "ticker": "3382.T",
+   "name": "セブン＆アイ・ホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 10862384950.0
+  },
+  {
+   "code": "91070",
+   "ticker": "9107.T",
+   "name": "川崎汽船",
+   "market": "プライム",
+   "sector": "海運業",
+   "va_at_selection": 10598705400.0
+  },
+  {
+   "code": "72700",
+   "ticker": "7270.T",
+   "name": "ＳＵＢＡＲＵ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 10588334050.0
+  },
+  {
+   "code": "19280",
+   "ticker": "1928.T",
+   "name": "積水ハウス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 10560835400.0
+  },
+  {
+   "code": "35630",
+   "ticker": "3563.T",
+   "name": "ＦＯＯＤ　＆　ＬＩＦＥ　ＣＯＭＰＡＮＩＥＳ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 10375053000.0
+  },
+  {
+   "code": "49010",
+   "ticker": "4901.T",
+   "name": "富士フイルムホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 10209782300.0
+  },
+  {
+   "code": "74530",
+   "ticker": "7453.T",
+   "name": "良品計画",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 10198977600.0
+  },
+  {
+   "code": "45030",
+   "ticker": "4503.T",
+   "name": "アステラス製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 10167100400.0
+  },
+  {
+   "code": "41820",
+   "ticker": "4182.T",
+   "name": "三菱瓦斯化学",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 10142146700.0
+  },
+  {
+   "code": "69880",
+   "ticker": "6988.T",
+   "name": "日東電工",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 9995524400.0
+  },
+  {
+   "code": "50200",
+   "ticker": "5020.T",
+   "name": "ＥＮＥＯＳホールディングス",
+   "market": "プライム",
+   "sector": "石油･石炭製品",
+   "va_at_selection": 9990030900.0
+  },
+  {
+   "code": "62010",
+   "ticker": "6201.T",
+   "name": "豊田自動織機",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 9857516000.0
+  },
+  {
+   "code": "63240",
+   "ticker": "6324.T",
+   "name": "ハーモニック・ドライブ・システムズ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 9842516000.0
+  },
+  {
+   "code": "19250",
+   "ticker": "1925.T",
+   "name": "大和ハウス工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 9720398900.0
+  },
+  {
+   "code": "52010",
+   "ticker": "5201.T",
+   "name": "ＡＧＣ",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 9713373300.0
+  },
+  {
+   "code": "69020",
+   "ticker": "6902.T",
+   "name": "デンソー",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 9639174900.0
+  },
+  {
+   "code": "53340",
+   "ticker": "5334.T",
+   "name": "日本特殊陶業",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 9612372500.0
+  },
+  {
+   "code": "90200",
+   "ticker": "9020.T",
+   "name": "東日本旅客鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 9548304200.0
+  },
+  {
+   "code": "200A0",
+   "ticker": "200A.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　日経半導体株指数連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 9528467445.0
+  },
+  {
+   "code": "32310",
+   "ticker": "3231.T",
+   "name": "野村不動産ホールディングス",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 9473440670.0
+  },
+  {
+   "code": "64790",
+   "ticker": "6479.T",
+   "name": "ミネベアミツミ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 9432054000.0
+  },
+  {
+   "code": "25030",
+   "ticker": "2503.T",
+   "name": "キリンホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 9315770000.0
+  },
+  {
+   "code": "26440",
+   "ticker": "2644.T",
+   "name": "Ｇｌｏｂａｌ　Ｘ　Ｊａｐａｎ株式会社　グローバルＸ　半導体関連−日本株式　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 9268395776.0
+  },
+  {
+   "code": "87290",
+   "ticker": "8729.T",
+   "name": "ソニーフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 9125651500.0
+  },
+  {
+   "code": "72690",
+   "ticker": "7269.T",
+   "name": "スズキ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 8977948400.0
+  },
+  {
+   "code": "87950",
+   "ticker": "8795.T",
+   "name": "Ｔ＆Ｄホールディングス",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 8950876700.0
+  },
+  {
+   "code": "75320",
+   "ticker": "7532.T",
+   "name": "パン・パシフィック・インターナショナルホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 8882280460.0
+  },
+  {
+   "code": "84730",
+   "ticker": "8473.T",
+   "name": "ＳＢＩホールディングス",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 8791219100.0
+  },
+  {
+   "code": "92010",
+   "ticker": "9201.T",
+   "name": "日本航空",
+   "market": "プライム",
+   "sector": "空運業",
+   "va_at_selection": 8749986750.0
+  },
+  {
+   "code": "18030",
+   "ticker": "1803.T",
+   "name": "清水建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 8695580950.0
+  },
+  {
+   "code": "18120",
+   "ticker": "1812.T",
+   "name": "鹿島建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 8683647600.0
+  },
+  {
+   "code": "31030",
+   "ticker": "3103.T",
+   "name": "ユニチカ",
+   "market": "スタンダード",
+   "sector": "繊維製品",
+   "va_at_selection": 8682412800.0
+  },
+  {
+   "code": "72200",
+   "ticker": "7220.T",
+   "name": "武蔵精密工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 8665363000.0
+  },
+  {
+   "code": "68900",
+   "ticker": "6890.T",
+   "name": "フェローテック",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 8441822000.0
+  },
+  {
+   "code": "36560",
+   "ticker": "3656.T",
+   "name": "ＫＬａｂ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 8432068100.0
+  },
+  {
+   "code": "72110",
+   "ticker": "7211.T",
+   "name": "三菱自動車工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 8409174740.0
+  },
+  {
+   "code": "90220",
+   "ticker": "9022.T",
+   "name": "東海旅客鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 8344645600.0
+  },
+  {
+   "code": "72720",
+   "ticker": "7272.T",
+   "name": "ヤマハ発動機",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 8342475000.0
+  },
+  {
+   "code": "90240",
+   "ticker": "9024.T",
+   "name": "西武ホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 8298390150.0
+  },
+  {
+   "code": "53440",
+   "ticker": "5344.T",
+   "name": "ＭＡＲＵＷＡ",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 8228864000.0
+  },
+  {
+   "code": "83310",
+   "ticker": "8331.T",
+   "name": "千葉銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 8221768850.0
+  },
+  {
+   "code": "33500",
+   "ticker": "3350.T",
+   "name": "メタプラネット",
+   "market": "スタンダード",
+   "sector": "卸売業",
+   "va_at_selection": 8202559500.0
+  },
+  {
+   "code": "97660",
+   "ticker": "9766.T",
+   "name": "コナミグループ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 8197416000.0
+  },
+  {
+   "code": "62680",
+   "ticker": "6268.T",
+   "name": "ナブテスコ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 8130114900.0
+  },
+  {
+   "code": "68410",
+   "ticker": "6841.T",
+   "name": "横河電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 8058788900.0
+  },
+  {
+   "code": "61340",
+   "ticker": "6134.T",
+   "name": "ＦＵＪＩ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 7997599800.0
+  },
+  {
+   "code": "97350",
+   "ticker": "9735.T",
+   "name": "セコム",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 7941021300.0
+  },
+  {
+   "code": "278A0",
+   "ticker": "278A.T",
+   "name": "Ｔｅｒｒａ　Ｄｒｏｎｅ",
+   "market": "グロース",
+   "sector": "精密機器",
+   "va_at_selection": 7937417000.0
+  },
+  {
+   "code": "41880",
+   "ticker": "4188.T",
+   "name": "三菱ケミカルグループ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 7871889090.0
+  },
+  {
+   "code": "45230",
+   "ticker": "4523.T",
+   "name": "エーザイ",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 7861169900.0
+  },
+  {
+   "code": "72010",
+   "ticker": "7201.T",
+   "name": "日産自動車",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 7856576920.0
+  },
+  {
+   "code": "34070",
+   "ticker": "3407.T",
+   "name": "旭化成",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 7816389800.0
+  },
+  {
+   "code": "62690",
+   "ticker": "6269.T",
+   "name": "三井海洋開発",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 7704363000.0
+  },
+  {
+   "code": "64810",
+   "ticker": "6481.T",
+   "name": "ＴＨＫ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 7665934100.0
+  },
+  {
+   "code": "85930",
+   "ticker": "8593.T",
+   "name": "三菱ＨＣキャピタル",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 7624785400.0
+  },
+  {
+   "code": "98430",
+   "ticker": "9843.T",
+   "name": "ニトリホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 7602553600.0
+  },
+  {
+   "code": "61130",
+   "ticker": "6113.T",
+   "name": "アマダ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 7587115200.0
+  },
+  {
+   "code": "53330",
+   "ticker": "5333.T",
+   "name": "ＮＧＫ",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 7574597000.0
+  },
+  {
+   "code": "95030",
+   "ticker": "9503.T",
+   "name": "関西電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 7549339250.0
+  },
+  {
+   "code": "66450",
+   "ticker": "6645.T",
+   "name": "オムロン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 7547099400.0
+  },
+  {
+   "code": "71730",
+   "ticker": "7173.T",
+   "name": "東京きらぼしフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 7484903000.0
+  },
+  {
+   "code": "71860",
+   "ticker": "7186.T",
+   "name": "横浜フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 7466181250.0
+  },
+  {
+   "code": "78680",
+   "ticker": "7868.T",
+   "name": "広済堂ホールディングス",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 7324022200.0
+  },
+  {
+   "code": "58050",
+   "ticker": "5805.T",
+   "name": "ＳＷＣＣ",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 7255969000.0
+  },
+  {
+   "code": "77010",
+   "ticker": "7701.T",
+   "name": "島津製作所",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 7157793200.0
+  },
+  {
+   "code": "19630",
+   "ticker": "1963.T",
+   "name": "日揮ホールディングス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 7144024700.0
+  },
+  {
+   "code": "96970",
+   "ticker": "9697.T",
+   "name": "カプコン",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 7101484400.0
+  },
+  {
+   "code": "77330",
+   "ticker": "7733.T",
+   "name": "オリンパス",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 7063920750.0
+  },
+  {
+   "code": "78320",
+   "ticker": "7832.T",
+   "name": "バンダイナムコホールディングス",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 7046363500.0
+  },
+  {
+   "code": "42040",
+   "ticker": "4204.T",
+   "name": "積水化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 7006602000.0
+  },
+  {
+   "code": "65900",
+   "ticker": "6590.T",
+   "name": "芝浦メカトロニクス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 6926267000.0
+  },
+  {
+   "code": "91470",
+   "ticker": "9147.T",
+   "name": "ＮＩＰＰＯＮ　ＥＸＰＲＥＳＳホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 6848381400.0
+  },
+  {
+   "code": "19420",
+   "ticker": "1942.T",
+   "name": "関電工",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 6758413200.0
+  },
+  {
+   "code": "78260",
+   "ticker": "7826.T",
+   "name": "フルヤ金属",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 6727132000.0
+  },
+  {
+   "code": "45070",
+   "ticker": "4507.T",
+   "name": "塩野義製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 6640116850.0
+  },
+  {
+   "code": "72610",
+   "ticker": "7261.T",
+   "name": "マツダ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 6598512900.0
+  },
+  {
+   "code": "464A0",
+   "ticker": "464A.T",
+   "name": "ＱＰＳホールディングス",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 6550806000.0
+  },
+  {
+   "code": "25020",
+   "ticker": "2502.T",
+   "name": "アサヒグループホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 6546867250.0
+  },
+  {
+   "code": "54110",
+   "ticker": "5411.T",
+   "name": "ＪＦＥホールディングス",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 6458704850.0
+  },
+  {
+   "code": "15680",
+   "ticker": "1568.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　ＴＯＰＩＸブル２倍上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 6452643925.0
+  },
+  {
+   "code": "90210",
+   "ticker": "9021.T",
+   "name": "西日本旅客鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 6452039600.0
+  },
+  {
+   "code": "27680",
+   "ticker": "2768.T",
+   "name": "双日",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 6451555600.0
+  },
+  {
+   "code": "92020",
+   "ticker": "9202.T",
+   "name": "ＡＮＡホールディングス",
+   "market": "プライム",
+   "sector": "空運業",
+   "va_at_selection": 6446217450.0
+  },
+  {
+   "code": "44520",
+   "ticker": "4452.T",
+   "name": "花王",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 6370811600.0
+  },
+  {
+   "code": "43850",
+   "ticker": "4385.T",
+   "name": "メルカリ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 6338751900.0
+  },
+  {
+   "code": "13060",
+   "ticker": "1306.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　ＴＯＰＩＸ連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 6334734867.0
+  },
+  {
+   "code": "58440",
+   "ticker": "5844.T",
+   "name": "京都フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 6299406200.0
+  },
+  {
+   "code": "141A0",
+   "ticker": "141A.T",
+   "name": "トライアルホールディングス",
+   "market": "グロース",
+   "sector": "小売業",
+   "va_at_selection": 6272477700.0
+  },
+  {
+   "code": "77290",
+   "ticker": "7729.T",
+   "name": "東京精密",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 6265213000.0
+  },
+  {
+   "code": "42590",
+   "ticker": "4259.T",
+   "name": "エクサウィザーズ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 6141110600.0
+  },
+  {
+   "code": "402A0",
+   "ticker": "402A.T",
+   "name": "アクセルスペースホールディングス",
+   "market": "グロース",
+   "sector": "輸送用機器",
+   "va_at_selection": 6118244200.0
+  },
+  {
+   "code": "53320",
+   "ticker": "5332.T",
+   "name": "ＴＯＴＯ",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 6052097600.0
+  },
+  {
+   "code": "86970",
+   "ticker": "8697.T",
+   "name": "日本取引所グループ",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 6001398350.0
+  },
+  {
+   "code": "63230",
+   "ticker": "6323.T",
+   "name": "ローツェ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 5995864000.0
+  },
+  {
+   "code": "68690",
+   "ticker": "6869.T",
+   "name": "シスメックス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 5994965400.0
+  },
+  {
+   "code": "15400",
+   "ticker": "1540.T",
+   "name": "三菱ＵＦＪ信託銀行株式会社　純金上場信託（現物国内保管型）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 5924297140.0
+  },
+  {
+   "code": "19110",
+   "ticker": "1911.T",
+   "name": "住友林業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 5892179500.0
+  },
+  {
+   "code": "86010",
+   "ticker": "8601.T",
+   "name": "大和証券グループ本社",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 5870606850.0
+  },
+  {
+   "code": "42030",
+   "ticker": "4203.T",
+   "name": "住友ベークライト",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 5821787100.0
+  },
+  {
+   "code": "65320",
+   "ticker": "6532.T",
+   "name": "ベイカレント",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 5785646700.0
+  },
+  {
+   "code": "90050",
+   "ticker": "9005.T",
+   "name": "東急",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 5745075200.0
+  },
+  {
+   "code": "95310",
+   "ticker": "9531.T",
+   "name": "東京瓦斯",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 5675261000.0
+  },
+  {
+   "code": "79110",
+   "ticker": "7911.T",
+   "name": "ＴＯＰＰＡＮホールディングス",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 5663116900.0
+  },
+  {
+   "code": "95020",
+   "ticker": "9502.T",
+   "name": "中部電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 5631680400.0
+  },
+  {
+   "code": "58310",
+   "ticker": "5831.T",
+   "name": "しずおかフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 5628099500.0
+  },
+  {
+   "code": "40050",
+   "ticker": "4005.T",
+   "name": "住友化学",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 5620067350.0
+  },
+  {
+   "code": "67770",
+   "ticker": "6777.T",
+   "name": "ｓａｎｔｅｃ　Ｈｏｌｄｉｎｇｓ",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 5590347000.0
+  },
+  {
+   "code": "36260",
+   "ticker": "3626.T",
+   "name": "ＴＩＳ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 5532191400.0
+  },
+  {
+   "code": "68550",
+   "ticker": "6855.T",
+   "name": "日本電子材料",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 5531221000.0
+  },
+  {
+   "code": "62320",
+   "ticker": "6232.T",
+   "name": "ＡＣＳＬ",
+   "market": "グロース",
+   "sector": "機械",
+   "va_at_selection": 5526978900.0
+  },
+  {
+   "code": "24130",
+   "ticker": "2413.T",
+   "name": "エムスリー",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 5517561050.0
+  },
+  {
+   "code": "96020",
+   "ticker": "9602.T",
+   "name": "東宝",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 5446537150.0
+  },
+  {
+   "code": "77310",
+   "ticker": "7731.T",
+   "name": "ニコン",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 5440531150.0
+  },
+  {
+   "code": "83540",
+   "ticker": "8354.T",
+   "name": "ふくおかフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 5386903500.0
+  },
+  {
+   "code": "90410",
+   "ticker": "9041.T",
+   "name": "近鉄グループホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 5381121100.0
+  },
+  {
+   "code": "95320",
+   "ticker": "9532.T",
+   "name": "大阪瓦斯",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 5302529000.0
+  },
+  {
+   "code": "57110",
+   "ticker": "5711.T",
+   "name": "三菱マテリアル",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 5158301500.0
+  },
+  {
+   "code": "46890",
+   "ticker": "4689.T",
+   "name": "ＬＩＮＥヤフー",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 5123254410.0
+  },
+  {
+   "code": "30880",
+   "ticker": "3088.T",
+   "name": "マツキヨココカラ＆カンパニー",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 5115995300.0
+  },
+  {
+   "code": "64070",
+   "ticker": "6407.T",
+   "name": "ＣＫＤ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 5089709000.0
+  },
+  {
+   "code": "50190",
+   "ticker": "5019.T",
+   "name": "出光興産",
+   "market": "プライム",
+   "sector": "石油･石炭製品",
+   "va_at_selection": 5005829100.0
+  },
+  {
+   "code": "40880",
+   "ticker": "4088.T",
+   "name": "エア・ウォーター",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 4967636200.0
+  },
+  {
+   "code": "59010",
+   "ticker": "5901.T",
+   "name": "東洋製罐グループホールディングス",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 4918063500.0
+  },
+  {
+   "code": "69410",
+   "ticker": "6941.T",
+   "name": "山一電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4908724000.0
+  },
+  {
+   "code": "33910",
+   "ticker": "3391.T",
+   "name": "ツルハホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 4846739200.0
+  },
+  {
+   "code": "61410",
+   "ticker": "6141.T",
+   "name": "ＤＭＧ森精機",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 4843733800.0
+  },
+  {
+   "code": "75500",
+   "ticker": "7550.T",
+   "name": "ゼンショーホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 4822459700.0
+  },
+  {
+   "code": "67280",
+   "ticker": "6728.T",
+   "name": "アルバック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4821690900.0
+  },
+  {
+   "code": "51100",
+   "ticker": "5110.T",
+   "name": "住友ゴム工業",
+   "market": "プライム",
+   "sector": "ゴム製品",
+   "va_at_selection": 4810928100.0
+  },
+  {
+   "code": "543A0",
+   "ticker": "543A.T",
+   "name": "ＡＲＣＨＩＯＮ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 4788548500.0
+  },
+  {
+   "code": "25870",
+   "ticker": "2587.T",
+   "name": "サントリービバレッジ＆フード",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 4779619400.0
+  },
+  {
+   "code": "30990",
+   "ticker": "3099.T",
+   "name": "三越伊勢丹ホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 4769655400.0
+  },
+  {
+   "code": "79120",
+   "ticker": "7912.T",
+   "name": "大日本印刷",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 4763273150.0
+  },
+  {
+   "code": "63050",
+   "ticker": "6305.T",
+   "name": "日立建機",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 4709309300.0
+  },
+  {
+   "code": "52140",
+   "ticker": "5214.T",
+   "name": "日本電気硝子",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 4708534500.0
+  },
+  {
+   "code": "36590",
+   "ticker": "3659.T",
+   "name": "ネクソン",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 4699459700.0
+  },
+  {
+   "code": "30920",
+   "ticker": "3092.T",
+   "name": "ＺＯＺＯ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 4690556150.0
+  },
+  {
+   "code": "62780",
+   "ticker": "6278.T",
+   "name": "ユニオンツール",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 4679740000.0
+  },
+  {
+   "code": "67400",
+   "ticker": "6740.T",
+   "name": "ジャパンディスプレイ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4659672900.0
+  },
+  {
+   "code": "82830",
+   "ticker": "8283.T",
+   "name": "ＰＡＬＴＡＣ",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 4650294400.0
+  },
+  {
+   "code": "67240",
+   "ticker": "6724.T",
+   "name": "セイコーエプソン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4649910700.0
+  },
+  {
+   "code": "85240",
+   "ticker": "8524.T",
+   "name": "北洋銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 4629902800.0
+  },
+  {
+   "code": "66740",
+   "ticker": "6674.T",
+   "name": "ジーエス・ユアサ　コーポレーション",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4618579100.0
+  },
+  {
+   "code": "96840",
+   "ticker": "9684.T",
+   "name": "スクウェア・エニックス・ホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 4564579300.0
+  },
+  {
+   "code": "45280",
+   "ticker": "4528.T",
+   "name": "小野薬品工業",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 4563260750.0
+  },
+  {
+   "code": "68560",
+   "ticker": "6856.T",
+   "name": "堀場製作所",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4532611500.0
+  },
+  {
+   "code": "290A0",
+   "ticker": "290A.T",
+   "name": "Ｓｙｎｓｐｅｃｔｉｖｅ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 4499912900.0
+  },
+  {
+   "code": "16620",
+   "ticker": "1662.T",
+   "name": "石油資源開発",
+   "market": "プライム",
+   "sector": "鉱業",
+   "va_at_selection": 4479879400.0
+  },
+  {
+   "code": "46310",
+   "ticker": "4631.T",
+   "name": "ＤＩＣ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 4448984400.0
+  },
+  {
+   "code": "51010",
+   "ticker": "5101.T",
+   "name": "横浜ゴム",
+   "market": "プライム",
+   "sector": "ゴム製品",
+   "va_at_selection": 4441079100.0
+  },
+  {
+   "code": "30640",
+   "ticker": "3064.T",
+   "name": "ＭｏｎｏｔａＲＯ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 4440539400.0
+  },
+  {
+   "code": "40210",
+   "ticker": "4021.T",
+   "name": "日産化学",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 4413273600.0
+  },
+  {
+   "code": "47040",
+   "ticker": "4704.T",
+   "name": "トレンドマイクロ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 4406870900.0
+  },
+  {
+   "code": "19440",
+   "ticker": "1944.T",
+   "name": "きんでん",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 4379278000.0
+  },
+  {
+   "code": "90420",
+   "ticker": "9042.T",
+   "name": "阪急阪神ホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 4322217700.0
+  },
+  {
+   "code": "89510",
+   "ticker": "8951.T",
+   "name": "日本ビルファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 4318131100.0
+  },
+  {
+   "code": "81130",
+   "ticker": "8113.T",
+   "name": "ユニ・チャーム",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 4295219800.0
+  },
+  {
+   "code": "67700",
+   "ticker": "6770.T",
+   "name": "アルプスアルパイン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4293953600.0
+  },
+  {
+   "code": "38610",
+   "ticker": "3861.T",
+   "name": "王子ホールディングス",
+   "market": "プライム",
+   "sector": "パルプ・紙",
+   "va_at_selection": 4264875860.0
+  },
+  {
+   "code": "41830",
+   "ticker": "4183.T",
+   "name": "三井化学",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 4256071350.0
+  },
+  {
+   "code": "90720",
+   "ticker": "9072.T",
+   "name": "ニッコンホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 4230494400.0
+  },
+  {
+   "code": "63700",
+   "ticker": "6370.T",
+   "name": "栗田工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 4219104700.0
+  },
+  {
+   "code": "28750",
+   "ticker": "2875.T",
+   "name": "東洋水産",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 4211208500.0
+  },
+  {
+   "code": "46120",
+   "ticker": "4612.T",
+   "name": "日本ペイントホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 4167539400.0
+  },
+  {
+   "code": "36970",
+   "ticker": "3697.T",
+   "name": "ＳＨＩＦＴ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 4152556670.0
+  },
+  {
+   "code": "28010",
+   "ticker": "2801.T",
+   "name": "キッコーマン",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 4128449700.0
+  },
+  {
+   "code": "69250",
+   "ticker": "6925.T",
+   "name": "ウシオ電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 4089505500.0
+  },
+  {
+   "code": "46840",
+   "ticker": "4684.T",
+   "name": "オービック",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 4063225400.0
+  },
+  {
+   "code": "17210",
+   "ticker": "1721.T",
+   "name": "コムシスホールディングス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 4063205900.0
+  },
+  {
+   "code": "53010",
+   "ticker": "5301.T",
+   "name": "東海カーボン",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 4047315500.0
+  },
+  {
+   "code": "50760",
+   "ticker": "5076.T",
+   "name": "インフロニア・ホールディングス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 4035587650.0
+  },
+  {
+   "code": "57140",
+   "ticker": "5714.T",
+   "name": "ＤＯＷＡホールディングス",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 4024294500.0
+  },
+  {
+   "code": "13290",
+   "ticker": "1329.T",
+   "name": "ブラックロック・ジャパン株式会社　　ｉシェアーズ・コア　日経２２５　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 4001982569.0
+  },
+  {
+   "code": "34020",
+   "ticker": "3402.T",
+   "name": "東レ",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 3967926150.0
+  },
+  {
+   "code": "70140",
+   "ticker": "7014.T",
+   "name": "名村造船所",
+   "market": "スタンダード",
+   "sector": "輸送用機器",
+   "va_at_selection": 3954978500.0
+  },
+  {
+   "code": "61030",
+   "ticker": "6103.T",
+   "name": "オークマ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 3945144000.0
+  },
+  {
+   "code": "52530",
+   "ticker": "5253.T",
+   "name": "カバー",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 3925802900.0
+  },
+  {
+   "code": "47510",
+   "ticker": "4751.T",
+   "name": "サイバーエージェント",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 3899589000.0
+  },
+  {
+   "code": "32890",
+   "ticker": "3289.T",
+   "name": "東急不動産ホールディングス",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 3880742650.0
+  },
+  {
+   "code": "13300",
+   "ticker": "1330.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンド２２５",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 3823469970.0
+  },
+  {
+   "code": "83040",
+   "ticker": "8304.T",
+   "name": "あおぞら銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 3811373600.0
+  },
+  {
+   "code": "65080",
+   "ticker": "6508.T",
+   "name": "明電舎",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 3776554000.0
+  },
+  {
+   "code": "13980",
+   "ticker": "1398.T",
+   "name": "三井住友ＤＳアセットマネジメント株式会社　ＳＭＤＡＭ　東証ＲＥＩＴ指数上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 3766027175.0
+  },
+  {
+   "code": "71810",
+   "ticker": "7181.T",
+   "name": "かんぽ生命保険",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 3737189100.0
+  },
+  {
+   "code": "45640",
+   "ticker": "4564.T",
+   "name": "オンコセラピー・サイエンス",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 3708818500.0
+  },
+  {
+   "code": "82520",
+   "ticker": "8252.T",
+   "name": "丸井グループ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 3706126750.0
+  },
+  {
+   "code": "69960",
+   "ticker": "6996.T",
+   "name": "ニチコン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 3703857000.0
+  },
+  {
+   "code": "72590",
+   "ticker": "7259.T",
+   "name": "アイシン",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 3701891650.0
+  },
+  {
+   "code": "95130",
+   "ticker": "9513.T",
+   "name": "電源開発",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 3701328200.0
+  },
+  {
+   "code": "39230",
+   "ticker": "3923.T",
+   "name": "ラクス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 3687943750.0
+  },
+  {
+   "code": "40430",
+   "ticker": "4043.T",
+   "name": "トクヤマ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 3685201000.0
+  },
+  {
+   "code": "18780",
+   "ticker": "1878.T",
+   "name": "大東建託",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 3650722900.0
+  },
+  {
+   "code": "45880",
+   "ticker": "4588.T",
+   "name": "オンコリスバイオファーマ",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 3647760300.0
+  },
+  {
+   "code": "54060",
+   "ticker": "5406.T",
+   "name": "神戸製鋼所",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 3644430700.0
+  },
+  {
+   "code": "27020",
+   "ticker": "2702.T",
+   "name": "日本マクドナルドホールディングス",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 3632623000.0
+  },
+  {
+   "code": "16150",
+   "ticker": "1615.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　東証銀行業株価指数連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 3606540713.0
+  },
+  {
+   "code": "47680",
+   "ticker": "4768.T",
+   "name": "大塚商会",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 3605837500.0
+  },
+  {
+   "code": "43240",
+   "ticker": "4324.T",
+   "name": "電通グループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 3592448700.0
+  },
+  {
+   "code": "72020",
+   "ticker": "7202.T",
+   "name": "いすゞ自動車",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 3531645350.0
+  },
+  {
+   "code": "62540",
+   "ticker": "6254.T",
+   "name": "野村マイクロ・サイエンス",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 3481969000.0
+  },
+  {
+   "code": "40470",
+   "ticker": "4047.T",
+   "name": "関東電化工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 3399208600.0
+  },
+  {
+   "code": "49710",
+   "ticker": "4971.T",
+   "name": "メック",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 3394737000.0
+  },
+  {
+   "code": "77470",
+   "ticker": "7747.T",
+   "name": "朝日インテック",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 3381262500.0
+  },
+  {
+   "code": "77520",
+   "ticker": "7752.T",
+   "name": "リコー",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 3364501400.0
+  },
+  {
+   "code": "63680",
+   "ticker": "6368.T",
+   "name": "オルガノ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 3361025500.0
+  },
+  {
+   "code": "89520",
+   "ticker": "8952.T",
+   "name": "ジャパンリアルエステイト投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 3341769600.0
+  },
+  {
+   "code": "90230",
+   "ticker": "9023.T",
+   "name": "東京地下鉄",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 3332424850.0
+  },
+  {
+   "code": "82530",
+   "ticker": "8253.T",
+   "name": "クレディセゾン",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 3328863700.0
+  },
+  {
+   "code": "66220",
+   "ticker": "6622.T",
+   "name": "ダイヘン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 3270095000.0
+  },
+  {
+   "code": "83590",
+   "ticker": "8359.T",
+   "name": "八十二長野銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 3263920300.0
+  },
+  {
+   "code": "83340",
+   "ticker": "8334.T",
+   "name": "群馬銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 3224192850.0
+  },
+  {
+   "code": "59910",
+   "ticker": "5991.T",
+   "name": "日本発條",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 3216067900.0
+  },
+  {
+   "code": "99620",
+   "ticker": "9962.T",
+   "name": "ミスミグループ本社",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 3105129400.0
+  },
+  {
+   "code": "65860",
+   "ticker": "6586.T",
+   "name": "マキタ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 3094781100.0
+  },
+  {
+   "code": "30380",
+   "ticker": "3038.T",
+   "name": "神戸物産",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 3088328550.0
+  },
+  {
+   "code": "23710",
+   "ticker": "2371.T",
+   "name": "カカクコム",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 3082027900.0
+  },
+  {
+   "code": "88040",
+   "ticker": "8804.T",
+   "name": "東京建物",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 3060892700.0
+  },
+  {
+   "code": "15420",
+   "ticker": "1542.T",
+   "name": "三菱ＵＦＪ信託銀行株式会社　純銀上場信託（現物国内保管型）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 3040957120.0
+  },
+  {
+   "code": "63660",
+   "ticker": "6366.T",
+   "name": "千代田化工建設",
+   "market": "スタンダード",
+   "sector": "建設業",
+   "va_at_selection": 3031069500.0
+  },
+  {
+   "code": "44430",
+   "ticker": "4443.T",
+   "name": "Ｓａｎｓａｎ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 2982087600.0
+  },
+  {
+   "code": "73090",
+   "ticker": "7309.T",
+   "name": "シマノ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 2974838500.0
+  },
+  {
+   "code": "18080",
+   "ticker": "1808.T",
+   "name": "長谷工コーポレーション",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 2957220750.0
+  },
+  {
+   "code": "37190",
+   "ticker": "3719.T",
+   "name": "ＡＩストーム",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 2946980900.0
+  },
+  {
+   "code": "77620",
+   "ticker": "7762.T",
+   "name": "シチズン時計",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 2932361400.0
+  },
+  {
+   "code": "58300",
+   "ticker": "5830.T",
+   "name": "いよぎんホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2921320400.0
+  },
+  {
+   "code": "30030",
+   "ticker": "3003.T",
+   "name": "ヒューリック",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 2913505400.0
+  },
+  {
+   "code": "22430",
+   "ticker": "2243.T",
+   "name": "Ｇｌｏｂａｌ　Ｘ　Ｊａｐａｎ株式会社　グローバルＸ　半導体　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 2893319146.0
+  },
+  {
+   "code": "71670",
+   "ticker": "7167.T",
+   "name": "めぶきフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2872712000.0
+  },
+  {
+   "code": "40420",
+   "ticker": "4042.T",
+   "name": "東ソー",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2870732900.0
+  },
+  {
+   "code": "32880",
+   "ticker": "3288.T",
+   "name": "オープンハウスグループ",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 2852622200.0
+  },
+  {
+   "code": "49120",
+   "ticker": "4912.T",
+   "name": "ライオン",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2847910450.0
+  },
+  {
+   "code": "83770",
+   "ticker": "8377.T",
+   "name": "ほくほくフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2835389500.0
+  },
+  {
+   "code": "95060",
+   "ticker": "9506.T",
+   "name": "東北電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 2812854900.0
+  },
+  {
+   "code": "94350",
+   "ticker": "9435.T",
+   "name": "光通信",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 2799336000.0
+  },
+  {
+   "code": "31970",
+   "ticker": "3197.T",
+   "name": "すかいらーくホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2798569150.0
+  },
+  {
+   "code": "65070",
+   "ticker": "6507.T",
+   "name": "シンフォニアテクノロジー",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2781218000.0
+  },
+  {
+   "code": "30860",
+   "ticker": "3086.T",
+   "name": "Ｊ．フロント　リテイリング",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2771971650.0
+  },
+  {
+   "code": "65210",
+   "ticker": "6521.T",
+   "name": "オキサイド",
+   "market": "グロース",
+   "sector": "電気機器",
+   "va_at_selection": 2767059000.0
+  },
+  {
+   "code": "37690",
+   "ticker": "3769.T",
+   "name": "ＧＭＯペイメントゲートウェイ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 2759760500.0
+  },
+  {
+   "code": "63020",
+   "ticker": "6302.T",
+   "name": "住友重機械工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2750509200.0
+  },
+  {
+   "code": "18930",
+   "ticker": "1893.T",
+   "name": "五洋建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 2746342950.0
+  },
+  {
+   "code": "21600",
+   "ticker": "2160.T",
+   "name": "ジーエヌアイグループ",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 2737184000.0
+  },
+  {
+   "code": "72820",
+   "ticker": "7282.T",
+   "name": "豊田合成",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 2724159200.0
+  },
+  {
+   "code": "47160",
+   "ticker": "4716.T",
+   "name": "日本オラクル",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 2715947900.0
+  },
+  {
+   "code": "40910",
+   "ticker": "4091.T",
+   "name": "日本酸素ホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2711440900.0
+  },
+  {
+   "code": "83680",
+   "ticker": "8368.T",
+   "name": "百五銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2706380500.0
+  },
+  {
+   "code": "14070",
+   "ticker": "1407.T",
+   "name": "ウエストホールディングス",
+   "market": "スタンダード",
+   "sector": "建設業",
+   "va_at_selection": 2695673500.0
+  },
+  {
+   "code": "46130",
+   "ticker": "4613.T",
+   "name": "関西ペイント",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2688556200.0
+  },
+  {
+   "code": "61010",
+   "ticker": "6101.T",
+   "name": "ツガミ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2688059000.0
+  },
+  {
+   "code": "16710",
+   "ticker": "1671.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　ＷＴＩ原油価格連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 2682226973.0
+  },
+  {
+   "code": "80880",
+   "ticker": "8088.T",
+   "name": "岩谷産業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 2669635350.0
+  },
+  {
+   "code": "93010",
+   "ticker": "9301.T",
+   "name": "三菱倉庫",
+   "market": "プライム",
+   "sector": "倉庫･運輸関連業",
+   "va_at_selection": 2625108850.0
+  },
+  {
+   "code": "429A0",
+   "ticker": "429A.T",
+   "name": "テクセンドフォトマスク",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 2614971500.0
+  },
+  {
+   "code": "22820",
+   "ticker": "2282.T",
+   "name": "日本ハム",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2610030800.0
+  },
+  {
+   "code": "84390",
+   "ticker": "8439.T",
+   "name": "東京センチュリー",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 2594193900.0
+  },
+  {
+   "code": "69520",
+   "ticker": "6952.T",
+   "name": "カシオ計算機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2584806500.0
+  },
+  {
+   "code": "40220",
+   "ticker": "4022.T",
+   "name": "ラサ工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2579983100.0
+  },
+  {
+   "code": "45920",
+   "ticker": "4592.T",
+   "name": "サンバイオ",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 2573043700.0
+  },
+  {
+   "code": "73270",
+   "ticker": "7327.T",
+   "name": "第四北越フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2563241600.0
+  },
+  {
+   "code": "19690",
+   "ticker": "1969.T",
+   "name": "高砂熱学工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 2538400400.0
+  },
+  {
+   "code": "58570",
+   "ticker": "5857.T",
+   "name": "ＡＲＥホールディングス",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 2532309000.0
+  },
+  {
+   "code": "68450",
+   "ticker": "6845.T",
+   "name": "アズビル",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2507293100.0
+  },
+  {
+   "code": "22690",
+   "ticker": "2269.T",
+   "name": "明治ホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2492098800.0
+  },
+  {
+   "code": "24320",
+   "ticker": "2432.T",
+   "name": "ディー・エヌ・エー",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 2490206100.0
+  },
+  {
+   "code": "68060",
+   "ticker": "6806.T",
+   "name": "ヒロセ電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2483842500.0
+  },
+  {
+   "code": "90640",
+   "ticker": "9064.T",
+   "name": "ヤマトホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 2482624950.0
+  },
+  {
+   "code": "64720",
+   "ticker": "6472.T",
+   "name": "ＮＴＮ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2477360760.0
+  },
+  {
+   "code": "69970",
+   "ticker": "6997.T",
+   "name": "日本ケミコン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2466541400.0
+  },
+  {
+   "code": "91430",
+   "ticker": "9143.T",
+   "name": "ＳＧホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 2460564200.0
+  },
+  {
+   "code": "82330",
+   "ticker": "8233.T",
+   "name": "高島屋",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2454692250.0
+  },
+  {
+   "code": "75810",
+   "ticker": "7581.T",
+   "name": "サイゼリヤ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2395353000.0
+  },
+  {
+   "code": "37780",
+   "ticker": "3778.T",
+   "name": "さくらインターネット",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 2391672900.0
+  },
+  {
+   "code": "40610",
+   "ticker": "4061.T",
+   "name": "デンカ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2388817800.0
+  },
+  {
+   "code": "51050",
+   "ticker": "5105.T",
+   "name": "ＴＯＹＯ　ＴＩＲＥ",
+   "market": "プライム",
+   "sector": "ゴム製品",
+   "va_at_selection": 2357063300.0
+  },
+  {
+   "code": "43680",
+   "ticker": "4368.T",
+   "name": "扶桑化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2346377500.0
+  },
+  {
+   "code": "52330",
+   "ticker": "5233.T",
+   "name": "太平洋セメント",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 2345324900.0
+  },
+  {
+   "code": "89850",
+   "ticker": "8985.T",
+   "name": "ジャパン・ホテル・リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 2345139900.0
+  },
+  {
+   "code": "247A0",
+   "ticker": "247A.T",
+   "name": "Ａｉロボティクス",
+   "market": "グロース",
+   "sector": "化学",
+   "va_at_selection": 2338532200.0
+  },
+  {
+   "code": "41510",
+   "ticker": "4151.T",
+   "name": "協和キリン",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 2332468700.0
+  },
+  {
+   "code": "31320",
+   "ticker": "3132.T",
+   "name": "マクニカホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 2323745500.0
+  },
+  {
+   "code": "62350",
+   "ticker": "6235.T",
+   "name": "オプトラン",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2323728500.0
+  },
+  {
+   "code": "71800",
+   "ticker": "7180.T",
+   "name": "九州フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2314487500.0
+  },
+  {
+   "code": "64480",
+   "ticker": "6448.T",
+   "name": "ブラザー工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2308808800.0
+  },
+  {
+   "code": "22670",
+   "ticker": "2267.T",
+   "name": "ヤクルト本社",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2305549500.0
+  },
+  {
+   "code": "20020",
+   "ticker": "2002.T",
+   "name": "日清製粉グループ本社",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2295792350.0
+  },
+  {
+   "code": "59290",
+   "ticker": "5929.T",
+   "name": "三和ホールディングス",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 2280440900.0
+  },
+  {
+   "code": "64800",
+   "ticker": "6480.T",
+   "name": "日本トムソン",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2278873000.0
+  },
+  {
+   "code": "89180",
+   "ticker": "8918.T",
+   "name": "ランド",
+   "market": "スタンダード",
+   "sector": "不動産業",
+   "va_at_selection": 2260894600.0
+  },
+  {
+   "code": "64710",
+   "ticker": "6471.T",
+   "name": "日本精工",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2209551800.0
+  },
+  {
+   "code": "14890",
+   "ticker": "1489.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　日経平均高配当株５０指数連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 2209300822.0
+  },
+  {
+   "code": "31050",
+   "ticker": "3105.T",
+   "name": "日清紡ホールディングス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2203825250.0
+  },
+  {
+   "code": "45360",
+   "ticker": "4536.T",
+   "name": "参天製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 2195189700.0
+  },
+  {
+   "code": "67530",
+   "ticker": "6753.T",
+   "name": "シャープ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2194104300.0
+  },
+  {
+   "code": "61350",
+   "ticker": "6135.T",
+   "name": "牧野フライス製作所",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 2179750000.0
+  },
+  {
+   "code": "34980",
+   "ticker": "3498.T",
+   "name": "霞ヶ関キャピタル",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 2168217000.0
+  },
+  {
+   "code": "28970",
+   "ticker": "2897.T",
+   "name": "日清食品ホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2158509500.0
+  },
+  {
+   "code": "34050",
+   "ticker": "3405.T",
+   "name": "クラレ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2156412250.0
+  },
+  {
+   "code": "83410",
+   "ticker": "8341.T",
+   "name": "七十七銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2149899300.0
+  },
+  {
+   "code": "18600",
+   "ticker": "1860.T",
+   "name": "戸田建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 2147430950.0
+  },
+  {
+   "code": "69610",
+   "ticker": "6961.T",
+   "name": "エンプラス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 2138592000.0
+  },
+  {
+   "code": "59380",
+   "ticker": "5938.T",
+   "name": "ＬＩＸＩＬ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 2130791900.0
+  },
+  {
+   "code": "19090",
+   "ticker": "1909.T",
+   "name": "日本ドライケミカル",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 2125852500.0
+  },
+  {
+   "code": "33490",
+   "ticker": "3349.T",
+   "name": "コスモス薬品",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2117554000.0
+  },
+  {
+   "code": "46170",
+   "ticker": "4617.T",
+   "name": "中国塗料",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2112336500.0
+  },
+  {
+   "code": "84180",
+   "ticker": "8418.T",
+   "name": "山口フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 2098064950.0
+  },
+  {
+   "code": "28710",
+   "ticker": "2871.T",
+   "name": "ニチレイ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2093854400.0
+  },
+  {
+   "code": "82270",
+   "ticker": "8227.T",
+   "name": "しまむら",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2079508600.0
+  },
+  {
+   "code": "37740",
+   "ticker": "3774.T",
+   "name": "インターネットイニシアティブ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 2071942400.0
+  },
+  {
+   "code": "44030",
+   "ticker": "4403.T",
+   "name": "日油",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 2065483400.0
+  },
+  {
+   "code": "98310",
+   "ticker": "9831.T",
+   "name": "ヤマダホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 2062676050.0
+  },
+  {
+   "code": "547A0",
+   "ticker": "547A.T",
+   "name": "ムニノバホールディングス",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 2061465400.0
+  },
+  {
+   "code": "25790",
+   "ticker": "2579.T",
+   "name": "コカ・コーラ　ボトラーズジャパンホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 2041124200.0
+  },
+  {
+   "code": "95090",
+   "ticker": "9509.T",
+   "name": "北海道電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 2036086810.0
+  },
+  {
+   "code": "63300",
+   "ticker": "6330.T",
+   "name": "東洋エンジニアリング",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 2035132000.0
+  },
+  {
+   "code": "13320",
+   "ticker": "1332.T",
+   "name": "ニッスイ",
+   "market": "プライム",
+   "sector": "水産・農林業",
+   "va_at_selection": 2000603600.0
+  },
+  {
+   "code": "44010",
+   "ticker": "4401.T",
+   "name": "ＡＤＥＫＡ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1997094800.0
+  },
+  {
+   "code": "69510",
+   "ticker": "6951.T",
+   "name": "日本電子",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1991780100.0
+  },
+  {
+   "code": "72760",
+   "ticker": "7276.T",
+   "name": "小糸製作所",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1987467200.0
+  },
+  {
+   "code": "41180",
+   "ticker": "4118.T",
+   "name": "カネカ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1976189400.0
+  },
+  {
+   "code": "46660",
+   "ticker": "4666.T",
+   "name": "パーク２４",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 1952952900.0
+  },
+  {
+   "code": "69660",
+   "ticker": "6966.T",
+   "name": "三井ハイテック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1951623600.0
+  },
+  {
+   "code": "95190",
+   "ticker": "9519.T",
+   "name": "レノバ",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 1951446200.0
+  },
+  {
+   "code": "53930",
+   "ticker": "5393.T",
+   "name": "ニチアス",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 1945318100.0
+  },
+  {
+   "code": "13660",
+   "ticker": "1366.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　日経平均ダブルインバース・インデックス",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1939458630.0
+  },
+  {
+   "code": "89530",
+   "ticker": "8953.T",
+   "name": "日本都市ファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1928966600.0
+  },
+  {
+   "code": "65240",
+   "ticker": "6524.T",
+   "name": "湖北工業",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 1927254000.0
+  },
+  {
+   "code": "42050",
+   "ticker": "4205.T",
+   "name": "日本ゼオン",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1926470900.0
+  },
+  {
+   "code": "14590",
+   "ticker": "1459.T",
+   "name": "楽天投信投資顧問株式会社　楽天ＥＴＦ‐日経ダブルインバース指数連動型",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1925261740.0
+  },
+  {
+   "code": "83580",
+   "ticker": "8358.T",
+   "name": "スルガ銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1923083400.0
+  },
+  {
+   "code": "50320",
+   "ticker": "5032.T",
+   "name": "ＡＮＹＣＯＬＯＲ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1898383200.0
+  },
+  {
+   "code": "19590",
+   "ticker": "1959.T",
+   "name": "クラフティア",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1897841500.0
+  },
+  {
+   "code": "66190",
+   "ticker": "6619.T",
+   "name": "ダブル・スコープ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1897495500.0
+  },
+  {
+   "code": "54630",
+   "ticker": "5463.T",
+   "name": "丸一鋼管",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 1893502100.0
+  },
+  {
+   "code": "83610",
+   "ticker": "8361.T",
+   "name": "大垣共立銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1883857000.0
+  },
+  {
+   "code": "76490",
+   "ticker": "7649.T",
+   "name": "スギホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1883457050.0
+  },
+  {
+   "code": "13580",
+   "ticker": "1358.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンド日経レバレッジ指数",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1881071900.0
+  },
+  {
+   "code": "79510",
+   "ticker": "7951.T",
+   "name": "ヤマハ",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 1875582200.0
+  },
+  {
+   "code": "49020",
+   "ticker": "4902.T",
+   "name": "コニカミノルタ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1861042440.0
+  },
+  {
+   "code": "90070",
+   "ticker": "9007.T",
+   "name": "小田急電鉄",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1860656400.0
+  },
+  {
+   "code": "89630",
+   "ticker": "8963.T",
+   "name": "インヴィンシブル投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1854728600.0
+  },
+  {
+   "code": "73370",
+   "ticker": "7337.T",
+   "name": "ひろぎんホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1854394350.0
+  },
+  {
+   "code": "99890",
+   "ticker": "9989.T",
+   "name": "サンドラッグ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1848120200.0
+  },
+  {
+   "code": "89660",
+   "ticker": "8966.T",
+   "name": "平和不動産リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1846367000.0
+  },
+  {
+   "code": "25850",
+   "ticker": "2585.T",
+   "name": "ライフドリンク　カンパニー",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1833806300.0
+  },
+  {
+   "code": "60720",
+   "ticker": "6072.T",
+   "name": "地盤ネットホールディングス",
+   "market": "スタンダード",
+   "sector": "サービス業",
+   "va_at_selection": 1829813900.0
+  },
+  {
+   "code": "47760",
+   "ticker": "4776.T",
+   "name": "サイボウズ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1823751900.0
+  },
+  {
+   "code": "64730",
+   "ticker": "6473.T",
+   "name": "ジェイテクト",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1810946850.0
+  },
+  {
+   "code": "47320",
+   "ticker": "4732.T",
+   "name": "ユー・エス・エス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1807891700.0
+  },
+  {
+   "code": "28090",
+   "ticker": "2809.T",
+   "name": "キユーピー",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1798077100.0
+  },
+  {
+   "code": "57410",
+   "ticker": "5741.T",
+   "name": "ＵＡＣＪ",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 1797680500.0
+  },
+  {
+   "code": "78670",
+   "ticker": "7867.T",
+   "name": "タカラトミー",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 1790814150.0
+  },
+  {
+   "code": "97440",
+   "ticker": "9744.T",
+   "name": "メイテックグループホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1785550150.0
+  },
+  {
+   "code": "91420",
+   "ticker": "9142.T",
+   "name": "九州旅客鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1782739100.0
+  },
+  {
+   "code": "79880",
+   "ticker": "7988.T",
+   "name": "ニフコ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1774296800.0
+  },
+  {
+   "code": "19610",
+   "ticker": "1961.T",
+   "name": "三機工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1760699100.0
+  },
+  {
+   "code": "53100",
+   "ticker": "5310.T",
+   "name": "東洋炭素",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 1758113000.0
+  },
+  {
+   "code": "68750",
+   "ticker": "6875.T",
+   "name": "メガチップス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1756866000.0
+  },
+  {
+   "code": "67030",
+   "ticker": "6703.T",
+   "name": "沖電気工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1750439000.0
+  },
+  {
+   "code": "19800",
+   "ticker": "1980.T",
+   "name": "ダイダン",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1748309500.0
+  },
+  {
+   "code": "94040",
+   "ticker": "9404.T",
+   "name": "日本テレビホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1734381300.0
+  },
+  {
+   "code": "89720",
+   "ticker": "8972.T",
+   "name": "ＫＤＸ不動産投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1731676400.0
+  },
+  {
+   "code": "25010",
+   "ticker": "2501.T",
+   "name": "サッポロホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1730099450.0
+  },
+  {
+   "code": "71640",
+   "ticker": "7164.T",
+   "name": "全国保証",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 1722766800.0
+  },
+  {
+   "code": "90010",
+   "ticker": "9001.T",
+   "name": "東武鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1718589850.0
+  },
+  {
+   "code": "15450",
+   "ticker": "1545.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　ＮＡＳＤＡＱ−１００（為替ヘッジなし）連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1709928580.0
+  },
+  {
+   "code": "77460",
+   "ticker": "7746.T",
+   "name": "岡本硝子",
+   "market": "スタンダード",
+   "sector": "精密機器",
+   "va_at_selection": 1708817200.0
+  },
+  {
+   "code": "46800",
+   "ticker": "4680.T",
+   "name": "ラウンドワン",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1705455200.0
+  },
+  {
+   "code": "71890",
+   "ticker": "7189.T",
+   "name": "西日本フィナンシャルホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1693477100.0
+  },
+  {
+   "code": "83380",
+   "ticker": "8338.T",
+   "name": "筑波銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1683836100.0
+  },
+  {
+   "code": "22290",
+   "ticker": "2229.T",
+   "name": "カルビー",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1666562400.0
+  },
+  {
+   "code": "42020",
+   "ticker": "4202.T",
+   "name": "ダイセル",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1666475100.0
+  },
+  {
+   "code": "23310",
+   "ticker": "2331.T",
+   "name": "ＡＬＳＯＫ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1646315500.0
+  },
+  {
+   "code": "61360",
+   "ticker": "6136.T",
+   "name": "オーエスジー",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1645556000.0
+  },
+  {
+   "code": "43690",
+   "ticker": "4369.T",
+   "name": "トリケミカル研究所",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1621605000.0
+  },
+  {
+   "code": "65920",
+   "ticker": "6592.T",
+   "name": "マブチモーター",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1616222200.0
+  },
+  {
+   "code": "66270",
+   "ticker": "6627.T",
+   "name": "テラプローブ",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 1614960000.0
+  },
+  {
+   "code": "98800",
+   "ticker": "9880.T",
+   "name": "イノテック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1614345000.0
+  },
+  {
+   "code": "45270",
+   "ticker": "4527.T",
+   "name": "ロート製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 1613462900.0
+  },
+  {
+   "code": "21810",
+   "ticker": "2181.T",
+   "name": "パーソルホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1605166080.0
+  },
+  {
+   "code": "77210",
+   "ticker": "7721.T",
+   "name": "東京計器",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 1603898000.0
+  },
+  {
+   "code": "13650",
+   "ticker": "1365.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　日経平均レバレッジ・インデックス",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1599535033.0
+  },
+  {
+   "code": "81410",
+   "ticker": "8141.T",
+   "name": "新光商事",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1597349400.0
+  },
+  {
+   "code": "79660",
+   "ticker": "7966.T",
+   "name": "リンテック",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 1582411000.0
+  },
+  {
+   "code": "68400",
+   "ticker": "6840.T",
+   "name": "ＡＫＩＢＡホールディングス",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 1580966600.0
+  },
+  {
+   "code": "94680",
+   "ticker": "9468.T",
+   "name": "ＫＡＤＯＫＡＷＡ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1576401800.0
+  },
+  {
+   "code": "90480",
+   "ticker": "9048.T",
+   "name": "名古屋鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1572729450.0
+  },
+  {
+   "code": "64170",
+   "ticker": "6417.T",
+   "name": "ＳＡＮＫＹＯ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1562019450.0
+  },
+  {
+   "code": "28690",
+   "ticker": "2869.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　ＮＡＳＤＡＱ１００レバレッジ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1561485100.0
+  },
+  {
+   "code": "41940",
+   "ticker": "4194.T",
+   "name": "ビジョナル",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1558419500.0
+  },
+  {
+   "code": "32810",
+   "ticker": "3281.T",
+   "name": "ＧＬＰ投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1557959000.0
+  },
+  {
+   "code": "87140",
+   "ticker": "8714.T",
+   "name": "池田泉州ホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1555864200.0
+  },
+  {
+   "code": "83660",
+   "ticker": "8366.T",
+   "name": "滋賀銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1552562300.0
+  },
+  {
+   "code": "80560",
+   "ticker": "8056.T",
+   "name": "ＢＩＰＲＯＧＹ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1543105900.0
+  },
+  {
+   "code": "50210",
+   "ticker": "5021.T",
+   "name": "コスモエネルギーホールディングス",
+   "market": "プライム",
+   "sector": "石油･石炭製品",
+   "va_at_selection": 1529362400.0
+  },
+  {
+   "code": "62640",
+   "ticker": "6264.T",
+   "name": "マルマエ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1524904400.0
+  },
+  {
+   "code": "34490",
+   "ticker": "3449.T",
+   "name": "テクノフレックス",
+   "market": "スタンダード",
+   "sector": "金属製品",
+   "va_at_selection": 1518100000.0
+  },
+  {
+   "code": "77770",
+   "ticker": "7777.T",
+   "name": "スリー・ディー・マトリックス",
+   "market": "グロース",
+   "sector": "精密機器",
+   "va_at_selection": 1513275200.0
+  },
+  {
+   "code": "59850",
+   "ticker": "5985.T",
+   "name": "サンコール",
+   "market": "スタンダード",
+   "sector": "金属製品",
+   "va_at_selection": 1511745500.0
+  },
+  {
+   "code": "69230",
+   "ticker": "6923.T",
+   "name": "スタンレー電気",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1502000300.0
+  },
+  {
+   "code": "19510",
+   "ticker": "1951.T",
+   "name": "エクシオグループ",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1498351800.0
+  },
+  {
+   "code": "90090",
+   "ticker": "9009.T",
+   "name": "京成電鉄",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1494489550.0
+  },
+  {
+   "code": "90760",
+   "ticker": "9076.T",
+   "name": "セイノーホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1491240200.0
+  },
+  {
+   "code": "68620",
+   "ticker": "6862.T",
+   "name": "ミナトホールディングス",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 1489887000.0
+  },
+  {
+   "code": "27370",
+   "ticker": "2737.T",
+   "name": "トーメンデバイス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1487154000.0
+  },
+  {
+   "code": "28740",
+   "ticker": "2874.T",
+   "name": "横浜冷凍",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1485115100.0
+  },
+  {
+   "code": "13430",
+   "ticker": "1343.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　東証ＲＥＩＴ　指数連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1482444115.0
+  },
+  {
+   "code": "13460",
+   "ticker": "1346.T",
+   "name": "三菱ＵＦＪアセットマネジメント株式会社　ＭＡＸＩＳ　日経２２５上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1481417780.0
+  },
+  {
+   "code": "80600",
+   "ticker": "8060.T",
+   "name": "キヤノンマーケティングジャパン",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1481269800.0
+  },
+  {
+   "code": "89600",
+   "ticker": "8960.T",
+   "name": "ユナイテッド・アーバン投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1480886500.0
+  },
+  {
+   "code": "64600",
+   "ticker": "6460.T",
+   "name": "セガサミーホールディングス",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1475915900.0
+  },
+  {
+   "code": "67790",
+   "ticker": "6779.T",
+   "name": "日本電波工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1474256900.0
+  },
+  {
+   "code": "49220",
+   "ticker": "4922.T",
+   "name": "コーセーホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1470791900.0
+  },
+  {
+   "code": "95080",
+   "ticker": "9508.T",
+   "name": "九州電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 1470589600.0
+  },
+  {
+   "code": "60850",
+   "ticker": "6085.T",
+   "name": "アーキテクツ・スタジオ・ジャパン",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 1465454000.0
+  },
+  {
+   "code": "26950",
+   "ticker": "2695.T",
+   "name": "くら寿司",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1461487300.0
+  },
+  {
+   "code": "22640",
+   "ticker": "2264.T",
+   "name": "森永乳業",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1456824200.0
+  },
+  {
+   "code": "60550",
+   "ticker": "6055.T",
+   "name": "ジャパンマテリアル",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1450603300.0
+  },
+  {
+   "code": "54440",
+   "ticker": "5444.T",
+   "name": "大和工業",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 1448235000.0
+  },
+  {
+   "code": "63870",
+   "ticker": "6387.T",
+   "name": "サムコ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1443597000.0
+  },
+  {
+   "code": "69140",
+   "ticker": "6914.T",
+   "name": "オプテックスグループ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1426435500.0
+  },
+  {
+   "code": "96160",
+   "ticker": "9616.T",
+   "name": "共立メンテナンス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1411036000.0
+  },
+  {
+   "code": "18610",
+   "ticker": "1861.T",
+   "name": "熊谷組",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1406186500.0
+  },
+  {
+   "code": "44780",
+   "ticker": "4478.T",
+   "name": "フリー",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 1402670000.0
+  },
+  {
+   "code": "82820",
+   "ticker": "8282.T",
+   "name": "ケーズホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1401046100.0
+  },
+  {
+   "code": "40990",
+   "ticker": "4099.T",
+   "name": "四国化成ホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1398982000.0
+  },
+  {
+   "code": "60160",
+   "ticker": "6016.T",
+   "name": "ジャパンエンジンコーポレーション",
+   "market": "スタンダード",
+   "sector": "輸送用機器",
+   "va_at_selection": 1393071000.0
+  },
+  {
+   "code": "90080",
+   "ticker": "9008.T",
+   "name": "京王電鉄",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1390173700.0
+  },
+  {
+   "code": "60050",
+   "ticker": "6005.T",
+   "name": "三浦工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1388021500.0
+  },
+  {
+   "code": "40550",
+   "ticker": "4055.T",
+   "name": "ティアンドエスグループ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 1384101900.0
+  },
+  {
+   "code": "85080",
+   "ticker": "8508.T",
+   "name": "Ｊトラスト",
+   "market": "スタンダード",
+   "sector": "その他金融業",
+   "va_at_selection": 1383709100.0
+  },
+  {
+   "code": "34450",
+   "ticker": "3445.T",
+   "name": "ＲＳ　Ｔｅｃｈｎｏｌｏｇｉｅｓ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 1382208000.0
+  },
+  {
+   "code": "42720",
+   "ticker": "4272.T",
+   "name": "日本化薬",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1373811650.0
+  },
+  {
+   "code": "33970",
+   "ticker": "3397.T",
+   "name": "トリドールホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1372628500.0
+  },
+  {
+   "code": "89840",
+   "ticker": "8984.T",
+   "name": "大和ハウスリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1371540900.0
+  },
+  {
+   "code": "40230",
+   "ticker": "4023.T",
+   "name": "クレハ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1364510000.0
+  },
+  {
+   "code": "90060",
+   "ticker": "9006.T",
+   "name": "京浜急行電鉄",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1359143000.0
+  },
+  {
+   "code": "22120",
+   "ticker": "2212.T",
+   "name": "山崎製パン",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1359041900.0
+  },
+  {
+   "code": "41070",
+   "ticker": "4107.T",
+   "name": "伊勢化学工業",
+   "market": "スタンダード",
+   "sector": "化学",
+   "va_at_selection": 1356155500.0
+  },
+  {
+   "code": "68140",
+   "ticker": "6814.T",
+   "name": "古野電気",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1355381000.0
+  },
+  {
+   "code": "63760",
+   "ticker": "6376.T",
+   "name": "日機装",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 1353690300.0
+  },
+  {
+   "code": "215A0",
+   "ticker": "215A.T",
+   "name": "タイミー",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 1352519300.0
+  },
+  {
+   "code": "17190",
+   "ticker": "1719.T",
+   "name": "安藤・間",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1346761700.0
+  },
+  {
+   "code": "65160",
+   "ticker": "6516.T",
+   "name": "山洋電気",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1338871000.0
+  },
+  {
+   "code": "77170",
+   "ticker": "7717.T",
+   "name": "ブイ・テクノロジー",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 1337047000.0
+  },
+  {
+   "code": "91660",
+   "ticker": "9166.T",
+   "name": "ＧＥＮＤＡ",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 1335728800.0
+  },
+  {
+   "code": "18850",
+   "ticker": "1885.T",
+   "name": "東亜建設工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1330164300.0
+  },
+  {
+   "code": "44610",
+   "ticker": "4461.T",
+   "name": "第一工業製薬",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1327234000.0
+  },
+  {
+   "code": "15150",
+   "ticker": "1515.T",
+   "name": "日鉄鉱業",
+   "market": "プライム",
+   "sector": "鉱業",
+   "va_at_selection": 1325596200.0
+  },
+  {
+   "code": "19790",
+   "ticker": "1979.T",
+   "name": "大氣社",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1324745000.0
+  },
+  {
+   "code": "94010",
+   "ticker": "9401.T",
+   "name": "ＴＢＳホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1319513200.0
+  },
+  {
+   "code": "76850",
+   "ticker": "7685.T",
+   "name": "ＢｕｙＳｅｌｌ　Ｔｅｃｈｎｏｌｏｇｉｅｓ",
+   "market": "グロース",
+   "sector": "卸売業",
+   "va_at_selection": 1312390000.0
+  },
+  {
+   "code": "64650",
+   "ticker": "6465.T",
+   "name": "ホシザキ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1307376000.0
+  },
+  {
+   "code": "34620",
+   "ticker": "3462.T",
+   "name": "野村不動産マスターファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1302998900.0
+  },
+  {
+   "code": "29800",
+   "ticker": "2980.T",
+   "name": "ＳＲＥホールディングス",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 1296629400.0
+  },
+  {
+   "code": "84100",
+   "ticker": "8410.T",
+   "name": "セブン銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1295561610.0
+  },
+  {
+   "code": "73800",
+   "ticker": "7380.T",
+   "name": "十六フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1291280400.0
+  },
+  {
+   "code": "28100",
+   "ticker": "2810.T",
+   "name": "ハウス食品グループ本社",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1286745600.0
+  },
+  {
+   "code": "79400",
+   "ticker": "7940.T",
+   "name": "ウェーブロックホールディングス",
+   "market": "スタンダード",
+   "sector": "化学",
+   "va_at_selection": 1282461600.0
+  },
+  {
+   "code": "39410",
+   "ticker": "3941.T",
+   "name": "レンゴー",
+   "market": "プライム",
+   "sector": "パルプ・紙",
+   "va_at_selection": 1272888100.0
+  },
+  {
+   "code": "83810",
+   "ticker": "8381.T",
+   "name": "山陰合同銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1271424700.0
+  },
+  {
+   "code": "83670",
+   "ticker": "8367.T",
+   "name": "南都銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1264569600.0
+  },
+  {
+   "code": "80860",
+   "ticker": "8086.T",
+   "name": "ニプロ",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 1263768200.0
+  },
+  {
+   "code": "90650",
+   "ticker": "9065.T",
+   "name": "山九",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 1260377500.0
+  },
+  {
+   "code": "75640",
+   "ticker": "7564.T",
+   "name": "ワークマン",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 1258960000.0
+  },
+  {
+   "code": "79950",
+   "ticker": "7995.T",
+   "name": "バルカー",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1258377000.0
+  },
+  {
+   "code": "93640",
+   "ticker": "9364.T",
+   "name": "上組",
+   "market": "プライム",
+   "sector": "倉庫･運輸関連業",
+   "va_at_selection": 1248514900.0
+  },
+  {
+   "code": "26700",
+   "ticker": "2670.T",
+   "name": "エービーシー・マート",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1248279500.0
+  },
+  {
+   "code": "32910",
+   "ticker": "3291.T",
+   "name": "飯田グループホールディングス",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 1233184000.0
+  },
+  {
+   "code": "48160",
+   "ticker": "4816.T",
+   "name": "東映アニメーション",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 1233020500.0
+  },
+  {
+   "code": "66320",
+   "ticker": "6632.T",
+   "name": "ＪＶＣケンウッド",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1232126050.0
+  },
+  {
+   "code": "80120",
+   "ticker": "8012.T",
+   "name": "長瀬産業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1222374500.0
+  },
+  {
+   "code": "14140",
+   "ticker": "1414.T",
+   "name": "ショーボンドホールディングス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 1208003550.0
+  },
+  {
+   "code": "24330",
+   "ticker": "2433.T",
+   "name": "博報堂ＤＹホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1206635000.0
+  },
+  {
+   "code": "25310",
+   "ticker": "2531.T",
+   "name": "宝ホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1203209950.0
+  },
+  {
+   "code": "24920",
+   "ticker": "2492.T",
+   "name": "インフォマート",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1202256600.0
+  },
+  {
+   "code": "57260",
+   "ticker": "5726.T",
+   "name": "大阪チタニウムテクノロジーズ",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 1200083100.0
+  },
+  {
+   "code": "83360",
+   "ticker": "8336.T",
+   "name": "武蔵野銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1197646300.0
+  },
+  {
+   "code": "59470",
+   "ticker": "5947.T",
+   "name": "リンナイ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 1196933200.0
+  },
+  {
+   "code": "43730",
+   "ticker": "4373.T",
+   "name": "シンプレクス・ホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1196199100.0
+  },
+  {
+   "code": "30890",
+   "ticker": "3089.T",
+   "name": "テクノアルファ",
+   "market": "スタンダード",
+   "sector": "卸売業",
+   "va_at_selection": 1194657800.0
+  },
+  {
+   "code": "41800",
+   "ticker": "4180.T",
+   "name": "Ａｐｐｉｅｒ　Ｇｒｏｕｐ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1191448100.0
+  },
+  {
+   "code": "54710",
+   "ticker": "5471.T",
+   "name": "大同特殊鋼",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 1190150950.0
+  },
+  {
+   "code": "31860",
+   "ticker": "3186.T",
+   "name": "ネクステージ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1188469000.0
+  },
+  {
+   "code": "67070",
+   "ticker": "6707.T",
+   "name": "サンケン電気",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1188174700.0
+  },
+  {
+   "code": "85850",
+   "ticker": "8585.T",
+   "name": "オリエントコーポレーション",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 1183284300.0
+  },
+  {
+   "code": "86980",
+   "ticker": "8698.T",
+   "name": "マネックスグループ",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 1180071700.0
+  },
+  {
+   "code": "32490",
+   "ticker": "3249.T",
+   "name": "産業ファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1179431000.0
+  },
+  {
+   "code": "86280",
+   "ticker": "8628.T",
+   "name": "松井証券",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 1168394000.0
+  },
+  {
+   "code": "39940",
+   "ticker": "3994.T",
+   "name": "マネーフォワード",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1164670300.0
+  },
+  {
+   "code": "46760",
+   "ticker": "4676.T",
+   "name": "フジ・メディア・ホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1156437900.0
+  },
+  {
+   "code": "70040",
+   "ticker": "7004.T",
+   "name": "カナデビア",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1146614800.0
+  },
+  {
+   "code": "49700",
+   "ticker": "4970.T",
+   "name": "東洋合成工業",
+   "market": "スタンダード",
+   "sector": "化学",
+   "va_at_selection": 1144477000.0
+  },
+  {
+   "code": "81740",
+   "ticker": "8174.T",
+   "name": "日本瓦斯",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1142221550.0
+  },
+  {
+   "code": "74190",
+   "ticker": "7419.T",
+   "name": "ノジマ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1141159600.0
+  },
+  {
+   "code": "36920",
+   "ticker": "3692.T",
+   "name": "ＦＦＲＩセキュリティ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 1139071000.0
+  },
+  {
+   "code": "255A0",
+   "ticker": "255A.T",
+   "name": "ジーエルテクノホールディングス",
+   "market": "スタンダード",
+   "sector": "精密機器",
+   "va_at_selection": 1137708000.0
+  },
+  {
+   "code": "79560",
+   "ticker": "7956.T",
+   "name": "ピジョン",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 1135755400.0
+  },
+  {
+   "code": "39930",
+   "ticker": "3993.T",
+   "name": "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1132448400.0
+  },
+  {
+   "code": "14750",
+   "ticker": "1475.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ・コア　ＴＯＰＩＸ　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1118628206.0
+  },
+  {
+   "code": "38630",
+   "ticker": "3863.T",
+   "name": "日本製紙",
+   "market": "プライム",
+   "sector": "パルプ・紙",
+   "va_at_selection": 1116025900.0
+  },
+  {
+   "code": "45400",
+   "ticker": "4540.T",
+   "name": "ツムラ",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 1114853600.0
+  },
+  {
+   "code": "69600",
+   "ticker": "6960.T",
+   "name": "フクダ電子",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 1111936000.0
+  },
+  {
+   "code": "36870",
+   "ticker": "3687.T",
+   "name": "フィックスターズ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1110428000.0
+  },
+  {
+   "code": "22960",
+   "ticker": "2296.T",
+   "name": "伊藤ハム米久ホールディングス",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1109816500.0
+  },
+  {
+   "code": "38910",
+   "ticker": "3891.T",
+   "name": "ニッポン高度紙工業",
+   "market": "スタンダード",
+   "sector": "パルプ・紙",
+   "va_at_selection": 1107726000.0
+  },
+  {
+   "code": "53840",
+   "ticker": "5384.T",
+   "name": "フジミインコーポレーテッド",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 1103835500.0
+  },
+  {
+   "code": "336A0",
+   "ticker": "336A.T",
+   "name": "ダイナミックマッププラットフォーム",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 1098249200.0
+  },
+  {
+   "code": "16550",
+   "ticker": "1655.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ　Ｓ＆Ｐ　５００　米国株　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1097654320.0
+  },
+  {
+   "code": "97060",
+   "ticker": "9706.T",
+   "name": "日本空港ビルデング",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 1097017000.0
+  },
+  {
+   "code": "62580",
+   "ticker": "6258.T",
+   "name": "平田機工",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1094735100.0
+  },
+  {
+   "code": "64320",
+   "ticker": "6432.T",
+   "name": "竹内製作所",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1093476000.0
+  },
+  {
+   "code": "69460",
+   "ticker": "6946.T",
+   "name": "日本アビオニクス",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 1090796000.0
+  },
+  {
+   "code": "88760",
+   "ticker": "8876.T",
+   "name": "リログループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1086997500.0
+  },
+  {
+   "code": "89540",
+   "ticker": "8954.T",
+   "name": "オリックス不動産投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1086529200.0
+  },
+  {
+   "code": "42930",
+   "ticker": "4293.T",
+   "name": "セプテーニ・ホールディングス",
+   "market": "スタンダード",
+   "sector": "サービス業",
+   "va_at_selection": 1086211700.0
+  },
+  {
+   "code": "58320",
+   "ticker": "5832.T",
+   "name": "ちゅうぎんフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1079898300.0
+  },
+  {
+   "code": "31010",
+   "ticker": "3101.T",
+   "name": "東洋紡",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 1074311500.0
+  },
+  {
+   "code": "68000",
+   "ticker": "6800.T",
+   "name": "ヨコオ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1073315500.0
+  },
+  {
+   "code": "71570",
+   "ticker": "7157.T",
+   "name": "ライフネット生命保険",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 1072941600.0
+  },
+  {
+   "code": "30460",
+   "ticker": "3046.T",
+   "name": "ジンズホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 1070103000.0
+  },
+  {
+   "code": "61430",
+   "ticker": "6143.T",
+   "name": "ソディック",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1065062500.0
+  },
+  {
+   "code": "62660",
+   "ticker": "6266.T",
+   "name": "タツモ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 1061277500.0
+  },
+  {
+   "code": "70820",
+   "ticker": "7082.T",
+   "name": "ジモティー",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 1058278100.0
+  },
+  {
+   "code": "45440",
+   "ticker": "4544.T",
+   "name": "Ｈ．Ｕ．グループホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1056412400.0
+  },
+  {
+   "code": "57030",
+   "ticker": "5703.T",
+   "name": "日本軽金属ホールディングス",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 1053314500.0
+  },
+  {
+   "code": "32690",
+   "ticker": "3269.T",
+   "name": "アドバンス・レジデンス投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1041031400.0
+  },
+  {
+   "code": "92470",
+   "ticker": "9247.T",
+   "name": "ＴＲＥホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1037095800.0
+  },
+  {
+   "code": "58510",
+   "ticker": "5851.T",
+   "name": "リョービ",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 1035955800.0
+  },
+  {
+   "code": "65440",
+   "ticker": "6544.T",
+   "name": "ジャパンエレベーターサービスホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 1028164550.0
+  },
+  {
+   "code": "36350",
+   "ticker": "3635.T",
+   "name": "コーエーテクモホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1023188950.0
+  },
+  {
+   "code": "94490",
+   "ticker": "9449.T",
+   "name": "ＧＭＯインターネットグループ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1022976000.0
+  },
+  {
+   "code": "72360",
+   "ticker": "7236.T",
+   "name": "ティラド",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 1019374000.0
+  },
+  {
+   "code": "27600",
+   "ticker": "2760.T",
+   "name": "東京エレクトロン　デバイス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1018990000.0
+  },
+  {
+   "code": "47330",
+   "ticker": "4733.T",
+   "name": "オービックビジネスコンサルタント",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 1018722900.0
+  },
+  {
+   "code": "66170",
+   "ticker": "6617.T",
+   "name": "東光高岳",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 1018418000.0
+  },
+  {
+   "code": "85220",
+   "ticker": "8522.T",
+   "name": "名古屋銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 1016242000.0
+  },
+  {
+   "code": "25930",
+   "ticker": "2593.T",
+   "name": "伊藤園",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 1013668200.0
+  },
+  {
+   "code": "32830",
+   "ticker": "3283.T",
+   "name": "日本プロロジスリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1012649000.0
+  },
+  {
+   "code": "80200",
+   "ticker": "8020.T",
+   "name": "兼松",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 1012416600.0
+  },
+  {
+   "code": "93690",
+   "ticker": "9369.T",
+   "name": "キユーソー流通システム",
+   "market": "スタンダード",
+   "sector": "倉庫･運輸関連業",
+   "va_at_selection": 1011699500.0
+  },
+  {
+   "code": "79840",
+   "ticker": "7984.T",
+   "name": "コクヨ",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 1007325570.0
+  },
+  {
+   "code": "74090",
+   "ticker": "7409.T",
+   "name": "ＡｅｒｏＥｄｇｅ",
+   "market": "グロース",
+   "sector": "輸送用機器",
+   "va_at_selection": 1006118000.0
+  },
+  {
+   "code": "13560",
+   "ticker": "1356.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　ＴＯＰＩＸベア２倍上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 1003495868.0
+  },
+  {
+   "code": "95520",
+   "ticker": "9552.T",
+   "name": "クオンツ総研ホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 998801000.0
+  },
+  {
+   "code": "38100",
+   "ticker": "3810.T",
+   "name": "サイバーステップホールディングス",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 995627900.0
+  },
+  {
+   "code": "26070",
+   "ticker": "2607.T",
+   "name": "不二製油",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 995576500.0
+  },
+  {
+   "code": "19480",
+   "ticker": "1948.T",
+   "name": "弘電社",
+   "market": "スタンダード",
+   "sector": "建設業",
+   "va_at_selection": 994842000.0
+  },
+  {
+   "code": "13770",
+   "ticker": "1377.T",
+   "name": "サカタのタネ",
+   "market": "プライム",
+   "sector": "水産・農林業",
+   "va_at_selection": 993525000.0
+  },
+  {
+   "code": "49670",
+   "ticker": "4967.T",
+   "name": "小林製薬",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 992393800.0
+  },
+  {
+   "code": "95040",
+   "ticker": "9504.T",
+   "name": "中国電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 990735940.0
+  },
+  {
+   "code": "82420",
+   "ticker": "8242.T",
+   "name": "エイチ・ツー・オー　リテイリング",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 984139450.0
+  },
+  {
+   "code": "25580",
+   "ticker": "2558.T",
+   "name": "三菱ＵＦＪアセットマネジメント株式会社　ＭＡＸＩＳ米国株式（Ｓ＆Ｐ５００）上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 980152690.0
+  },
+  {
+   "code": "85700",
+   "ticker": "8570.T",
+   "name": "イオンフィナンシャルサービス",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 975358050.0
+  },
+  {
+   "code": "90750",
+   "ticker": "9075.T",
+   "name": "福山通運",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 975274000.0
+  },
+  {
+   "code": "64900",
+   "ticker": "6490.T",
+   "name": "ＰＩＬＬＡＲ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 970164000.0
+  },
+  {
+   "code": "83600",
+   "ticker": "8360.T",
+   "name": "山梨中央銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 966404000.0
+  },
+  {
+   "code": "90440",
+   "ticker": "9044.T",
+   "name": "ＮＡＮＫＡＩ",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 966019350.0
+  },
+  {
+   "code": "73810",
+   "ticker": "7381.T",
+   "name": "ＣＣＩグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 964619700.0
+  },
+  {
+   "code": "63310",
+   "ticker": "6331.T",
+   "name": "三菱化工機",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 959569500.0
+  },
+  {
+   "code": "26310",
+   "ticker": "2631.T",
+   "name": "三菱ＵＦＪアセットマネジメント株式会社　ＭＡＸＩＳナスダック１００上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 959112300.0
+  },
+  {
+   "code": "21210",
+   "ticker": "2121.T",
+   "name": "ＭＩＸＩ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 957849300.0
+  },
+  {
+   "code": "27300",
+   "ticker": "2730.T",
+   "name": "エディオン",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 955205100.0
+  },
+  {
+   "code": "23340",
+   "ticker": "2334.T",
+   "name": "イオレ",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 954071500.0
+  },
+  {
+   "code": "13080",
+   "ticker": "1308.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンドＴＯＰＩＸ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 954057046.0
+  },
+  {
+   "code": "31160",
+   "ticker": "3116.T",
+   "name": "トヨタ紡織",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 953241350.0
+  },
+  {
+   "code": "49660",
+   "ticker": "4966.T",
+   "name": "上村工業",
+   "market": "スタンダード",
+   "sector": "化学",
+   "va_at_selection": 950012000.0
+  },
+  {
+   "code": "40280",
+   "ticker": "4028.T",
+   "name": "石原産業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 947144400.0
+  },
+  {
+   "code": "62620",
+   "ticker": "6262.T",
+   "name": "ＰＥＧＡＳＵＳ",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 943318900.0
+  },
+  {
+   "code": "20360",
+   "ticker": "2036.T",
+   "name": "ノムラ・ヨーロッパ・ファイナンス・エヌ・ブイ　ＮＥＸＴ　ＮＯＴＥＳ　金先物　ダブル・ブル　ＥＴＮ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 941320750.0
+  },
+  {
+   "code": "33090",
+   "ticker": "3309.T",
+   "name": "積水ハウス・リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 936927500.0
+  },
+  {
+   "code": "48890",
+   "ticker": "4889.T",
+   "name": "レナサイエンス",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 927652700.0
+  },
+  {
+   "code": "73890",
+   "ticker": "7389.T",
+   "name": "あいちフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 927257400.0
+  },
+  {
+   "code": "14170",
+   "ticker": "1417.T",
+   "name": "ミライト・ワン",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 926091500.0
+  },
+  {
+   "code": "93020",
+   "ticker": "9302.T",
+   "name": "三井倉庫ホールディングス",
+   "market": "プライム",
+   "sector": "倉庫･運輸関連業",
+   "va_at_selection": 925210700.0
+  },
+  {
+   "code": "68380",
+   "ticker": "6838.T",
+   "name": "多摩川ホールディングス",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 922710200.0
+  },
+  {
+   "code": "80780",
+   "ticker": "8078.T",
+   "name": "阪和興業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 919384000.0
+  },
+  {
+   "code": "85950",
+   "ticker": "8595.T",
+   "name": "ジャフコ　グループ",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 918935450.0
+  },
+  {
+   "code": "16630",
+   "ticker": "1663.T",
+   "name": "Ｋ＆Ｏエナジーグループ",
+   "market": "プライム",
+   "sector": "鉱業",
+   "va_at_selection": 916477000.0
+  },
+  {
+   "code": "314A0",
+   "ticker": "314A.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ　ゴールド　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 912604749.0
+  },
+  {
+   "code": "85500",
+   "ticker": "8550.T",
+   "name": "栃木銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 909634300.0
+  },
+  {
+   "code": "34010",
+   "ticker": "3401.T",
+   "name": "帝人",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 906899600.0
+  },
+  {
+   "code": "61400",
+   "ticker": "6140.T",
+   "name": "旭ダイヤモンド工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 906803300.0
+  },
+  {
+   "code": "27820",
+   "ticker": "2782.T",
+   "name": "セリア",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 906530500.0
+  },
+  {
+   "code": "83860",
+   "ticker": "8386.T",
+   "name": "百十四銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 901762600.0
+  },
+  {
+   "code": "29720",
+   "ticker": "2972.T",
+   "name": "サンケイリアルエステート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 894910200.0
+  },
+  {
+   "code": "90450",
+   "ticker": "9045.T",
+   "name": "京阪ホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 892555500.0
+  },
+  {
+   "code": "46810",
+   "ticker": "4681.T",
+   "name": "リゾートトラスト",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 886785800.0
+  },
+  {
+   "code": "27840",
+   "ticker": "2784.T",
+   "name": "アルフレッサ　ホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 886479600.0
+  },
+  {
+   "code": "83460",
+   "ticker": "8346.T",
+   "name": "東邦銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 886186800.0
+  },
+  {
+   "code": "316A0",
+   "ticker": "316A.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　ＦＡＮＧ＋",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 886182872.0
+  },
+  {
+   "code": "80500",
+   "ticker": "8050.T",
+   "name": "セイコーグループ",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 885983000.0
+  },
+  {
+   "code": "64120",
+   "ticker": "6412.T",
+   "name": "平和",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 885089200.0
+  },
+  {
+   "code": "46260",
+   "ticker": "4626.T",
+   "name": "太陽ホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 884663700.0
+  },
+  {
+   "code": "67370",
+   "ticker": "6737.T",
+   "name": "ＥＩＺＯ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 883778200.0
+  },
+  {
+   "code": "350A0",
+   "ticker": "350A.T",
+   "name": "デジタルグリッド",
+   "market": "グロース",
+   "sector": "電気･ガス業",
+   "va_at_selection": 878382100.0
+  },
+  {
+   "code": "22060",
+   "ticker": "2206.T",
+   "name": "江崎グリコ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 877390700.0
+  },
+  {
+   "code": "68660",
+   "ticker": "6866.T",
+   "name": "日置電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 875590000.0
+  },
+  {
+   "code": "41140",
+   "ticker": "4114.T",
+   "name": "日本触媒",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 875364250.0
+  },
+  {
+   "code": "89190",
+   "ticker": "8919.T",
+   "name": "カチタス",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 873450000.0
+  },
+  {
+   "code": "36730",
+   "ticker": "3673.T",
+   "name": "ブロードリーフ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 873157700.0
+  },
+  {
+   "code": "67270",
+   "ticker": "6727.T",
+   "name": "ワコム",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 871111600.0
+  },
+  {
+   "code": "44830",
+   "ticker": "4483.T",
+   "name": "ＪＭＤＣ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 871099700.0
+  },
+  {
+   "code": "34710",
+   "ticker": "3471.T",
+   "name": "三井不動産ロジスティクスパーク投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 870501700.0
+  },
+  {
+   "code": "67680",
+   "ticker": "6768.T",
+   "name": "タムラ製作所",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 866316800.0
+  },
+  {
+   "code": "57150",
+   "ticker": "5715.T",
+   "name": "古河機械金属",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 865001500.0
+  },
+  {
+   "code": "72780",
+   "ticker": "7278.T",
+   "name": "エクセディ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 855552000.0
+  },
+  {
+   "code": "282A0",
+   "ticker": "282A.T",
+   "name": "Ｇｌｏｂａｌ　Ｘ　Ｊａｐａｎ株式会社　グローバルＸ　半導体・トップ１０−日本株式　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 855175592.0
+  },
+  {
+   "code": "98610",
+   "ticker": "9861.T",
+   "name": "吉野家ホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 854835000.0
+  },
+  {
+   "code": "80610",
+   "ticker": "8061.T",
+   "name": "西華産業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 853480400.0
+  },
+  {
+   "code": "35490",
+   "ticker": "3549.T",
+   "name": "クスリのアオキホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 852093100.0
+  },
+  {
+   "code": "21270",
+   "ticker": "2127.T",
+   "name": "日本Ｍ＆Ａセンターホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 847537510.0
+  },
+  {
+   "code": "79060",
+   "ticker": "7906.T",
+   "name": "ヨネックス",
+   "market": "スタンダード",
+   "sector": "その他製品",
+   "va_at_selection": 839111500.0
+  },
+  {
+   "code": "81790",
+   "ticker": "8179.T",
+   "name": "ロイヤルホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 838710900.0
+  },
+  {
+   "code": "30480",
+   "ticker": "3048.T",
+   "name": "ビックカメラ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 834266550.0
+  },
+  {
+   "code": "99870",
+   "ticker": "9987.T",
+   "name": "スズケン",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 832880300.0
+  },
+  {
+   "code": "85720",
+   "ticker": "8572.T",
+   "name": "アコム",
+   "market": "スタンダード",
+   "sector": "その他金融業",
+   "va_at_selection": 824728120.0
+  },
+  {
+   "code": "48870",
+   "ticker": "4887.T",
+   "name": "サワイグループホールディングス",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 824623050.0
+  },
+  {
+   "code": "93480",
+   "ticker": "9348.T",
+   "name": "ｉｓｐａｃｅ",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 823573300.0
+  },
+  {
+   "code": "71990",
+   "ticker": "7199.T",
+   "name": "プレミアグループ",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 818509900.0
+  },
+  {
+   "code": "45870",
+   "ticker": "4587.T",
+   "name": "ペプチドリーム",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 814525600.0
+  },
+  {
+   "code": "45470",
+   "ticker": "4547.T",
+   "name": "キッセイ薬品工業",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 813180000.0
+  },
+  {
+   "code": "21460",
+   "ticker": "2146.T",
+   "name": "ＵＴグループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 811081100.0
+  },
+  {
+   "code": "76060",
+   "ticker": "7606.T",
+   "name": "ユナイテッドアローズ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 808638200.0
+  },
+  {
+   "code": "95330",
+   "ticker": "9533.T",
+   "name": "東邦瓦斯",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 805773200.0
+  },
+  {
+   "code": "22220",
+   "ticker": "2222.T",
+   "name": "寿スピリッツ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 801411500.0
+  },
+  {
+   "code": "85440",
+   "ticker": "8544.T",
+   "name": "京葉銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 795100500.0
+  },
+  {
+   "code": "55410",
+   "ticker": "5541.T",
+   "name": "大平洋金属",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 793763500.0
+  },
+  {
+   "code": "64570",
+   "ticker": "6457.T",
+   "name": "グローリー",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 791952000.0
+  },
+  {
+   "code": "81110",
+   "ticker": "8111.T",
+   "name": "ゴールドウイン",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 784399850.0
+  },
+  {
+   "code": "57270",
+   "ticker": "5727.T",
+   "name": "東邦チタニウム",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 782935500.0
+  },
+  {
+   "code": "77440",
+   "ticker": "7744.T",
+   "name": "ノーリツ鋼機",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 779837700.0
+  },
+  {
+   "code": "18200",
+   "ticker": "1820.T",
+   "name": "西松建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 768008000.0
+  },
+  {
+   "code": "60130",
+   "ticker": "6013.T",
+   "name": "タクマ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 760753000.0
+  },
+  {
+   "code": "41870",
+   "ticker": "4187.T",
+   "name": "大阪有機化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 758398000.0
+  },
+  {
+   "code": "52320",
+   "ticker": "5232.T",
+   "name": "住友大阪セメント",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 757806000.0
+  },
+  {
+   "code": "77340",
+   "ticker": "7734.T",
+   "name": "理研計器",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 753482500.0
+  },
+  {
+   "code": "23840",
+   "ticker": "2384.T",
+   "name": "ＳＢＳホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 752403500.0
+  },
+  {
+   "code": "47840",
+   "ticker": "4784.T",
+   "name": "ＧＭＯインターネット",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 751427800.0
+  },
+  {
+   "code": "44130",
+   "ticker": "4413.T",
+   "name": "ボードルア",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 743585000.0
+  },
+  {
+   "code": "37530",
+   "ticker": "3753.T",
+   "name": "フライトソリューションズ",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 735344400.0
+  },
+  {
+   "code": "58520",
+   "ticker": "5852.T",
+   "name": "アーレスティ",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 733722500.0
+  },
+  {
+   "code": "74590",
+   "ticker": "7459.T",
+   "name": "メディパルホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 731981250.0
+  },
+  {
+   "code": "18350",
+   "ticker": "1835.T",
+   "name": "東鉄工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 730309000.0
+  },
+  {
+   "code": "69990",
+   "ticker": "6999.T",
+   "name": "ＫＯＡ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 726617200.0
+  },
+  {
+   "code": "80160",
+   "ticker": "8016.T",
+   "name": "オンワードホールディングス",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 726231800.0
+  },
+  {
+   "code": "41090",
+   "ticker": "4109.T",
+   "name": "ステラ　ケミファ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 724857000.0
+  },
+  {
+   "code": "97220",
+   "ticker": "9722.T",
+   "name": "藤田観光",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 721274100.0
+  },
+  {
+   "code": "72260",
+   "ticker": "7226.T",
+   "name": "極東開発工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 721175700.0
+  },
+  {
+   "code": "40460",
+   "ticker": "4046.T",
+   "name": "大阪ソーダ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 720357200.0
+  },
+  {
+   "code": "32820",
+   "ticker": "3282.T",
+   "name": "コンフォリア・レジデンシャル投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 719386700.0
+  },
+  {
+   "code": "19520",
+   "ticker": "1952.T",
+   "name": "新日本空調",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 715491000.0
+  },
+  {
+   "code": "93360",
+   "ticker": "9336.T",
+   "name": "大栄環境",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 714936500.0
+  },
+  {
+   "code": "36600",
+   "ticker": "3660.T",
+   "name": "アイスタイル",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 713846900.0
+  },
+  {
+   "code": "31040",
+   "ticker": "3104.T",
+   "name": "富士紡ホールディングス",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 703487000.0
+  },
+  {
+   "code": "48940",
+   "ticker": "4894.T",
+   "name": "クオリプス",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 701978000.0
+  },
+  {
+   "code": "72400",
+   "ticker": "7240.T",
+   "name": "ＮＯＫ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 699960500.0
+  },
+  {
+   "code": "27260",
+   "ticker": "2726.T",
+   "name": "パルグループホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 693068000.0
+  },
+  {
+   "code": "22700",
+   "ticker": "2270.T",
+   "name": "雪印メグミルク",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 690889500.0
+  },
+  {
+   "code": "66440",
+   "ticker": "6644.T",
+   "name": "大崎電気工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 688078600.0
+  },
+  {
+   "code": "67450",
+   "ticker": "6745.T",
+   "name": "ホーチキ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 688066000.0
+  },
+  {
+   "code": "34920",
+   "ticker": "3492.T",
+   "name": "ＭＩＲＡＲＴＨ不動産投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 684408500.0
+  },
+  {
+   "code": "213A0",
+   "ticker": "213A.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンド日経半導体株",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 681431159.0
+  },
+  {
+   "code": "44190",
+   "ticker": "4419.T",
+   "name": "Ｆｉｎａｔｅｘｔホールディングス",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 676911800.0
+  },
+  {
+   "code": "77160",
+   "ticker": "7716.T",
+   "name": "ナカニシ",
+   "market": "スタンダード",
+   "sector": "精密機器",
+   "va_at_selection": 676357900.0
+  },
+  {
+   "code": "27670",
+   "ticker": "2767.T",
+   "name": "円谷フィールズホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 675915000.0
+  },
+  {
+   "code": "89640",
+   "ticker": "8964.T",
+   "name": "フロンティア不動産投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 675150900.0
+  },
+  {
+   "code": "22010",
+   "ticker": "2201.T",
+   "name": "森永製菓",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 673102350.0
+  },
+  {
+   "code": "62260",
+   "ticker": "6226.T",
+   "name": "守谷輸送機工業",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 671372800.0
+  },
+  {
+   "code": "49740",
+   "ticker": "4974.T",
+   "name": "タカラバイオ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 671235400.0
+  },
+  {
+   "code": "89550",
+   "ticker": "8955.T",
+   "name": "日本プライムリアルティ投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 668750100.0
+  },
+  {
+   "code": "31910",
+   "ticker": "3191.T",
+   "name": "ジョイフル本田",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 666724900.0
+  },
+  {
+   "code": "94090",
+   "ticker": "9409.T",
+   "name": "テレビ朝日ホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 663669000.0
+  },
+  {
+   "code": "32010",
+   "ticker": "3201.T",
+   "name": "日本毛織",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 657738600.0
+  },
+  {
+   "code": "23260",
+   "ticker": "2326.T",
+   "name": "デジタルアーツ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 657237000.0
+  },
+  {
+   "code": "32340",
+   "ticker": "3234.T",
+   "name": "森ヒルズリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 656827300.0
+  },
+  {
+   "code": "30970",
+   "ticker": "3097.T",
+   "name": "物語コーポレーション",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 656020000.0
+  },
+  {
+   "code": "96720",
+   "ticker": "9672.T",
+   "name": "東京都競馬",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 653857000.0
+  },
+  {
+   "code": "69580",
+   "ticker": "6958.T",
+   "name": "日本シイエムケイ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 652379500.0
+  },
+  {
+   "code": "68490",
+   "ticker": "6849.T",
+   "name": "日本光電工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 650040250.0
+  },
+  {
+   "code": "95050",
+   "ticker": "9505.T",
+   "name": "北陸電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 649870670.0
+  },
+  {
+   "code": "35690",
+   "ticker": "3569.T",
+   "name": "セーレン",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 648521500.0
+  },
+  {
+   "code": "84250",
+   "ticker": "8425.T",
+   "name": "みずほリース",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 648219500.0
+  },
+  {
+   "code": "13330",
+   "ticker": "1333.T",
+   "name": "Ｕｍｉｏｓ",
+   "market": "プライム",
+   "sector": "水産・農林業",
+   "va_at_selection": 648175700.0
+  },
+  {
+   "code": "63320",
+   "ticker": "6332.T",
+   "name": "月島ホールディングス",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 648023400.0
+  },
+  {
+   "code": "34660",
+   "ticker": "3466.T",
+   "name": "ラサールロジポート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 647256100.0
+  },
+  {
+   "code": "32920",
+   "ticker": "3292.T",
+   "name": "イオンリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 644790900.0
+  },
+  {
+   "code": "71840",
+   "ticker": "7184.T",
+   "name": "富山第一銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 643286300.0
+  },
+  {
+   "code": "67940",
+   "ticker": "6794.T",
+   "name": "フォスター電機",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 642133200.0
+  },
+  {
+   "code": "39320",
+   "ticker": "3932.T",
+   "name": "アカツキ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 641989500.0
+  },
+  {
+   "code": "96050",
+   "ticker": "9605.T",
+   "name": "東映",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 641365000.0
+  },
+  {
+   "code": "80220",
+   "ticker": "8022.T",
+   "name": "美津濃",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 637977500.0
+  },
+  {
+   "code": "417A0",
+   "ticker": "417A.T",
+   "name": "ブルーゾーンホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 636146200.0
+  },
+  {
+   "code": "83930",
+   "ticker": "8393.T",
+   "name": "宮崎銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 632238600.0
+  },
+  {
+   "code": "66590",
+   "ticker": "6659.T",
+   "name": "メディアリンクス",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 632201600.0
+  },
+  {
+   "code": "71480",
+   "ticker": "7148.T",
+   "name": "ＦＰＧ",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 631136200.0
+  },
+  {
+   "code": "74560",
+   "ticker": "7456.T",
+   "name": "松田産業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 630051000.0
+  },
+  {
+   "code": "79720",
+   "ticker": "7972.T",
+   "name": "イトーキ",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 627829000.0
+  },
+  {
+   "code": "31070",
+   "ticker": "3107.T",
+   "name": "ダイワボウホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 627616300.0
+  },
+  {
+   "code": "94180",
+   "ticker": "9418.T",
+   "name": "Ｕ−ＮＥＸＴ　ＨＯＬＤＩＮＧＳ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 625704000.0
+  },
+  {
+   "code": "72450",
+   "ticker": "7245.T",
+   "name": "大同メタル工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 620055400.0
+  },
+  {
+   "code": "32260",
+   "ticker": "3226.T",
+   "name": "三井不動産アコモデーションファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 615918600.0
+  },
+  {
+   "code": "40820",
+   "ticker": "4082.T",
+   "name": "第一稀元素化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 615847400.0
+  },
+  {
+   "code": "28110",
+   "ticker": "2811.T",
+   "name": "カゴメ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 615575450.0
+  },
+  {
+   "code": "54230",
+   "ticker": "5423.T",
+   "name": "東京製鐵",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 613213400.0
+  },
+  {
+   "code": "25590",
+   "ticker": "2559.T",
+   "name": "三菱ＵＦＪアセットマネジメント株式会社　ＭＡＸＩＳ全世界株式（オール・カントリー）上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 612246625.0
+  },
+  {
+   "code": "37650",
+   "ticker": "3765.T",
+   "name": "ガンホー・オンライン・エンターテイメント",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 611729300.0
+  },
+  {
+   "code": "94360",
+   "ticker": "9436.T",
+   "name": "沖縄セルラー電話",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 610707500.0
+  },
+  {
+   "code": "48190",
+   "ticker": "4819.T",
+   "name": "デジタルガレージ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 610490800.0
+  },
+  {
+   "code": "72240",
+   "ticker": "7224.T",
+   "name": "新明和工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 609937700.0
+  },
+  {
+   "code": "63270",
+   "ticker": "6327.T",
+   "name": "北川精機",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 608021900.0
+  },
+  {
+   "code": "84240",
+   "ticker": "8424.T",
+   "name": "芙蓉総合リース",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 607669400.0
+  },
+  {
+   "code": "49750",
+   "ticker": "4975.T",
+   "name": "ＪＣＵ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 605054000.0
+  },
+  {
+   "code": "26780",
+   "ticker": "2678.T",
+   "name": "アスクル",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 604197500.0
+  },
+  {
+   "code": "26340",
+   "ticker": "2634.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　Ｓ＆Ｐ　５００　指数（為替ヘッジあり）連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 603722416.0
+  },
+  {
+   "code": "73220",
+   "ticker": "7322.T",
+   "name": "三十三フィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 601827400.0
+  },
+  {
+   "code": "87150",
+   "ticker": "8715.T",
+   "name": "アニコム　ホールディングス",
+   "market": "プライム",
+   "sector": "保険業",
+   "va_at_selection": 599582700.0
+  },
+  {
+   "code": "26590",
+   "ticker": "2659.T",
+   "name": "サンエー",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 598289500.0
+  },
+  {
+   "code": "44250",
+   "ticker": "4425.T",
+   "name": "Ｋｕｄａｎ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 597849700.0
+  },
+  {
+   "code": "42750",
+   "ticker": "4275.T",
+   "name": "カーリット",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 595276900.0
+  },
+  {
+   "code": "55630",
+   "ticker": "5563.T",
+   "name": "新日本電工",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 594709700.0
+  },
+  {
+   "code": "32960",
+   "ticker": "3296.T",
+   "name": "日本リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 594546000.0
+  },
+  {
+   "code": "32790",
+   "ticker": "3279.T",
+   "name": "アクティビア・プロパティーズ投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 594379900.0
+  },
+  {
+   "code": "86000",
+   "ticker": "8600.T",
+   "name": "トモニホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 593010700.0
+  },
+  {
+   "code": "57020",
+   "ticker": "5702.T",
+   "name": "大紀アルミニウム工業所",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 592238500.0
+  },
+  {
+   "code": "89580",
+   "ticker": "8958.T",
+   "name": "グローバル・ワン不動産投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 591618300.0
+  },
+  {
+   "code": "79440",
+   "ticker": "7944.T",
+   "name": "ローランド",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 591053000.0
+  },
+  {
+   "code": "325A0",
+   "ticker": "325A.T",
+   "name": "ＴＥＮＴＩＡＬ",
+   "market": "グロース",
+   "sector": "繊維製品",
+   "va_at_selection": 588962000.0
+  },
+  {
+   "code": "34330",
+   "ticker": "3433.T",
+   "name": "トーカロ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 588239000.0
+  },
+  {
+   "code": "36120",
+   "ticker": "3612.T",
+   "name": "ワールド",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 585949300.0
+  },
+  {
+   "code": "16290",
+   "ticker": "1629.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　商社・卸売（ＴＯＰＩＸ−１７）上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 585505920.0
+  },
+  {
+   "code": "45650",
+   "ticker": "4565.T",
+   "name": "ネクセラファーマ",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 585477200.0
+  },
+  {
+   "code": "75990",
+   "ticker": "7599.T",
+   "name": "ＩＤＯＭ",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 583994300.0
+  },
+  {
+   "code": "83700",
+   "ticker": "8370.T",
+   "name": "紀陽銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 583734500.0
+  },
+  {
+   "code": "19680",
+   "ticker": "1968.T",
+   "name": "太平電業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 582508200.0
+  },
+  {
+   "code": "39070",
+   "ticker": "3907.T",
+   "name": "シリコンスタジオ",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 580819000.0
+  },
+  {
+   "code": "95070",
+   "ticker": "9507.T",
+   "name": "四国電力",
+   "market": "プライム",
+   "sector": "電気･ガス業",
+   "va_at_selection": 578555500.0
+  },
+  {
+   "code": "13280",
+   "ticker": "1328.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　金価格連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 573976235.0
+  },
+  {
+   "code": "86160",
+   "ticker": "8616.T",
+   "name": "東海東京フィナンシャル・ホールディングス",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 571689400.0
+  },
+  {
+   "code": "64360",
+   "ticker": "6436.T",
+   "name": "アマノ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 571664500.0
+  },
+  {
+   "code": "26210",
+   "ticker": "2621.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ　米国債２０年超　ＥＴＦ（為替ヘッジあり）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 570684417.0
+  },
+  {
+   "code": "31060",
+   "ticker": "3106.T",
+   "name": "倉敷紡績",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 568592000.0
+  },
+  {
+   "code": "67360",
+   "ticker": "6736.T",
+   "name": "サン電子",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 567860000.0
+  },
+  {
+   "code": "89760",
+   "ticker": "8976.T",
+   "name": "大和証券オフィス投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 566746000.0
+  },
+  {
+   "code": "59700",
+   "ticker": "5970.T",
+   "name": "ジーテクト",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 565791000.0
+  },
+  {
+   "code": "23790",
+   "ticker": "2379.T",
+   "name": "ディップ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 565241300.0
+  },
+  {
+   "code": "83880",
+   "ticker": "8388.T",
+   "name": "阿波銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 564840000.0
+  },
+  {
+   "code": "40410",
+   "ticker": "4041.T",
+   "name": "日本曹達",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 563933500.0
+  },
+  {
+   "code": "77800",
+   "ticker": "7780.T",
+   "name": "メニコン",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 562753000.0
+  },
+  {
+   "code": "167A0",
+   "ticker": "167A.T",
+   "name": "リョーサン菱洋ホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 561220600.0
+  },
+  {
+   "code": "45490",
+   "ticker": "4549.T",
+   "name": "栄研化学",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 560501300.0
+  },
+  {
+   "code": "73500",
+   "ticker": "7350.T",
+   "name": "おきなわフィナンシャルグループ",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 560208000.0
+  },
+  {
+   "code": "20010",
+   "ticker": "2001.T",
+   "name": "ニップン",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 559687900.0
+  },
+  {
+   "code": "48120",
+   "ticker": "4812.T",
+   "name": "電通総研",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 558015700.0
+  },
+  {
+   "code": "319A0",
+   "ticker": "319A.T",
+   "name": "技術承継機構",
+   "market": "グロース",
+   "sector": "金属製品",
+   "va_at_selection": 557116000.0
+  },
+  {
+   "code": "81540",
+   "ticker": "8154.T",
+   "name": "加賀電子",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 556504000.0
+  },
+  {
+   "code": "49270",
+   "ticker": "4927.T",
+   "name": "ポーラ・オルビスホールディングス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 556320350.0
+  },
+  {
+   "code": "63710",
+   "ticker": "6371.T",
+   "name": "椿本チエイン",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 555798800.0
+  },
+  {
+   "code": "19500",
+   "ticker": "1950.T",
+   "name": "日本電設工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 555277000.0
+  },
+  {
+   "code": "29820",
+   "ticker": "2982.T",
+   "name": "ＡＤワークスグループ",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 555090000.0
+  },
+  {
+   "code": "73180",
+   "ticker": "7318.T",
+   "name": "セレンディップ・ホールディングス",
+   "market": "グロース",
+   "sector": "輸送用機器",
+   "va_at_selection": 554767300.0
+  },
+  {
+   "code": "83990",
+   "ticker": "8399.T",
+   "name": "琉球銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 548513300.0
+  },
+  {
+   "code": "78390",
+   "ticker": "7839.T",
+   "name": "ＳＨＯＥＩ",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 547260800.0
+  },
+  {
+   "code": "39620",
+   "ticker": "3962.T",
+   "name": "チェンジホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 547228300.0
+  },
+  {
+   "code": "35430",
+   "ticker": "3543.T",
+   "name": "コメダホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 546173400.0
+  },
+  {
+   "code": "19650",
+   "ticker": "1965.T",
+   "name": "テクノ菱和",
+   "market": "スタンダード",
+   "sector": "建設業",
+   "va_at_selection": 545810000.0
+  },
+  {
+   "code": "35910",
+   "ticker": "3591.T",
+   "name": "ワコールホールディングス",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 544601300.0
+  },
+  {
+   "code": "89560",
+   "ticker": "8956.T",
+   "name": "ＮＴＴ都市開発リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 542929100.0
+  },
+  {
+   "code": "83450",
+   "ticker": "8345.T",
+   "name": "岩手銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 539308200.0
+  },
+  {
+   "code": "75450",
+   "ticker": "7545.T",
+   "name": "西松屋チェーン",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 538064900.0
+  },
+  {
+   "code": "29860",
+   "ticker": "2986.T",
+   "name": "ＬＡホールディングス",
+   "market": "グロース",
+   "sector": "不動産業",
+   "va_at_selection": 537017000.0
+  },
+  {
+   "code": "26020",
+   "ticker": "2602.T",
+   "name": "日清オイリオグループ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 534494900.0
+  },
+  {
+   "code": "93030",
+   "ticker": "9303.T",
+   "name": "住友倉庫",
+   "market": "プライム",
+   "sector": "倉庫･運輸関連業",
+   "va_at_selection": 534276500.0
+  },
+  {
+   "code": "88480",
+   "ticker": "8848.T",
+   "name": "レオパレス２１",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 533005000.0
+  },
+  {
+   "code": "60230",
+   "ticker": "6023.T",
+   "name": "ダイハツインフィニアース",
+   "market": "スタンダード",
+   "sector": "輸送用機器",
+   "va_at_selection": 532440200.0
+  },
+  {
+   "code": "14360",
+   "ticker": "1436.T",
+   "name": "グリーンエナジー＆カンパニー",
+   "market": "グロース",
+   "sector": "建設業",
+   "va_at_selection": 532120800.0
+  },
+  {
+   "code": "33870",
+   "ticker": "3387.T",
+   "name": "クリエイト・レストランツ・ホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 531378300.0
+  },
+  {
+   "code": "96030",
+   "ticker": "9603.T",
+   "name": "エイチ・アイ・エス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 530917700.0
+  },
+  {
+   "code": "46340",
+   "ticker": "4634.T",
+   "name": "ａｒｔｉｅｎｃｅ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 529146500.0
+  },
+  {
+   "code": "21750",
+   "ticker": "2175.T",
+   "name": "エス・エム・エス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 528714700.0
+  },
+  {
+   "code": "30020",
+   "ticker": "3002.T",
+   "name": "グンゼ",
+   "market": "プライム",
+   "sector": "繊維製品",
+   "va_at_selection": 523899500.0
+  },
+  {
+   "code": "65230",
+   "ticker": "6523.T",
+   "name": "ＰＨＣホールディングス",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 523149800.0
+  },
+  {
+   "code": "135A0",
+   "ticker": "135A.T",
+   "name": "ＶＲＡＩＮ　Ｓｏｌｕｔｉｏｎ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 522537000.0
+  },
+  {
+   "code": "85840",
+   "ticker": "8584.T",
+   "name": "ジャックス",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 522374500.0
+  },
+  {
+   "code": "63630",
+   "ticker": "6363.T",
+   "name": "酉島製作所",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 519307500.0
+  },
+  {
+   "code": "32870",
+   "ticker": "3287.T",
+   "name": "星野リゾート・リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 519172400.0
+  },
+  {
+   "code": "42460",
+   "ticker": "4246.T",
+   "name": "ダイキョーニシカワ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 516172400.0
+  },
+  {
+   "code": "73830",
+   "ticker": "7383.T",
+   "name": "ネットプロテクションズホールディングス",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 516008300.0
+  },
+  {
+   "code": "221A0",
+   "ticker": "221A.T",
+   "name": "三菱ＵＦＪアセットマネジメント株式会社　ＭＡＸＩＳ日経半導体株上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 514938350.0
+  },
+  {
+   "code": "53310",
+   "ticker": "5331.T",
+   "name": "ノリタケ",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 514679000.0
+  },
+  {
+   "code": "44990",
+   "ticker": "4499.T",
+   "name": "Ｓｐｅｅｅ",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 513576500.0
+  },
+  {
+   "code": "74760",
+   "ticker": "7476.T",
+   "name": "アズワン",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 511379950.0
+  },
+  {
+   "code": "44800",
+   "ticker": "4480.T",
+   "name": "メドレー",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 510130700.0
+  },
+  {
+   "code": "163A0",
+   "ticker": "163A.T",
+   "name": "三菱ＵＦＪ証券ホールディングス株式会社　半導体フォーカス　日本株（ネットリターン）ＥＴＮ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 507243955.0
+  },
+  {
+   "code": "42060",
+   "ticker": "4206.T",
+   "name": "アイカ工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 506819200.0
+  },
+  {
+   "code": "42900",
+   "ticker": "4290.T",
+   "name": "プレステージ・インターナショナル",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 506744200.0
+  },
+  {
+   "code": "13260",
+   "ticker": "1326.T",
+   "name": "ワールド・ゴールド・トラスト・サービシズ・エルエルシー　ＳＰＤＲゴールド・シェア",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 506321600.0
+  },
+  {
+   "code": "26850",
+   "ticker": "2685.T",
+   "name": "アンドエスティＨＤ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 504543000.0
+  },
+  {
+   "code": "90690",
+   "ticker": "9069.T",
+   "name": "センコーグループホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 504368600.0
+  },
+  {
+   "code": "19460",
+   "ticker": "1946.T",
+   "name": "トーエネック",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 503272900.0
+  },
+  {
+   "code": "78060",
+   "ticker": "7806.T",
+   "name": "ＭＴＧ",
+   "market": "グロース",
+   "sector": "その他製品",
+   "va_at_selection": 502401000.0
+  },
+  {
+   "code": "19260",
+   "ticker": "1926.T",
+   "name": "ライト工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 499791500.0
+  },
+  {
+   "code": "563A0",
+   "ticker": "563A.T",
+   "name": "Ｇｌｏｂａｌ　Ｘ　Ｊａｐａｎ株式会社　グローバルＸ　ＮＡＳＤＡＱ１００・デイリー・カバード・コール　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 498003716.0
+  },
+  {
+   "code": "34800",
+   "ticker": "3480.T",
+   "name": "ジェイ・エス・ビー",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 496539000.0
+  },
+  {
+   "code": "277A0",
+   "ticker": "277A.T",
+   "name": "グロービング",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 495883900.0
+  },
+  {
+   "code": "44360",
+   "ticker": "4436.T",
+   "name": "ミンカブ・ジ・インフォノイド",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 494777400.0
+  },
+  {
+   "code": "45160",
+   "ticker": "4516.T",
+   "name": "日本新薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 492676300.0
+  },
+  {
+   "code": "75520",
+   "ticker": "7552.T",
+   "name": "ハピネット",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 487983300.0
+  },
+  {
+   "code": "96270",
+   "ticker": "9627.T",
+   "name": "アインホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 487451200.0
+  },
+  {
+   "code": "72420",
+   "ticker": "7242.T",
+   "name": "カヤバ",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 487313500.0
+  },
+  {
+   "code": "44170",
+   "ticker": "4417.T",
+   "name": "グローバルセキュリティエキスパート",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 486427900.0
+  },
+  {
+   "code": "67440",
+   "ticker": "6744.T",
+   "name": "能美防災",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 485636500.0
+  },
+  {
+   "code": "29310",
+   "ticker": "2931.T",
+   "name": "ユーグレナ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 484710100.0
+  },
+  {
+   "code": "70470",
+   "ticker": "7047.T",
+   "name": "ポート",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 484193800.0
+  },
+  {
+   "code": "77400",
+   "ticker": "7740.T",
+   "name": "タムロン",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 482954400.0
+  },
+  {
+   "code": "45530",
+   "ticker": "4553.T",
+   "name": "東和薬品",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 480522000.0
+  },
+  {
+   "code": "98320",
+   "ticker": "9832.T",
+   "name": "オートバックスセブン",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 479323800.0
+  },
+  {
+   "code": "69930",
+   "ticker": "6993.T",
+   "name": "大黒屋ホールディングス",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 478128900.0
+  },
+  {
+   "code": "99360",
+   "ticker": "9936.T",
+   "name": "王将フードサービス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 476587200.0
+  },
+  {
+   "code": "71720",
+   "ticker": "7172.T",
+   "name": "ジャパンインベストメントアドバイザー",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 475788700.0
+  },
+  {
+   "code": "54100",
+   "ticker": "5410.T",
+   "name": "合同製鐵",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 474930100.0
+  },
+  {
+   "code": "83920",
+   "ticker": "8392.T",
+   "name": "大分銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 473832800.0
+  },
+  {
+   "code": "59890",
+   "ticker": "5989.T",
+   "name": "エイチワン",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 473746700.0
+  },
+  {
+   "code": "32950",
+   "ticker": "3295.T",
+   "name": "ヒューリックリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 473521100.0
+  },
+  {
+   "code": "17200",
+   "ticker": "1720.T",
+   "name": "東急建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 473363600.0
+  },
+  {
+   "code": "34430",
+   "ticker": "3443.T",
+   "name": "川田テクノロジーズ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 473235100.0
+  },
+  {
+   "code": "77790",
+   "ticker": "7779.T",
+   "name": "ＣＹＢＥＲＤＹＮＥ",
+   "market": "グロース",
+   "sector": "精密機器",
+   "va_at_selection": 472993300.0
+  },
+  {
+   "code": "87710",
+   "ticker": "8771.T",
+   "name": "イー・ギャランティ",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 471846600.0
+  },
+  {
+   "code": "34960",
+   "ticker": "3496.T",
+   "name": "アズーム",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 471637000.0
+  },
+  {
+   "code": "78460",
+   "ticker": "7846.T",
+   "name": "パイロットコーポレーション",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 471185800.0
+  },
+  {
+   "code": "40920",
+   "ticker": "4092.T",
+   "name": "日本化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 469422000.0
+  },
+  {
+   "code": "76090",
+   "ticker": "7609.T",
+   "name": "ダイトロン",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 466125500.0
+  },
+  {
+   "code": "318A0",
+   "ticker": "318A.T",
+   "name": "ＶＩＸ短期先物指数ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 465738992.0
+  },
+  {
+   "code": "21680",
+   "ticker": "2168.T",
+   "name": "パソナグループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 465429600.0
+  },
+  {
+   "code": "32520",
+   "ticker": "3252.T",
+   "name": "地主",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 465032500.0
+  },
+  {
+   "code": "97550",
+   "ticker": "9755.T",
+   "name": "応用地質",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 464068800.0
+  },
+  {
+   "code": "56440",
+   "ticker": "5644.T",
+   "name": "メタルアート",
+   "market": "スタンダード",
+   "sector": "鉄鋼",
+   "va_at_selection": 462592000.0
+  },
+  {
+   "code": "48250",
+   "ticker": "4825.T",
+   "name": "ウェザーニューズ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 461746300.0
+  },
+  {
+   "code": "18330",
+   "ticker": "1833.T",
+   "name": "奥村組",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 461743000.0
+  },
+  {
+   "code": "15710",
+   "ticker": "1571.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ日経平均インバース・インデックス連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 461552394.0
+  },
+  {
+   "code": "70180",
+   "ticker": "7018.T",
+   "name": "内海造船",
+   "market": "スタンダード",
+   "sector": "輸送用機器",
+   "va_at_selection": 457462000.0
+  },
+  {
+   "code": "45520",
+   "ticker": "4552.T",
+   "name": "ＪＣＲファーマ",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 456511200.0
+  },
+  {
+   "code": "69290",
+   "ticker": "6929.T",
+   "name": "日本セラミック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 455128500.0
+  },
+  {
+   "code": "36610",
+   "ticker": "3661.T",
+   "name": "エムアップホールディングス",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 454550400.0
+  },
+  {
+   "code": "97930",
+   "ticker": "9793.T",
+   "name": "ダイセキ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 453286000.0
+  },
+  {
+   "code": "27800",
+   "ticker": "2780.T",
+   "name": "コメ兵ホールディングス",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 452509000.0
+  },
+  {
+   "code": "79150",
+   "ticker": "7915.T",
+   "name": "ＮＩＳＳＨＡ",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 452407700.0
+  },
+  {
+   "code": "44710",
+   "ticker": "4471.T",
+   "name": "三洋化成工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 452054000.0
+  },
+  {
+   "code": "89860",
+   "ticker": "8986.T",
+   "name": "大和証券リビング投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 451009500.0
+  },
+  {
+   "code": "49190",
+   "ticker": "4919.T",
+   "name": "ミルボン",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 446793200.0
+  },
+  {
+   "code": "16230",
+   "ticker": "1623.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　鉄鋼・非鉄（ＴＯＰＩＸ−１７）上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 445621320.0
+  },
+  {
+   "code": "41890",
+   "ticker": "4189.T",
+   "name": "ＫＨネオケム",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 444865000.0
+  },
+  {
+   "code": "54820",
+   "ticker": "5482.T",
+   "name": "愛知製鋼",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 444734700.0
+  },
+  {
+   "code": "44750",
+   "ticker": "4475.T",
+   "name": "ＨＥＮＮＧＥ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 442937600.0
+  },
+  {
+   "code": "64740",
+   "ticker": "6474.T",
+   "name": "不二越",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 441791000.0
+  },
+  {
+   "code": "15800",
+   "ticker": "1580.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　日経平均ベア上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 440157618.0
+  },
+  {
+   "code": "46330",
+   "ticker": "4633.T",
+   "name": "サカタインクス",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 439091200.0
+  },
+  {
+   "code": "22440",
+   "ticker": "2244.T",
+   "name": "Ｇｌｏｂａｌ　Ｘ　Ｊａｐａｎ株式会社　グローバルＸ　ＵＳ　テック・トップ２０　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 438127627.0
+  },
+  {
+   "code": "34810",
+   "ticker": "3481.T",
+   "name": "三菱地所物流リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 437990600.0
+  },
+  {
+   "code": "89670",
+   "ticker": "8967.T",
+   "name": "日本ロジスティクスファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 437515000.0
+  },
+  {
+   "code": "60800",
+   "ticker": "6080.T",
+   "name": "Ｍ＆Ａキャピタルパートナーズ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 437135500.0
+  },
+  {
+   "code": "99340",
+   "ticker": "9934.T",
+   "name": "因幡電機産業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 436624600.0
+  },
+  {
+   "code": "61730",
+   "ticker": "6173.T",
+   "name": "アクアライン",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 434959900.0
+  },
+  {
+   "code": "71770",
+   "ticker": "7177.T",
+   "name": "ＧＭＯフィナンシャルホールディングス",
+   "market": "スタンダード",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 433144400.0
+  },
+  {
+   "code": "97460",
+   "ticker": "9746.T",
+   "name": "ＴＫＣ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 432766000.0
+  },
+  {
+   "code": "287A0",
+   "ticker": "287A.T",
+   "name": "黒田グループ",
+   "market": "スタンダード",
+   "sector": "卸売業",
+   "va_at_selection": 432646800.0
+  },
+  {
+   "code": "13050",
+   "ticker": "1305.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　ＴＯＰＩＸ（年１回決算型）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 432628170.0
+  },
+  {
+   "code": "45210",
+   "ticker": "4521.T",
+   "name": "科研製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 432274500.0
+  },
+  {
+   "code": "37410",
+   "ticker": "3741.T",
+   "name": "セック",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 432021500.0
+  },
+  {
+   "code": "281A0",
+   "ticker": "281A.T",
+   "name": "インフォメティス",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 429370600.0
+  },
+  {
+   "code": "61040",
+   "ticker": "6104.T",
+   "name": "芝浦機械",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 423590500.0
+  },
+  {
+   "code": "73840",
+   "ticker": "7384.T",
+   "name": "プロクレアホールディングス",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 423557000.0
+  },
+  {
+   "code": "14820",
+   "ticker": "1482.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ・コア　米国債７−１０年　ＥＴＦ（為替ヘッジあり）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 423536909.0
+  },
+  {
+   "code": "219A0",
+   "ticker": "219A.T",
+   "name": "Ｈｅａｒｔｓｅｅｄ",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 421915500.0
+  },
+  {
+   "code": "89870",
+   "ticker": "8987.T",
+   "name": "ジャパンエクセレント投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 417794300.0
+  },
+  {
+   "code": "61960",
+   "ticker": "6196.T",
+   "name": "ストライクグループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 417623600.0
+  },
+  {
+   "code": "68100",
+   "ticker": "6810.T",
+   "name": "マクセル",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 416258400.0
+  },
+  {
+   "code": "19450",
+   "ticker": "1945.T",
+   "name": "東京エネシス",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 415443300.0
+  },
+  {
+   "code": "89570",
+   "ticker": "8957.T",
+   "name": "東急リアル・エステート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 415255200.0
+  },
+  {
+   "code": "78640",
+   "ticker": "7864.T",
+   "name": "フジシールインターナショナル",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 414305100.0
+  },
+  {
+   "code": "90030",
+   "ticker": "9003.T",
+   "name": "相鉄ホールディングス",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 414000450.0
+  },
+  {
+   "code": "81300",
+   "ticker": "8130.T",
+   "name": "サンゲツ",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 413222700.0
+  },
+  {
+   "code": "60880",
+   "ticker": "6088.T",
+   "name": "シグマクシス・ホールディングス",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 413004700.0
+  },
+  {
+   "code": "153A0",
+   "ticker": "153A.T",
+   "name": "カウリス",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 412884100.0
+  },
+  {
+   "code": "30500",
+   "ticker": "3050.T",
+   "name": "ＤＣＭホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 412856300.0
+  },
+  {
+   "code": "96820",
+   "ticker": "9682.T",
+   "name": "ＤＴＳ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 412617200.0
+  },
+  {
+   "code": "76110",
+   "ticker": "7611.T",
+   "name": "ハイデイ日高",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 411016600.0
+  },
+  {
+   "code": "17660",
+   "ticker": "1766.T",
+   "name": "東建コーポレーション",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 407531000.0
+  },
+  {
+   "code": "89230",
+   "ticker": "8923.T",
+   "name": "トーセイ",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 407454000.0
+  },
+  {
+   "code": "34820",
+   "ticker": "3482.T",
+   "name": "ロードスターキャピタル",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 405557300.0
+  },
+  {
+   "code": "23170",
+   "ticker": "2317.T",
+   "name": "システナ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 405458900.0
+  },
+  {
+   "code": "409A0",
+   "ticker": "409A.T",
+   "name": "オリオンビール",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 404603600.0
+  },
+  {
+   "code": "47460",
+   "ticker": "4746.T",
+   "name": "東計電算",
+   "market": "スタンダード",
+   "sector": "情報･通信業",
+   "va_at_selection": 404163000.0
+  },
+  {
+   "code": "40780",
+   "ticker": "4078.T",
+   "name": "堺化学工業",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 401732500.0
+  },
+  {
+   "code": "14880",
+   "ticker": "1488.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　東証ＲＥＩＴ指数",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 399285107.0
+  },
+  {
+   "code": "72870",
+   "ticker": "7287.T",
+   "name": "日本精機",
+   "market": "スタンダード",
+   "sector": "輸送用機器",
+   "va_at_selection": 399196500.0
+  },
+  {
+   "code": "45690",
+   "ticker": "4569.T",
+   "name": "杏林製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 398451900.0
+  },
+  {
+   "code": "79900",
+   "ticker": "7990.T",
+   "name": "グローブライド",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 397547600.0
+  },
+  {
+   "code": "34650",
+   "ticker": "3465.T",
+   "name": "ケイアイスター不動産",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 396256500.0
+  },
+  {
+   "code": "51860",
+   "ticker": "5186.T",
+   "name": "ニッタ",
+   "market": "プライム",
+   "sector": "ゴム製品",
+   "va_at_selection": 396205000.0
+  },
+  {
+   "code": "19750",
+   "ticker": "1975.T",
+   "name": "朝日工業社",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 393965000.0
+  },
+  {
+   "code": "19380",
+   "ticker": "1938.T",
+   "name": "日本リーテック",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 393836200.0
+  },
+  {
+   "code": "89750",
+   "ticker": "8975.T",
+   "name": "いちごオフィスリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 393488000.0
+  },
+  {
+   "code": "68590",
+   "ticker": "6859.T",
+   "name": "エスペック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 393244500.0
+  },
+  {
+   "code": "72800",
+   "ticker": "7280.T",
+   "name": "ミツバ",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 391632200.0
+  },
+  {
+   "code": "61450",
+   "ticker": "6145.T",
+   "name": "ＮＩＴＴＯＫＵ",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 391571100.0
+  },
+  {
+   "code": "82190",
+   "ticker": "8219.T",
+   "name": "青山商事",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 390898900.0
+  },
+  {
+   "code": "262A0",
+   "ticker": "262A.T",
+   "name": "インターメスティック",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 390772200.0
+  },
+  {
+   "code": "14780",
+   "ticker": "1478.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ　ＭＳＣＩ　ジャパン高配当利回り　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 390371956.0
+  },
+  {
+   "code": "18520",
+   "ticker": "1852.T",
+   "name": "淺沼組",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 389536700.0
+  },
+  {
+   "code": "18710",
+   "ticker": "1871.T",
+   "name": "ピーエス・コンストラクション",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 389184900.0
+  },
+  {
+   "code": "80980",
+   "ticker": "8098.T",
+   "name": "稲畑産業",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 388937000.0
+  },
+  {
+   "code": "40450",
+   "ticker": "4045.T",
+   "name": "東亞合成",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 388063500.0
+  },
+  {
+   "code": "19820",
+   "ticker": "1982.T",
+   "name": "日比谷総合設備",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 386006000.0
+  },
+  {
+   "code": "77300",
+   "ticker": "7730.T",
+   "name": "マニー",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 385187600.0
+  },
+  {
+   "code": "16990",
+   "ticker": "1699.T",
+   "name": "野村アセットマネジメント株式会社　ＮＥＸＴ　ＦＵＮＤＳ　ＮＯＭＵＲＡ　原油インデックス連動型上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 384782729.0
+  },
+  {
+   "code": "79470",
+   "ticker": "7947.T",
+   "name": "エフピコ",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 383775300.0
+  },
+  {
+   "code": "23270",
+   "ticker": "2327.T",
+   "name": "日鉄ソリューションズ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 383518200.0
+  },
+  {
+   "code": "18700",
+   "ticker": "1870.T",
+   "name": "矢作建設工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 382335800.0
+  },
+  {
+   "code": "66290",
+   "ticker": "6629.T",
+   "name": "テクノホライゾン",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 381931400.0
+  },
+  {
+   "code": "54510",
+   "ticker": "5451.T",
+   "name": "ヨドコウ",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 381314700.0
+  },
+  {
+   "code": "40710",
+   "ticker": "4071.T",
+   "name": "プラスアルファ・コンサルティング",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 381213900.0
+  },
+  {
+   "code": "83430",
+   "ticker": "8343.T",
+   "name": "秋田銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 376764000.0
+  },
+  {
+   "code": "62400",
+   "ticker": "6240.T",
+   "name": "ヤマシンフィルタ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 376148500.0
+  },
+  {
+   "code": "66760",
+   "ticker": "6676.T",
+   "name": "バッファロー",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 375415000.0
+  },
+  {
+   "code": "23370",
+   "ticker": "2337.T",
+   "name": "いちご",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 375081300.0
+  },
+  {
+   "code": "60360",
+   "ticker": "6036.T",
+   "name": "ＫｅｅＰｅｒ技研",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 374846900.0
+  },
+  {
+   "code": "15470",
+   "ticker": "1547.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンド米国株式（Ｓ＆Ｐ５００）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 374595890.0
+  },
+  {
+   "code": "68070",
+   "ticker": "6807.T",
+   "name": "日本航空電子工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 373256600.0
+  },
+  {
+   "code": "36360",
+   "ticker": "3636.T",
+   "name": "三菱総合研究所",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 373169500.0
+  },
+  {
+   "code": "96780",
+   "ticker": "9678.T",
+   "name": "カナモト",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 371926000.0
+  },
+  {
+   "code": "83440",
+   "ticker": "8344.T",
+   "name": "山形銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 371874500.0
+  },
+  {
+   "code": "85110",
+   "ticker": "8511.T",
+   "name": "日本証券金融",
+   "market": "プライム",
+   "sector": "その他金融業",
+   "va_at_selection": 371124600.0
+  },
+  {
+   "code": "76160",
+   "ticker": "7616.T",
+   "name": "コロワイド",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 370692900.0
+  },
+  {
+   "code": "74580",
+   "ticker": "7458.T",
+   "name": "第一興商",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 369302200.0
+  },
+  {
+   "code": "13670",
+   "ticker": "1367.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　ＴＯＰＩＸレバレッジ（２倍）指数",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 368896731.0
+  },
+  {
+   "code": "89610",
+   "ticker": "8961.T",
+   "name": "森トラストリート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 365800600.0
+  },
+  {
+   "code": "68040",
+   "ticker": "6804.T",
+   "name": "ホシデン",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 365575500.0
+  },
+  {
+   "code": "76780",
+   "ticker": "7678.T",
+   "name": "あさくま",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 365467000.0
+  },
+  {
+   "code": "52080",
+   "ticker": "5208.T",
+   "name": "有沢製作所",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 365321900.0
+  },
+  {
+   "code": "28400",
+   "ticker": "2840.T",
+   "name": "大和アセットマネジメント株式会社　ｉＦｒｅｅＥＴＦ　ＮＡＳＤＡＱ１００（為替ヘッジなし）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 364689399.0
+  },
+  {
+   "code": "23950",
+   "ticker": "2395.T",
+   "name": "新日本科学",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 363992800.0
+  },
+  {
+   "code": "48880",
+   "ticker": "4888.T",
+   "name": "ステラファーマ",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 363908200.0
+  },
+  {
+   "code": "64330",
+   "ticker": "6433.T",
+   "name": "ヒーハイスト",
+   "market": "スタンダード",
+   "sector": "機械",
+   "va_at_selection": 363248700.0
+  },
+  {
+   "code": "62980",
+   "ticker": "6298.T",
+   "name": "ワイエイシイホールディングス",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 363092800.0
+  },
+  {
+   "code": "79940",
+   "ticker": "7994.T",
+   "name": "オカムラ",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 362493600.0
+  },
+  {
+   "code": "18820",
+   "ticker": "1882.T",
+   "name": "東亜道路工業",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 362245100.0
+  },
+  {
+   "code": "34870",
+   "ticker": "3487.T",
+   "name": "ＣＲＥロジスティクスファンド投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 361904800.0
+  },
+  {
+   "code": "94240",
+   "ticker": "9424.T",
+   "name": "日本通信",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 361439900.0
+  },
+  {
+   "code": "332A0",
+   "ticker": "332A.T",
+   "name": "ミーク",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 360946200.0
+  },
+  {
+   "code": "34680",
+   "ticker": "3468.T",
+   "name": "スターアジア不動産投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 360549600.0
+  },
+  {
+   "code": "80510",
+   "ticker": "8051.T",
+   "name": "山善",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 359821000.0
+  },
+  {
+   "code": "82370",
+   "ticker": "8237.T",
+   "name": "松屋",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 359754300.0
+  },
+  {
+   "code": "64540",
+   "ticker": "6454.T",
+   "name": "マックス",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 359624300.0
+  },
+  {
+   "code": "20380",
+   "ticker": "2038.T",
+   "name": "ノムラ・ヨーロッパ・ファイナンス・エヌ・ブイ　ＮＥＸＴ　ＮＯＴＥＳ　ドバイ原油先物　ダブル・ブル　ＥＴＮ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 358796983.0
+  },
+  {
+   "code": "77450",
+   "ticker": "7745.T",
+   "name": "Ａ＆Ｄホロンホールディングス",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 356975300.0
+  },
+  {
+   "code": "72960",
+   "ticker": "7296.T",
+   "name": "エフ・シー・シー",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 356364000.0
+  },
+  {
+   "code": "15140",
+   "ticker": "1514.T",
+   "name": "住石ホールディングス",
+   "market": "スタンダード",
+   "sector": "鉱業",
+   "va_at_selection": 356014600.0
+  },
+  {
+   "code": "29620",
+   "ticker": "2962.T",
+   "name": "テクニスコ",
+   "market": "スタンダード",
+   "sector": "金属製品",
+   "va_at_selection": 355223000.0
+  },
+  {
+   "code": "97590",
+   "ticker": "9759.T",
+   "name": "ＮＳＤ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 354222300.0
+  },
+  {
+   "code": "64860",
+   "ticker": "6486.T",
+   "name": "イーグル工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 353518700.0
+  },
+  {
+   "code": "38650",
+   "ticker": "3865.T",
+   "name": "北越コーポレーション",
+   "market": "プライム",
+   "sector": "パルプ・紙",
+   "va_at_selection": 352196100.0
+  },
+  {
+   "code": "68770",
+   "ticker": "6877.T",
+   "name": "ＯＢＡＲＡ　ＧＲＯＵＰ",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 349678000.0
+  },
+  {
+   "code": "42630",
+   "ticker": "4263.T",
+   "name": "サスメド",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 349643000.0
+  },
+  {
+   "code": "33600",
+   "ticker": "3360.T",
+   "name": "シップヘルスケアホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 349075750.0
+  },
+  {
+   "code": "75130",
+   "ticker": "7513.T",
+   "name": "コジマ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 348862600.0
+  },
+  {
+   "code": "25690",
+   "ticker": "2569.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンド米国株式（ＮＡＳＤＡＱ１００）為替ヘッジあり",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 348846120.0
+  },
+  {
+   "code": "83870",
+   "ticker": "8387.T",
+   "name": "四国銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 347016500.0
+  },
+  {
+   "code": "42160",
+   "ticker": "4216.T",
+   "name": "旭有機材",
+   "market": "プライム",
+   "sector": "化学",
+   "va_at_selection": 346787000.0
+  },
+  {
+   "code": "38440",
+   "ticker": "3844.T",
+   "name": "コムチュア",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 346537200.0
+  },
+  {
+   "code": "13480",
+   "ticker": "1348.T",
+   "name": "三菱ＵＦＪアセットマネジメント株式会社　ＭＡＸＩＳ　トピックス上場投信",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 346357008.0
+  },
+  {
+   "code": "28150",
+   "ticker": "2815.T",
+   "name": "アリアケジャパン",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 346004000.0
+  },
+  {
+   "code": "63100",
+   "ticker": "6310.T",
+   "name": "井関農機",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 345538400.0
+  },
+  {
+   "code": "49720",
+   "ticker": "4972.T",
+   "name": "綜研化学",
+   "market": "スタンダード",
+   "sector": "化学",
+   "va_at_selection": 345361000.0
+  },
+  {
+   "code": "13690",
+   "ticker": "1369.T",
+   "name": "アセットマネジメントＯｎｅ株式会社　Ｏｎｅ　ＥＴＦ　日経２２５",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 344804910.0
+  },
+  {
+   "code": "65840",
+   "ticker": "6584.T",
+   "name": "三櫻工業",
+   "market": "プライム",
+   "sector": "輸送用機器",
+   "va_at_selection": 344193700.0
+  },
+  {
+   "code": "92790",
+   "ticker": "9279.T",
+   "name": "ギフトホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 344098000.0
+  },
+  {
+   "code": "30910",
+   "ticker": "3091.T",
+   "name": "ブロンコビリー",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 343505000.0
+  },
+  {
+   "code": "82140",
+   "ticker": "8214.T",
+   "name": "ＡＯＫＩホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 343446900.0
+  },
+  {
+   "code": "92740",
+   "ticker": "9274.T",
+   "name": "ＫＰＰグループホールディングス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 342819200.0
+  },
+  {
+   "code": "18140",
+   "ticker": "1814.T",
+   "name": "大末建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 342001000.0
+  },
+  {
+   "code": "61970",
+   "ticker": "6197.T",
+   "name": "ソラスト",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 341781300.0
+  },
+  {
+   "code": "28570",
+   "ticker": "2857.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ　ドイツ国債　ＥＴＦ（為替ヘッジあり）",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 341129840.0
+  },
+  {
+   "code": "89340",
+   "ticker": "8934.T",
+   "name": "サンフロンティア不動産",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 340044300.0
+  },
+  {
+   "code": "45340",
+   "ticker": "4534.T",
+   "name": "持田製薬",
+   "market": "プライム",
+   "sector": "医薬品",
+   "va_at_selection": 338565500.0
+  },
+  {
+   "code": "67410",
+   "ticker": "6741.T",
+   "name": "日本信号",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 337941900.0
+  },
+  {
+   "code": "82730",
+   "ticker": "8273.T",
+   "name": "イズミ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 337229800.0
+  },
+  {
+   "code": "25160",
+   "ticker": "2516.T",
+   "name": "シンプレクス・アセット・マネジメント株式会社　東証グロース２５０ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 337120503.0
+  },
+  {
+   "code": "34440",
+   "ticker": "3444.T",
+   "name": "菊池製作所",
+   "market": "スタンダード",
+   "sector": "金属製品",
+   "va_at_selection": 336369600.0
+  },
+  {
+   "code": "63790",
+   "ticker": "6379.T",
+   "name": "レイズネクスト",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 335739900.0
+  },
+  {
+   "code": "64190",
+   "ticker": "6419.T",
+   "name": "マースグループホールディングス",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 335143000.0
+  },
+  {
+   "code": "166A0",
+   "ticker": "166A.T",
+   "name": "タスキホールディングス",
+   "market": "グロース",
+   "sector": "不動産業",
+   "va_at_selection": 335062700.0
+  },
+  {
+   "code": "22920",
+   "ticker": "2292.T",
+   "name": "Ｓ　Ｆｏｏｄｓ",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 334872500.0
+  },
+  {
+   "code": "45930",
+   "ticker": "4593.T",
+   "name": "ヘリオス",
+   "market": "グロース",
+   "sector": "医薬品",
+   "va_at_selection": 334700000.0
+  },
+  {
+   "code": "63690",
+   "ticker": "6369.T",
+   "name": "トーヨーカネツ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 333478700.0
+  },
+  {
+   "code": "82180",
+   "ticker": "8218.T",
+   "name": "コメリ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 333284000.0
+  },
+  {
+   "code": "25680",
+   "ticker": "2568.T",
+   "name": "アモーヴァ・アセットマネジメント株式会社　上場インデックスファンド米国株式（ＮＡＳＤＡＱ１００）為替ヘッジなし",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 333002576.0
+  },
+  {
+   "code": "46650",
+   "ticker": "4665.T",
+   "name": "ダスキン",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 332768500.0
+  },
+  {
+   "code": "52020",
+   "ticker": "5202.T",
+   "name": "日本板硝子",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 332329200.0
+  },
+  {
+   "code": "69940",
+   "ticker": "6994.T",
+   "name": "指月電機製作所",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 331535000.0
+  },
+  {
+   "code": "54400",
+   "ticker": "5440.T",
+   "name": "共英製鋼",
+   "market": "プライム",
+   "sector": "鉄鋼",
+   "va_at_selection": 330368200.0
+  },
+  {
+   "code": "61910",
+   "ticker": "6191.T",
+   "name": "エアトリ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 330313200.0
+  },
+  {
+   "code": "64980",
+   "ticker": "6498.T",
+   "name": "キッツ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 330073400.0
+  },
+  {
+   "code": "17230",
+   "ticker": "1723.T",
+   "name": "日本電技",
+   "market": "スタンダード",
+   "sector": "建設業",
+   "va_at_selection": 329300400.0
+  },
+  {
+   "code": "91100",
+   "ticker": "9110.T",
+   "name": "ＮＳユナイテッド海運",
+   "market": "プライム",
+   "sector": "海運業",
+   "va_at_selection": 327412000.0
+  },
+  {
+   "code": "45260",
+   "ticker": "4526.T",
+   "name": "理研ビタミン",
+   "market": "プライム",
+   "sector": "食料品",
+   "va_at_selection": 325831000.0
+  },
+  {
+   "code": "29750",
+   "ticker": "2975.T",
+   "name": "スター・マイカ・ホールディングス",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 325762200.0
+  },
+  {
+   "code": "27050",
+   "ticker": "2705.T",
+   "name": "大戸屋ホールディングス",
+   "market": "スタンダード",
+   "sector": "小売業",
+   "va_at_selection": 325302000.0
+  },
+  {
+   "code": "73750",
+   "ticker": "7375.T",
+   "name": "リファインバースグループ",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 325280600.0
+  },
+  {
+   "code": "34150",
+   "ticker": "3415.T",
+   "name": "ＴＯＫＹＯ　ＢＡＳＥ",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 325246500.0
+  },
+  {
+   "code": "65880",
+   "ticker": "6588.T",
+   "name": "東芝テック",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 325152000.0
+  },
+  {
+   "code": "19410",
+   "ticker": "1941.T",
+   "name": "中電工",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 325098000.0
+  },
+  {
+   "code": "15180",
+   "ticker": "1518.T",
+   "name": "三井松島ホールディングス",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 324995900.0
+  },
+  {
+   "code": "81940",
+   "ticker": "8194.T",
+   "name": "ライフコーポレーション",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 323943800.0
+  },
+  {
+   "code": "19340",
+   "ticker": "1934.T",
+   "name": "ユアテック",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 323813200.0
+  },
+  {
+   "code": "83370",
+   "ticker": "8337.T",
+   "name": "千葉興業銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 322528500.0
+  },
+  {
+   "code": "46860",
+   "ticker": "4686.T",
+   "name": "ジャストシステム",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 322383000.0
+  },
+  {
+   "code": "80370",
+   "ticker": "8037.T",
+   "name": "カメイ",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 321578500.0
+  },
+  {
+   "code": "34310",
+   "ticker": "3431.T",
+   "name": "宮地エンジニアリンググループ",
+   "market": "プライム",
+   "sector": "金属製品",
+   "va_at_selection": 320754400.0
+  },
+  {
+   "code": "96100",
+   "ticker": "9610.T",
+   "name": "ウィルソン・ラーニング　ワールドワイド",
+   "market": "スタンダード",
+   "sector": "サービス業",
+   "va_at_selection": 320038900.0
+  },
+  {
+   "code": "62840",
+   "ticker": "6284.T",
+   "name": "日精エー・エス・ビー機械",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 317231000.0
+  },
+  {
+   "code": "89770",
+   "ticker": "8977.T",
+   "name": "阪急阪神リート投資法人",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 317073300.0
+  },
+  {
+   "code": "65220",
+   "ticker": "6522.T",
+   "name": "アスタリスク",
+   "market": "グロース",
+   "sector": "電気機器",
+   "va_at_selection": 316316400.0
+  },
+  {
+   "code": "91190",
+   "ticker": "9119.T",
+   "name": "飯野海運",
+   "market": "プライム",
+   "sector": "海運業",
+   "va_at_selection": 314146200.0
+  },
+  {
+   "code": "66680",
+   "ticker": "6668.T",
+   "name": "アドテック　プラズマ　テクノロジー",
+   "market": "スタンダード",
+   "sector": "電気機器",
+   "va_at_selection": 313477600.0
+  },
+  {
+   "code": "86090",
+   "ticker": "8609.T",
+   "name": "岡三証券グループ",
+   "market": "プライム",
+   "sector": "証券･商品先物取引業",
+   "va_at_selection": 313432600.0
+  },
+  {
+   "code": "31480",
+   "ticker": "3148.T",
+   "name": "クリエイトＳＤホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 313412000.0
+  },
+  {
+   "code": "85410",
+   "ticker": "8541.T",
+   "name": "愛媛銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 312374900.0
+  },
+  {
+   "code": "68440",
+   "ticker": "6844.T",
+   "name": "新電元工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 312338500.0
+  },
+  {
+   "code": "56980",
+   "ticker": "5698.T",
+   "name": "エンビプロ・ホールディングス",
+   "market": "スタンダード",
+   "sector": "鉄鋼",
+   "va_at_selection": 312058200.0
+  },
+  {
+   "code": "85580",
+   "ticker": "8558.T",
+   "name": "東和銀行",
+   "market": "プライム",
+   "sector": "銀行業",
+   "va_at_selection": 311900400.0
+  },
+  {
+   "code": "90310",
+   "ticker": "9031.T",
+   "name": "西日本鉄道",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 311375550.0
+  },
+  {
+   "code": "78210",
+   "ticker": "7821.T",
+   "name": "前田工繊",
+   "market": "プライム",
+   "sector": "その他製品",
+   "va_at_selection": 311366000.0
+  },
+  {
+   "code": "55970",
+   "ticker": "5597.T",
+   "name": "ブルーイノベーション",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 311065000.0
+  },
+  {
+   "code": "69470",
+   "ticker": "6947.T",
+   "name": "図研",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 310637000.0
+  },
+  {
+   "code": "38640",
+   "ticker": "3864.T",
+   "name": "三菱製紙",
+   "market": "プライム",
+   "sector": "パルプ・紙",
+   "va_at_selection": 310473400.0
+  },
+  {
+   "code": "21580",
+   "ticker": "2158.T",
+   "name": "ＦＲＯＮＴＥＯ",
+   "market": "グロース",
+   "sector": "サービス業",
+   "va_at_selection": 310409800.0
+  },
+  {
+   "code": "57070",
+   "ticker": "5707.T",
+   "name": "東邦亜鉛",
+   "market": "プライム",
+   "sector": "非鉄金属",
+   "va_at_selection": 309871200.0
+  },
+  {
+   "code": "80050",
+   "ticker": "8005.T",
+   "name": "スクロール",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 309866500.0
+  },
+  {
+   "code": "18150",
+   "ticker": "1815.T",
+   "name": "鉄建建設",
+   "market": "プライム",
+   "sector": "建設業",
+   "va_at_selection": 309500000.0
+  },
+  {
+   "code": "32450",
+   "ticker": "3245.T",
+   "name": "ディア・ライフ",
+   "market": "プライム",
+   "sector": "不動産業",
+   "va_at_selection": 309177800.0
+  },
+  {
+   "code": "35650",
+   "ticker": "3565.T",
+   "name": "アセンテック",
+   "market": "スタンダード",
+   "sector": "卸売業",
+   "va_at_selection": 308130200.0
+  },
+  {
+   "code": "456A0",
+   "ticker": "456A.T",
+   "name": "ＨＵＭＡＮ　ＭＡＤＥ",
+   "market": "グロース",
+   "sector": "小売業",
+   "va_at_selection": 307717800.0
+  },
+  {
+   "code": "408A0",
+   "ticker": "408A.T",
+   "name": "ブラックロック・ジャパン株式会社　ｉシェアーズ　ＡＩ　グローバル・イノベーション　アクティブ　ＥＴＦ",
+   "market": "その他",
+   "sector": "その他",
+   "va_at_selection": 307202042.0
+  },
+  {
+   "code": "66160",
+   "ticker": "6616.T",
+   "name": "トレックス・セミコンダクター",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 307079900.0
+  },
+  {
+   "code": "90680",
+   "ticker": "9068.T",
+   "name": "丸全昭和運輸",
+   "market": "プライム",
+   "sector": "陸運業",
+   "va_at_selection": 307058000.0
+  },
+  {
+   "code": "44320",
+   "ticker": "4432.T",
+   "name": "ウイングアーク１ｓｔ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 306765800.0
+  },
+  {
+   "code": "76000",
+   "ticker": "7600.T",
+   "name": "日本エム・ディ・エム",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 306431400.0
+  },
+  {
+   "code": "52880",
+   "ticker": "5288.T",
+   "name": "アジアパイルホールディングス",
+   "market": "プライム",
+   "sector": "ガラス･土石製品",
+   "va_at_selection": 305724600.0
+  },
+  {
+   "code": "21540",
+   "ticker": "2154.T",
+   "name": "オープンアップグループ",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 305549000.0
+  },
+  {
+   "code": "30340",
+   "ticker": "3034.T",
+   "name": "クオールホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 305512800.0
+  },
+  {
+   "code": "62820",
+   "ticker": "6282.T",
+   "name": "オイレス工業",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 304895300.0
+  },
+  {
+   "code": "368A0",
+   "ticker": "368A.T",
+   "name": "北里コーポレーション",
+   "market": "プライム",
+   "sector": "精密機器",
+   "va_at_selection": 304818000.0
+  },
+  {
+   "code": "97160",
+   "ticker": "9716.T",
+   "name": "乃村工藝社",
+   "market": "プライム",
+   "sector": "サービス業",
+   "va_at_selection": 304090900.0
+  },
+  {
+   "code": "81370",
+   "ticker": "8137.T",
+   "name": "サンワテクノス",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 303993000.0
+  },
+  {
+   "code": "36810",
+   "ticker": "3681.T",
+   "name": "ブイキューブ",
+   "market": "プライム",
+   "sector": "情報･通信業",
+   "va_at_selection": 303980900.0
+  },
+  {
+   "code": "99600",
+   "ticker": "9960.T",
+   "name": "東テク",
+   "market": "プライム",
+   "sector": "卸売業",
+   "va_at_selection": 303968500.0
+  },
+  {
+   "code": "63950",
+   "ticker": "6395.T",
+   "name": "タダノ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 303314600.0
+  },
+  {
+   "code": "66510",
+   "ticker": "6651.T",
+   "name": "日東工業",
+   "market": "プライム",
+   "sector": "電気機器",
+   "va_at_selection": 301788500.0
+  },
+  {
+   "code": "62500",
+   "ticker": "6250.T",
+   "name": "やまびこ",
+   "market": "プライム",
+   "sector": "機械",
+   "va_at_selection": 301663500.0
+  },
+  {
+   "code": "41750",
+   "ticker": "4175.T",
+   "name": "ｃｏｌｙ",
+   "market": "グロース",
+   "sector": "情報･通信業",
+   "va_at_selection": 301638900.0
+  },
+  {
+   "code": "99560",
+   "ticker": "9956.T",
+   "name": "バローホールディングス",
+   "market": "プライム",
+   "sector": "小売業",
+   "va_at_selection": 301382000.0
+  },
+  {
+   "code": "78850",
+   "ticker": "7885.T",
+   "name": "タカノ",
+   "market": "スタンダード",
+   "sector": "その他製品",
+   "va_at_selection": 300824300.0
+  }
+ ]
+}

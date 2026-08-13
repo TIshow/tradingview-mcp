@@ -86,6 +86,53 @@ datasets:
       - 未検証: 配当調整の扱い / コード変更の追跡 / 欠損の扱い / 正確なレート制限値
 
   # =============================================================
+  # 日本株の主データセット：yfinance 10年 — 2026-08-14 取得
+  # =============================================================
+  - dataset_id: jp_equity_daily_yfinance_v1
+    source: Yahoo Finance（yfinance）
+    retrieved_at: 2026-08-14
+    version_hash: "af617742ab79c1063e5ba85763318e7252f3dc13fd267838676de1809b55f321"   # data/jp/manifest.json の symbols ハッシュ
+    storage: "data/jp/daily/<ticker>.json.gz（生OHLCVのみ・50.8MB） / data/jp/manifest.json（git管理）"
+
+    coverage_start: 2016-01-04
+    coverage_end: 2026-08-13
+    symbols: 1188
+    total_bars: 2872813
+    universe_source: "scripts/data/universe-jp.json（J-Quants で売買代金3億円以上・1,193銘柄を母集団として選定）"
+
+    # --- 実測で確認した性質 ---
+    price_point_in_time: false
+      # Close は分割を遡及適用した値。実測: 5801 の 2026-05-21 は yf=4,928 に対し
+      # J-Quants 生値=49,280（後の1:10分割）。J-Quants の AdjC とは完全一致した。
+      # 他4銘柄は生値と完全一致しており、分割のない銘柄では問題ない。
+    universe_survivorship_free: false
+      # ★ 上場廃止銘柄は取得できない。実測: 1,193銘柄中5件が取得不能
+      #   （6201 豊田自動織機・7189 西日本FH・6173 アクアライン 等 = TOB/廃止）
+      #   母集団自体も「現在上場している銘柄」から作られているため、
+      #   過去に上場していて今は無い銘柄は最初から含まれていない。
+    corporate_actions_point_in_time: false
+    same_day_available: true          # 当日データが取れる（J-Quants の12週遅延と対照的）
+    timezone_verified: true
+    missing_data_policy: "取得失敗した銘柄はマニフェストに含めない（欠損として扱う）"
+
+    cross_check:
+      vs_jquants: "2026-05-21 の終値を5銘柄で照合。分割のあった5801以外の4件は生値と完全一致"
+      integrity: "全1,188銘柄の sha256 をマニフェストと照合し一致（--verify）"
+
+    allowed_claims:
+      - fixed-universe price-pattern research
+      - relative comparison between strategies   # 同一ユニバースなのでバイアスが相殺される
+      - regime-stability analysis                # 10年あるためレジーム間の安定性を検定できる
+    forbidden_claims:
+      - historical stock-selection performance   # 生存者バイアス（廃止銘柄が欠落）
+      - point-in-time price level analysis       # 分割の遡及適用で「当時◯円」が言えない
+      - absolute historical return claims        # 「年率◯%だった」は主張できない
+
+    known_limitations:
+      - "最終日が古い銘柄が3件（2036/3681/7940）。期間中の廃止と思われる"
+      - "1,013銘柄（85%）は2016年から全期間あり。残り175銘柄はそれ以降の新規上場"
+
+  # =============================================================
   # 当日データ（フォワード記録用）：Yahoo Finance / yfinance — 2026-08-13 実測
   # =============================================================
   - dataset_id: same_day_quotes_yfinance

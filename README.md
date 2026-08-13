@@ -14,6 +14,22 @@ Personal AI assistant for your TradingView Desktop charts. Connects Claude Code 
 > [!CAUTION]
 > This tool accesses undocumented internal TradingView APIs via the Electron debug interface. These can change or break without notice in any TradingView update. Pin your TradingView Desktop version if stability matters to you.
 
+## This fork: quantitative research lab
+
+This fork additionally hosts a **quantitative investment research lab** built on top of the MCP bridge — an
+AI-era, Renaissance-style research infrastructure whose edge is the speed and rigor of the
+hypothesis-to-refutation cycle, not a predictive model.
+
+**→ [docs/README.md](docs/README.md) — 全体像と図（日本語）**
+
+Two tracks run in parallel: an offline research loop over historical data, and an "artificial investor"
+that publishes a tamper-evident daily record. In this project TradingView MCP is a **microscope** for
+reproducing failures — not a data source and not an alpha source.
+
+Scope: research, validation and record-keeping only. **No live order execution.**
+
+---
+
 ## How It Works (and why it's safe to run)
 
 This tool does not connect to TradingView's servers, modify any TradingView files, or intercept any network traffic. It communicates exclusively with your locally running TradingView Desktop instance via Chrome DevTools Protocol (CDP) — a standard debugging interface built into all Chromium/Electron applications by Google, including VS Code, Slack, and Discord.

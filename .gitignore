@@ -9,3 +9,10 @@ discovery-log.json
 .codex/
 AGENTS.md
 .tool-versions
+experiments/
+.DS_Store
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example

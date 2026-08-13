@@ -128,10 +128,26 @@ Claude Code ←→ MCP Server (stdio) ←→ CDP (localhost:9222) ←→ Trading
 
 Pine graphics path: `study._graphics._primitivesCollection.dwglines.get('lines').get(false)._primitivesDataById`
 
-## Investor-content project
+## Research projects in this repo
 
-This repo is also used to produce investor-facing technical-analysis articles (theme → screen → TradingView analysis → article). Before working on that, read:
-- `docs/content-pipeline.md` — the editorial strategy & workflow (living doc, update it)
-- `docs/tooling-notes.md` — which MCP tools are reliable vs broken, the stale-symbol-switch gate, and the `scripts/` (analyze_semi_jp, rrg_compute, dump_bars, backtest_rsi_macd) that compute indicators locally from raw bars
+**Primary: quantitative research lab** — an AI-era Renaissance-style research infrastructure.
+- `docs/ai-trading-strategy.md` — **the charter**: org structure, core principles, research protocol, acceptance criteria, issue map. Read this first.
+- `docs/research-protocol.md` — **the operating manual**: 11-stage pipeline, research contract, judging (hard conditions then incremental utility), data bias registry, sealed-test budgeting, experiment budgets, and the v0 scope.
+- `docs/references.md` — the scientific literature the validation rests on (Reality Check, SPA, Deflated Sharpe, Purged CV). **Do not invent judging criteria** — ground them here.
+- `docs/tooling-notes.md` — instrument manual: which MCP tools are reliable vs stale/broken, the stale-symbol-switch gate, replay verification.
 
-Key operational fact: MCP indicator readouts (`data_get_study_values`, screenshot legend) are unreliable/stale — compute indicators locally from raw OHLCV instead; use TradingView for visual/levels/screenshots only.
+Non-negotiables:
+- The **LLM writes deterministic programs and never answers with numbers**. Output is code plus saved results under `research/`, so everything is re-runnable.
+- The **validation harness ships before the generator**. Generation is free; `scripts/selection_bias_demo.js` shows pure noise yields Sharpe 2.15 over 3050 trials.
+- Signals are correlated (RSI/MACD/EMA are one price series) — compress them, then judge candidates only on **incremental information** after orthogonalizing against existing factors.
+- Log **every** trial including rejected ones — the trial count is the input to Deflated Sharpe, so keeping only winners invalidates the statistics. Sealed test data has an access budget, not a boolean flag.
+- The first deliverable is never a strategy: it is a **frozen research contract** (conditions fixed before seeing any result) and an **experiment ledger that never loses a failure**.
+- v0 runs 20 hypotheses end-to-end, not 1000. **Zero survivors is a passing outcome** — it means the judge worked.
+- **Forward recording starts before the judge is built.** A record written before the outcome exists is out-of-sample by construction, and clean data only accrues in wall-clock time — every day of delay is lost permanently. Signals are pushed before the open (external timestamp), the strategy set is frozen up front and reported in full every time, and post-hoc explanations of losses are registered as unverified child hypotheses, never stated as conclusions.
+- TradingView MCP is a **microscope** for reproducing failures, not an alpha source or bulk data feed (5-10s/symbol).
+- Scope: research and validation only — no live order execution.
+
+**Secondary (paused): investor-content pipeline** — theme → screen → analysis → article.
+- `docs/content-pipeline.md` — editorial strategy. Its discovery engine (`scripts/watchlist.json`, `scripts/scan.js`) is reused by the lab.
+
+Key operational fact: MCP indicator readouts (`data_get_study_values`, screenshot legend) are unreliable/stale — compute indicators locally from raw OHLCV instead.

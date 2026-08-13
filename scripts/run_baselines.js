@@ -52,6 +52,8 @@ console.log(`  dataset: ${panel.datasetId} @ ${panel.manifestHash.slice(0, 12)}`
 const uni = universeByDate(panel, { minTradedValue: CONTRACT.minTradedValue });
 const sizes = uni.map(u => u.length).filter(x => x > 0).sort((a, b) => a - b);
 console.log(`  ユニバース: 中央 ${sizes[sizes.length >> 1]}銘柄（株式のみ・売買代金${CONTRACT.minTradedValue / 1e8}億円以上）`);
+console.log(`  株式でないため除外: ${uni.excluded.byMarket.length}銘柄（ETF/ETN/貴金属信託）` +
+  (uni.excluded.unknownMeta.length ? `  ⚠️ 属性不明で除外: ${uni.excluded.unknownMeta.length}銘柄 — ${uni.excluded.unknownMeta.join(', ')}` : ''));
 
 // 極端な値動きは自動で消さず、必ず目に見える形で出す（契約 §6）。
 const extreme = auditExtremeMoves(panel, uni);
@@ -164,6 +166,8 @@ if (JSON_OUT) {
         ticker: e.ticker, maxMove: Math.max(...e.events.map(x => Math.abs(x.ret))),
       })),
       universe_excluded_markets: ['その他'],
+      universe_excluded_symbols: uni.excluded.byMarket,
+      universe_unknown_meta: uni.excluded.unknownMeta,
       extreme_moves_in_universe: extreme,
     },
     hold: HOLD, contract: CONTRACT,

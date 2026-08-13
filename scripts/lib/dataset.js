@@ -251,7 +251,7 @@ export function universeByDate(panel, {
     const m = im.get(tk);
     return m ? !excludeMarkets.includes(m.market) : false;   // 属性不明は採用しない
   });
-  return panel.dates.map((_, di) => {
+  const out = panel.dates.map((_, di) => {
     const ix = [];
     for (let si = 0; si < panel.tickers.length; si++) {
       if (!eligible[si]) continue;
@@ -259,6 +259,12 @@ export function universeByDate(panel, {
     }
     return ix;
   });
+  // 何を落としたかを毎回検証できるようにする（黙って除外しない）。
+  out.excluded = {
+    byMarket: panel.tickers.filter(tk => { const m = im.get(tk); return m && excludeMarkets.includes(m.market); }),
+    unknownMeta: panel.tickers.filter(tk => !im.has(tk)),
+  };
+  return out;
 }
 
 /**

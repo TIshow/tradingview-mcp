@@ -16,11 +16,11 @@
 Usage:
   python3 scripts/fetch_daily.py                # 全銘柄を取得
   python3 scripts/fetch_daily.py --limit 20     # 動作確認用に先頭20銘柄
-  python3 scripts/fetch_daily.py --update       # 既存を差分更新（最終日以降のみ）
+  python3 scripts/fetch_daily.py --update       # 差分更新（重なりを突き合わせ、書き換えを検出したら取り込まない）
   python3 scripts/fetch_daily.py --verify       # マニフェストとの整合を検査
 """
 import argparse, gzip, hashlib, json, math, os, sys, time, warnings
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 warnings.filterwarnings('ignore')
 
@@ -34,6 +34,7 @@ MANIFEST = os.path.join(DATA_DIR, 'manifest.json')
 START = '2016-01-01'
 DATASET_ID = 'jp_equity_daily_yfinance_v1'
 BATCH = 50          # yfinance の一括ダウンロード単位
+OVERLAP_DAYS = 45   # 差分更新でさかのぼって突き合わせる日数（遡及書き換えの検出用）
 FIELDS = ['t', 'o', 'h', 'l', 'c', 'v', 'adjc']
 
 
@@ -113,6 +114,39 @@ def frame_to_rows(df, ticker: str):
     return rows
 
 
+def compare_overlap(old_rows, new_rows):
+    """重なる期間で【生の価格が書き換わっていないか】を調べる。
+
+    yfinance は分割が起きると過去の価格を遡って書き換える（実測: 5801 の 49,280 → 4,928）。
+    差分更新でこれを見逃すと、探索期間の結果が再現できなくなったことに気づけない。
+    したがって重なり部分を必ず突き合わせ、変化していたら【書き込まずに報告する】。
+
+    adjc は比較しない。配当が出るたびに正当に再計算されるため、
+    比較対象にすると毎回差分として出てしまう。
+    """
+    o = {r[0]: r for r in old_rows}
+    n = {r[0]: r for r in new_rows}
+    diffs = []
+    for ts in sorted(set(o) & set(n)):
+        a, b = o[ts], n[ts]
+        for i in range(1, 6):          # o, h, l, c, v のみ（adjc=6 は除く）
+            x, y = a[i], b[i]
+            if x is None and y is None:
+                continue
+            if x is None or y is None or abs(float(x) - float(y)) > max(1e-6, abs(float(x)) * 1e-9):
+                d = datetime.fromtimestamp(ts, timezone.utc).strftime('%Y-%m-%d')
+                diffs.append((d, FIELDS[i], x, y))
+                break
+    return diffs
+
+
+def merge_rows(old_rows, new_rows):
+    """既存に新しいバーを足す。重なりは既存を残す（履歴を書き換えない）。"""
+    by_ts = {r[0]: r for r in new_rows}
+    by_ts.update({r[0]: r for r in old_rows})   # 既存が優先
+    return [by_ts[ts] for ts in sorted(by_ts)]
+
+
 def fetch(tickers, start, end=None):
     import yfinance as yf
     df = yf.download(tickers, start=start, end=end, progress=False,
@@ -167,12 +201,35 @@ def main():
         manifest = json.load(open(MANIFEST))
         manifest['fetched_at'] = datetime.now(timezone.utc).isoformat(timespec='seconds')
 
-    t0 = time.time(); done = failed = 0
+    t0 = time.time(); done = failed = skipped = 0
+    rewrites = {}
     for i in range(0, len(tickers), BATCH):
         chunk = tickers[i:i + BATCH]
-        got = fetch(chunk, START)
+
+        # 差分更新: 既存の最終日の少し前から取り直し、重なりを突き合わせる。
+        # 重なりを取らずに継ぎ足すと、遡及書き換えを検出できないまま混ざる。
+        existing = {t: load_bars(t) for t in chunk} if args.update else {}
+        if args.update:
+            lasts = [d['bars'][-1][0] for d in existing.values() if d and d.get('bars')]
+            start = (datetime.fromtimestamp(min(lasts), timezone.utc) - timedelta(days=OVERLAP_DAYS)
+                     ).strftime('%Y-%m-%d') if lasts else START
+        else:
+            start = START
+
+        got = fetch(chunk, start)
         for t in chunk:
             rows = got.get(t) or []
+            old = existing.get(t)
+
+            if args.update and old and old.get('bars'):
+                diffs = compare_overlap(old['bars'], rows)
+                if diffs:
+                    # 遡及書き換えを検出。書き込まずに報告する。
+                    rewrites[t] = diffs[:5]
+                    skipped += 1
+                    continue
+                rows = merge_rows(old['bars'], rows)
+
             if not rows:
                 failed += 1
                 continue
@@ -188,7 +245,20 @@ def main():
             }
             done += 1
         el = time.time() - t0
-        print(f'  {min(i+BATCH,len(tickers)):>5}/{len(tickers)}  成功{done} 失敗{failed}  {el:.0f}秒', flush=True)
+        print(f'  {min(i+BATCH,len(tickers)):>5}/{len(tickers)}  成功{done} 失敗{failed} '
+              f'書換検出{skipped}  {el:.0f}秒', flush=True)
+
+    if rewrites:
+        print(f'\n⚠️  過去の価格が書き換わっていた銘柄: {len(rewrites)}件（更新していません）')
+        print('   分割の遡及適用と思われます。取り込むと探索期間の結果が再現できなくなります。')
+        for t, ds in list(rewrites.items())[:10]:
+            d, f, x, y = ds[0]
+            print(f'     {t:<9} {d} {f}: {x} → {y}（他 {len(ds)-1}件）')
+        path = os.path.join(DATA_DIR, 'rewrites.json')
+        with open(path, 'w') as fh:
+            json.dump({'detected_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                       'symbols': {t: [list(x) for x in ds] for t, ds in rewrites.items()}}, fh, indent=1)
+        print(f'   記録: {path}')
 
     manifest['count'] = len(manifest['symbols'])
     manifest['manifest_sha256'] = sha256_bytes(canonical(manifest['symbols']))

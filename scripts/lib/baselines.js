@@ -11,7 +11,22 @@
  *
  * 参照: research/contracts/RC-20260812-jp.md §10
  */
+import { createHash } from 'crypto';
 import { smaAt, rsiWilder, ema, atrWilder } from './indicators.js';
+
+/**
+ * 戦略の同定ハッシュ。ランク付けロジックのソースそのものを対象にする。
+ *
+ * ★ バージョン文字列を手で書かないこと。手書きの識別子は、
+ *   コードを変えても書き換え忘れて同じ値のまま残る。
+ *   ソースを直接ハッシュしていれば、ロジックを1文字変えた時点で値が変わり、
+ *   凍結違反として検出できる（scripts/freeze_strategy_set.js --verify）。
+ */
+export function strategyCodeHash(s) {
+  return createHash('sha256')
+    .update(JSON.stringify({ id: s.id, warmup: s.warmup, rank: String(s.rank) }))
+    .digest('hex');
+}
 
 /** 系列の [from, to] 区間のリターン。欠損なら null。 */
 function ret(cs, from, to) {

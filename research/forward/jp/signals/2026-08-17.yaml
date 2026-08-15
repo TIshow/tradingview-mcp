@@ -1,0 +1,162 @@
+# フォワード記録 — 2026-08-17 の日次シグナル
+#
+# ★ このファイルは書き換えない。訂正が必要なら別レコードとして追記する。
+# ★ 外部の証人は、このファイルを含む GitHub コミットのサーバ側タイムスタンプ。
+#   寄り付き（09:00 JST）より前に push されていることが記録の有効条件。
+#
+# 参照: research/contracts/RC-20260812-jp.md §10 / research/forward/jp/strategy-set.yaml
+
+signal_record:
+  date: "2026-08-17"
+  generated_at: "2026-08-15T16:09:05.946Z"      # UTC
+  generated_at_jst: "2026-08-16 01:08:57"    # JST
+  market_open_at_jst: "2026-08-17 09:00:00"
+  pre_open: true                         # generated_at < market_open（不変条件）
+  contract_id: RC-20260812-jp
+  baseline_version: baseline_v1
+  code_version: e16b360a06ac32c7f484df7990d3bf3d6ec7d80c
+  data_version: 8374d12a534c9e76b0481904de4f6bf775be1e82384ce279ac6e7c8c57949903
+  dataset_id: jp_equity_daily_yfinance_v1
+  data_as_of: "2026-08-14"                  # この日の終値までしか見ていない
+
+  # 判定は前週最終営業日の大引け、執行は今週初営業日の寄り付き。
+  # 週の途中はこの構成を持ち続ける（週次リバランス）。
+  decision_date: "2026-08-14"
+  week_start: "2026-08-17"
+  universe_size: 639
+  hold: 20
+  weight_per_name: 0.05
+
+  # baseline_v1 は建値からの逆指値を持たない。週次リバランスで上位20位を外れたら降りる。
+  # 契約 §7 の「1トレードあたりリスク2%」は最大DD -20% と同じく【実運用の規律】であり、
+  # 凍結した実装には含まれていない（含めるとバックテストと別の戦略になる）。
+  stop_loss_policy: none_by_design
+  exit_rule: "週次リバランスで上位20位から外れたら売却"
+
+  signals:
+    - strategy_id: trend
+      name: トレンド追随
+      code_hash: 9386e505abe2d2151c826b65cf3487d2591546c89181650692b1a4b3ad03b7ef
+      positions:
+        - { symbol: 285A.T, name: "キオクシアホールディングス", direction: long, weight: 0.05, reference_price: 53740, score: 26.885391 }
+        - { symbol: 6613.T, name: "ＱＤレーザ", direction: long, weight: 0.05, reference_price: 1806, score: 8.220532 }
+        - { symbol: 6327.T, name: "北川精機", direction: long, weight: 0.05, reference_price: 3580, score: 7.099688 }
+        - { symbol: 6227.T, name: "ＡＩメカテック", direction: long, weight: 0.05, reference_price: 6460, score: 6.178729 }
+        - { symbol: 4062.T, name: "イビデン", direction: long, weight: 0.05, reference_price: 20785, score: 4.566563 }
+        - { symbol: 5706.T, name: "三井金属", direction: long, weight: 0.05, reference_price: 29375, score: 4.331783 }
+        - { symbol: 3103.T, name: "ユニチカ", direction: long, weight: 0.05, reference_price: 1594, score: 4.066667 }
+        - { symbol: 3436.T, name: "ＳＵＭＣＯ", direction: long, weight: 0.05, reference_price: 3920, score: 3.433584 }
+        - { symbol: 5016.T, name: "ＪＸ金属", direction: long, weight: 0.05, reference_price: 3785, score: 3.365408 }
+        - { symbol: 3449.T, name: "テクノフレックス", direction: long, weight: 0.05, reference_price: 4050, score: 3.285714 }
+        - { symbol: 4588.T, name: "オンコリスバイオファーマ", direction: long, weight: 0.05, reference_price: 3250, score: 3.282534 }
+        - { symbol: 6387.T, name: "サムコ", direction: long, weight: 0.05, reference_price: 9900, score: 3.247293 }
+        - { symbol: 6522.T, name: "アスタリスク", direction: long, weight: 0.05, reference_price: 2165, score: 3.214781 }
+        - { symbol: 4004.T, name: "レゾナック・ホールディングス", direction: long, weight: 0.05, reference_price: 16465, score: 3.207151 }
+        - { symbol: 6976.T, name: "太陽誘電", direction: long, weight: 0.05, reference_price: 11015, score: 3.149457 }
+        - { symbol: 6981.T, name: "村田製作所", direction: long, weight: 0.05, reference_price: 8235, score: 3.01323 }
+        - { symbol: 3891.T, name: "ニッポン高度紙工業", direction: long, weight: 0.05, reference_price: 7190, score: 2.951655 }
+        - { symbol: 5801.T, name: "古河電気工業", direction: long, weight: 0.05, reference_price: 4057, score: 2.828167 }
+        - { symbol: 6779.T, name: "日本電波工業", direction: long, weight: 0.05, reference_price: 3100, score: 2.721893 }
+        - { symbol: 5985.T, name: "サンコール", direction: long, weight: 0.05, reference_price: 2138, score: 2.683938 }
+    - strategy_id: reversal
+      name: 逆張り
+      code_hash: 575545063ac92133d1564236741294100210d68f7755780ac46205ce44088922
+      positions:
+        - { symbol: 3905.T, name: "データセクション", direction: long, weight: 0.05, reference_price: 1877, score: 0.340246 }
+        - { symbol: 3449.T, name: "テクノフレックス", direction: long, weight: 0.05, reference_price: 4050, score: 0.328358 }
+        - { symbol: 6327.T, name: "北川精機", direction: long, weight: 0.05, reference_price: 3580, score: 0.311538 }
+        - { symbol: 6787.T, name: "メイコー", direction: long, weight: 0.05, reference_price: 18250, score: 0.290435 }
+        - { symbol: 3436.T, name: "ＳＵＭＣＯ", direction: long, weight: 0.05, reference_price: 3920, score: 0.261353 }
+        - { symbol: 6613.T, name: "ＱＤレーザ", direction: long, weight: 0.05, reference_price: 1806, score: 0.255258 }
+        - { symbol: 6266.T, name: "タツモ", direction: long, weight: 0.05, reference_price: 4020, score: 0.251397 }
+        - { symbol: 4259.T, name: "エクサウィザーズ", direction: long, weight: 0.05, reference_price: 705, score: 0.240302 }
+        - { symbol: 285A.T, name: "キオクシアホールディングス", direction: long, weight: 0.05, reference_price: 53740, score: 0.222287 }
+        - { symbol: 6315.T, name: "ＴＯＷＡ", direction: long, weight: 0.05, reference_price: 2512, score: 0.215 }
+        - { symbol: 6278.T, name: "ユニオンツール", direction: long, weight: 0.05, reference_price: 16370, score: 0.214491 }
+        - { symbol: 7735.T, name: "ＳＣＲＥＥＮホールディングス", direction: long, weight: 0.05, reference_price: 14275, score: 0.213932 }
+        - { symbol: 6227.T, name: "ＡＩメカテック", direction: long, weight: 0.05, reference_price: 6460, score: 0.202469 }
+        - { symbol: 7717.T, name: "ブイ・テクノロジー", direction: long, weight: 0.05, reference_price: 5810, score: 0.189679 }
+        - { symbol: 4980.T, name: "デクセリアルズ", direction: long, weight: 0.05, reference_price: 3191, score: 0.188247 }
+        - { symbol: 6387.T, name: "サムコ", direction: long, weight: 0.05, reference_price: 9900, score: 0.185855 }
+        - { symbol: 6526.T, name: "ソシオネクスト", direction: long, weight: 0.05, reference_price: 2118.5, score: 0.181098 }
+        - { symbol: 6590.T, name: "芝浦メカトロニクス", direction: long, weight: 0.05, reference_price: 4485, score: 0.172509 }
+        - { symbol: 4970.T, name: "東洋合成工業", direction: long, weight: 0.05, reference_price: 12510, score: 0.169323 }
+        - { symbol: 6707.T, name: "サンケン電気", direction: long, weight: 0.05, reference_price: 8280, score: 0.169092 }
+    - strategy_id: lowvol
+      name: 低ボラティリティ
+      code_hash: ca8facbfb11c02e7328ee4395a926b671275a474ab92bf5292013f7ce862ea5a
+      positions:
+        - { symbol: 9744.T, name: "メイテックグループホールディングス", direction: long, weight: 0.05, reference_price: 3356, score: -0.00771 }
+        - { symbol: 2371.T, name: "カカクコム", direction: long, weight: 0.05, reference_price: 3715, score: -0.008225 }
+        - { symbol: 1414.T, name: "ショーボンドホールディングス", direction: long, weight: 0.05, reference_price: 1267.5, score: -0.00961 }
+        - { symbol: 4626.T, name: "太陽ホールディングス", direction: long, weight: 0.05, reference_price: 4812, score: -0.011282 }
+        - { symbol: 4732.T, name: "ユー・エス・エス", direction: long, weight: 0.05, reference_price: 2011, score: -0.011434 }
+        - { symbol: 3861.T, name: "王子ホールディングス", direction: long, weight: 0.05, reference_price: 875.6, score: -0.011736 }
+        - { symbol: 9531.T, name: "東京瓦斯", direction: long, weight: 0.05, reference_price: 6015, score: -0.011742 }
+        - { symbol: 7164.T, name: "全国保証", direction: long, weight: 0.05, reference_price: 3131, score: -0.011838 }
+        - { symbol: 1719.T, name: "安藤・間", direction: long, weight: 0.05, reference_price: 1890, score: -0.011987 }
+        - { symbol: 8001.T, name: "伊藤忠商事", direction: long, weight: 0.05, reference_price: 2064.5, score: -0.012026 }
+        - { symbol: 9048.T, name: "名古屋鉄道", direction: long, weight: 0.05, reference_price: 1863.5, score: -0.012095 }
+        - { symbol: 9989.T, name: "サンドラッグ", direction: long, weight: 0.05, reference_price: 3746, score: -0.012109 }
+        - { symbol: 2206.T, name: "江崎グリコ", direction: long, weight: 0.05, reference_price: 5162, score: -0.012343 }
+        - { symbol: 1721.T, name: "コムシスホールディングス", direction: long, weight: 0.05, reference_price: 5303, score: -0.01243 }
+        - { symbol: 7278.T, name: "エクセディ", direction: long, weight: 0.05, reference_price: 6170, score: -0.01244 }
+        - { symbol: 9041.T, name: "近鉄グループホールディングス", direction: long, weight: 0.05, reference_price: 3555, score: -0.012472 }
+        - { symbol: 9432.T, name: "ＮＴＴ", direction: long, weight: 0.05, reference_price: 162.7, score: -0.012535 }
+        - { symbol: 9504.T, name: "中国電力", direction: long, weight: 0.05, reference_price: 931.8, score: -0.012544 }
+        - { symbol: 5947.T, name: "リンナイ", direction: long, weight: 0.05, reference_price: 3650, score: -0.012609 }
+        - { symbol: 9533.T, name: "東邦瓦斯", direction: long, weight: 0.05, reference_price: 1175, score: -0.012763 }
+    - strategy_id: volume
+      name: 出来高急増
+      code_hash: 350f6cfeb04ae907a014b9bddd8116c47f1928ffe11dfb56db88ac9e2b8e7db3
+      positions:
+        - { symbol: 6862.T, name: "ミナトホールディングス", direction: long, weight: 0.05, reference_price: 3800, score: 14.379163 }
+        - { symbol: 3103.T, name: "ユニチカ", direction: long, weight: 0.05, reference_price: 1594, score: 9.518282 }
+        - { symbol: 7936.T, name: "アシックス", direction: long, weight: 0.05, reference_price: 5281, score: 7.732802 }
+        - { symbol: 3993.T, name: "ＰＫＳＨＡ　Ｔｅｃｈｎｏｌｏｇｙ", direction: long, weight: 0.05, reference_price: 3170, score: 5.042508 }
+        - { symbol: 141A.T, name: "トライアルホールディングス", direction: long, weight: 0.05, reference_price: 3680, score: 4.445502 }
+        - { symbol: 6330.T, name: "東洋エンジニアリング", direction: long, weight: 0.05, reference_price: 2590, score: 4.286688 }
+        - { symbol: 4118.T, name: "カネカ", direction: long, weight: 0.05, reference_price: 6345, score: 4.056486 }
+        - { symbol: 5715.T, name: "古河機械金属", direction: long, weight: 0.05, reference_price: 4215, score: 4.047301 }
+        - { symbol: 6522.T, name: "アスタリスク", direction: long, weight: 0.05, reference_price: 2165, score: 3.717869 }
+        - { symbol: 6376.T, name: "日機装", direction: long, weight: 0.05, reference_price: 4385, score: 3.708737 }
+        - { symbol: 6592.T, name: "マブチモーター", direction: long, weight: 0.05, reference_price: 1742, score: 3.417019 }
+        - { symbol: 3994.T, name: "マネーフォワード", direction: long, weight: 0.05, reference_price: 6479, score: 3.37785 }
+        - { symbol: 7389.T, name: "あいちフィナンシャルグループ", direction: long, weight: 0.05, reference_price: 1868, score: 2.928529 }
+        - { symbol: 8508.T, name: "Ｊトラスト", direction: long, weight: 0.05, reference_price: 895, score: 2.923939 }
+        - { symbol: 3397.T, name: "トリドールホールディングス", direction: long, weight: 0.05, reference_price: 4203, score: 2.904694 }
+        - { symbol: 4588.T, name: "オンコリスバイオファーマ", direction: long, weight: 0.05, reference_price: 3250, score: 2.819367 }
+        - { symbol: 4478.T, name: "フリー", direction: long, weight: 0.05, reference_price: 3345, score: 2.805529 }
+        - { symbol: 9435.T, name: "光通信", direction: long, weight: 0.05, reference_price: 38580, score: 2.767218 }
+        - { symbol: 7762.T, name: "シチズン時計", direction: long, weight: 0.05, reference_price: 2751, score: 2.759424 }
+        - { symbol: 4751.T, name: "サイバーエージェント", direction: long, weight: 0.05, reference_price: 1266, score: 2.594628 }
+    - strategy_id: relstr
+      name: 相対強度
+      code_hash: 9fe6ddb33e6cd65a414b8510a52f0be01f764ea17c6b59c2485583b336dedb1f
+      positions:
+        - { symbol: 6522.T, name: "アスタリスク", direction: long, weight: 0.05, reference_price: 2165, score: 1.156248 }
+        - { symbol: 2737.T, name: "トーメンデバイス", direction: long, weight: 0.05, reference_price: 31400, score: 1.123282 }
+        - { symbol: 8050.T, name: "セイコーグループ", direction: long, weight: 0.05, reference_price: 11210, score: 0.749224 }
+        - { symbol: 4461.T, name: "第一工業製薬", direction: long, weight: 0.05, reference_price: 15280, score: 0.696096 }
+        - { symbol: 2767.T, name: "円谷フィールズホールディングス", direction: long, weight: 0.05, reference_price: 2473, score: 0.622082 }
+        - { symbol: 6098.T, name: "リクルートホールディングス", direction: long, weight: 0.05, reference_price: 16455, score: 0.600983 }
+        - { symbol: 1518.T, name: "三井松島ホールディングス", direction: long, weight: 0.05, reference_price: 2349, score: 0.583832 }
+        - { symbol: 3907.T, name: "シリコンスタジオ", direction: long, weight: 0.05, reference_price: 1595, score: 0.552614 }
+        - { symbol: 6862.T, name: "ミナトホールディングス", direction: long, weight: 0.05, reference_price: 3800, score: 0.50992 }
+        - { symbol: 4092.T, name: "日本化学工業", direction: long, weight: 0.05, reference_price: 5550, score: 0.507362 }
+        - { symbol: 7272.T, name: "ヤマハ発動機", direction: long, weight: 0.05, reference_price: 1949, score: 0.491911 }
+        - { symbol: 6952.T, name: "カシオ計算機", direction: long, weight: 0.05, reference_price: 2456, score: 0.491655 }
+        - { symbol: 4588.T, name: "オンコリスバイオファーマ", direction: long, weight: 0.05, reference_price: 3250, score: 0.488688 }
+        - { symbol: 2492.T, name: "インフォマート", direction: long, weight: 0.05, reference_price: 614, score: 0.482895 }
+        - { symbol: 8541.T, name: "愛媛銀行", direction: long, weight: 0.05, reference_price: 3065, score: 0.462505 }
+        - { symbol: 1515.T, name: "日鉄鉱業", direction: long, weight: 0.05, reference_price: 3365, score: 0.449887 }
+        - { symbol: 6376.T, name: "日機装", direction: long, weight: 0.05, reference_price: 4385, score: 0.429013 }
+        - { symbol: 6327.T, name: "北川精機", direction: long, weight: 0.05, reference_price: 3580, score: 0.42821 }
+        - { symbol: 4680.T, name: "ラウンドワン", direction: long, weight: 0.05, reference_price: 1339.5, score: 0.418491 }
+        - { symbol: 4478.T, name: "フリー", direction: long, weight: 0.05, reference_price: 3345, score: 0.417478 }
+
+  # 外部の証人。このファイルを含むコミットが push された時刻が記録の証拠になる。
+  witness:
+    commit_sha: null        # このファイルを含むコミット（push 後に確定する）
+    pushed_at: null         # GitHub のサーバ側タイムスタンプ
+    published_url: null

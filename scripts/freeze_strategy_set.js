@@ -13,21 +13,17 @@
  *   node scripts/freeze_strategy_set.js --verify   # 実装が凍結時と一致するか検査
  */
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
-import { createHash } from 'crypto';
+
 import { execSync } from 'child_process';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
-import { BASELINES, BASELINE_VERSION } from './lib/baselines.js';
+import { BASELINES, BASELINE_VERSION, strategyCodeHash as codeHash } from './lib/baselines.js';
 import { CONTRACT } from './lib/portfolio.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'research', 'forward', 'jp', 'strategy-set.yaml');
 const CONTRACT_ID = 'RC-20260812-jp';
 const HOLD = 20;
-
-const sha = s => createHash('sha256').update(s).digest('hex');
-/** 戦略の同定: ランク付けロジックのソースと、判定に効くパラメータ。 */
-const codeHash = s => sha(JSON.stringify({ id: s.id, warmup: s.warmup, rank: String(s.rank) }));
 
 if (process.argv.includes('--verify')) {
   if (!existsSync(OUT)) { console.error('凍結ファイルがありません。まず凍結してください。'); process.exit(1); }

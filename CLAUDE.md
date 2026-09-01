@@ -147,7 +147,7 @@ Non-negotiables:
 - TradingView MCP is a **microscope** for reproducing failures, not an alpha source or bulk data feed (5-10s/symbol).
 - Scope: research and validation only — no live order execution.
 - **This repo owns the data layer** (`scripts/lib/dataset.js`, `scripts/lib/indicators.js`, `data/`).
-  The sibling repo `jp-weekly-column` consumes it read-only via `LAB_HOME`; changes belong here, not there.
+  The repo `jp-weekly-column` (`~/src/steins/market/jp-weekly-column`) consumes it read-only via `LAB_HOME`; changes belong here, not there.
   Editing these files changes numbers already published there, so its pipeline halts until a human
   re-pins the hashes. Do not "fix" the data layer to suit a column.
 

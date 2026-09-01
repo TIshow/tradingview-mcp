@@ -146,6 +146,10 @@ Non-negotiables:
 - **Forward recording starts before the judge is built.** A record written before the outcome exists is out-of-sample by construction, and clean data only accrues in wall-clock time — every day of delay is lost permanently. Signals are pushed before the open (external timestamp), the strategy set is frozen up front and reported in full every time, and post-hoc explanations of losses are registered as unverified child hypotheses, never stated as conclusions.
 - TradingView MCP is a **microscope** for reproducing failures, not an alpha source or bulk data feed (5-10s/symbol).
 - Scope: research and validation only — no live order execution.
+- **This repo owns the data layer** (`scripts/lib/dataset.js`, `scripts/lib/indicators.js`, `data/`).
+  The sibling repo `jp-weekly-column` consumes it read-only via `LAB_HOME`; changes belong here, not there.
+  Editing these files changes numbers already published there, so its pipeline halts until a human
+  re-pins the hashes. Do not "fix" the data layer to suit a column.
 
 **Secondary (paused): investor-content pipeline** — theme → screen → analysis → article.
 - `docs/content-pipeline.md` — editorial strategy. Its discovery engine (`scripts/watchlist.json`, `scripts/scan.js`) is reused by the lab.

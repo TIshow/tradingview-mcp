@@ -9,7 +9,9 @@ discovery-log.json
 .codex/
 AGENTS.md
 .tool-versions
-experiments/
+# ルート直下の外部ツール置き場のみ。先頭の / を外すと任意の深さに一致し、
+# scripts/experiments/ まで巻き込んで研究コードが git に入らなくなる（実測で発生）。
+/experiments/
 .DS_Store
 
 # Secrets — never commit
